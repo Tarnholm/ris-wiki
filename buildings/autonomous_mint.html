@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Local Mint (Civic) — RIS wiki</title>
+<link rel="stylesheet" href="../wiki.css">
+<script>window.RIS_BASE="../"</script></head><body>
+<div class="top">
+  <div class="bar">
+  <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">Imperium <span>Surrectum</span></a>
+  <form action="../search.html" method="get" role="search">
+    <input name="q" type="search" placeholder="Search 4,258 pages — a faction, region or unit…" autocomplete="off">
+  </form>
+  <div class="right">
+    <button id="theme" type="button" title="Switch theme">theme</button>
+    <span>local preview</span>
+  </div>
+  </div>
+  
+</div>
+<div class="wrap">
+  <nav class="side"><h4>Start here</h4><a href="../README.html">Wiki index</a><a href="../factions.html">All factions</a><a href="../regions.html">All regions</a><a href="../settlements.html">All settlements</a><a href="../units.html">All units</a><a href="../buildings.html">All buildings</a><a href="../trade-goods.html">Trade goods</a><a href="../cultures.html">Cultures</a><a href="../religions.html">Beliefs</a><a href="../sizes.html">Settlement sizes</a><h4>Overviews</h4><a href="../factions-overview.html">Factions vs vanilla</a><a href="../map-and-regions.html">The map</a><a href="../units-overview.html">Roster vs vanilla</a><h4>Region tags</h4><a href="../tags.html">All reference tables</a><a href="../tags/terrain.html">Terrain</a><a href="../tags/climate.html">Climate</a><a href="../tags/irrigation.html">Irrigation</a><a href="../tags/ports.html">Ports</a><a href="../tags/recruitment-zones.html">Recruitment zones</a><a href="../tags/specialty-recruitment.html">Specialty recruitment</a><a href="../tags/cultural-homeland.html">Cultural homelands</a><a href="../tags/hazards-and-river-trade.html">Hazards and river trade</a><a href="../tags/fertility.html">Fertility</a><h4>Sortable views</h4><a href="../units-sortable.html">Unit roster</a><a href="../regions-sortable.html">Regions</a><a href="../factions-sortable.html">Factions</a></nav>
+  <main><div class="crumb"><a href="../README.html">RIS wiki</a> › <a href="../buildings.html">buildings</a></div><div class="lede"><h1 id="local-mint-civic">Local Mint (Civic)</h1>
+<p><a href="../buildings.html">← all buildings</a> · <a href="../README.html">wiki index</a></p>
+<p>A single-level building: there is nothing to upgrade it into.</p>
+<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="local-mint-civic">Local Mint (Civic)</h2>
+<p><img src="../art/roman__academy.png" alt="Local Mint (Civic)"></p>
+<p><em>The game ships no picture of its own for this level and shows the Small School (Civic) picture instead.</em></p>
+<p><strong>An Autonomous Mint increases happiness but breeds local independence, and with it, a desire for more freedom, as they will mint coins representing their city/culture.</strong></p>
+<p>Freedom is in the air, and in the pockets!</p>
+<p>Granting the settlement its own mint is a gift and a curse. It will please the citizens, who will now see their own culture stamped onto their currency, and will be a boost to trade. But beware, too much freedom leads to dangerous ambitions. When settlements feel more independent, they might start imagining themselves free. Letting them mint their own coins might make them happy, but it’s only a matter of time before they start wanting more than just money. Proceed with caution!</p>
+<p>Historically, the mint was a source of wealth and control. The Ptolemies, for example, tried to make an inner economy and only allowed to use their coins. The mint in many cases was a symbol of independence. In case of Bosporan Kingdom, during the time of consolidation of power, kings allowed mint only in the capital, while before there were at least 5-6 another mints. The decentralization of the kingdom in the II BCE, even without any written sources, could be seen through the sudden appearance of new minting locations. The person who controlled the mint influenced all others who used those coins, as he decided: what will be on coin (propaganda), from which metal it will be made, and how much was the coin worth.</p>
+<div class="tw multi"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td></tr></tbody></table></div>
+<p><strong>What it does</strong></p>
+<details>
+<summary>Show 8 effects that apply only in the circumstances shown</summary>
+<ul><li>+6 taxable income — only when <code>not copper_building_supply and not resource silver and minting_factions</code></li><li>+10 taxable income — only when <code>minting_factions and copper_building_supply and not resource silver</code></li><li>+2 trade income — only when <code>minting_factions and not resource gold and not resource silver</code></li><li>+3 trade income — only when <code>minting_factions and not resource gold and resource silver</code></li><li>+3 trade income — only when <code>minting_factions and resource gold and not resource silver</code></li><li>+3 trade income — only when <code>minting_factions and resource gold and resource silver</code></li><li>+4 public order (happiness) — only when <code>minting_factions</code></li><li>-1 public order (law) — only when <code>minting_factions</code></li></ul>
+</details>
+<blockquote><p><strong>Excludes:</strong> building this rules out Homeland at Homeland or above, State Mint (Civic). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
+<details>
+<summary>What the shorthands in those conditions stand for (2)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>copper_building_supply</code></td><td><code>resource copper or hidden_resource copper_supply_built factionwide</code></td><td class="grp"><code>minting_factions</code></td><td><code>factions { carthaginian, barbarian, iberian, celtiberian, eastern, anatolian, illyrian, egyptian, thracian, iranian, arab, indian, greek, w_hellenistic, e_hellenistic, roman, }</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
+</div>
+<script>
+// See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's
+// script touches it before any try/catch. A memory stand-in keeps the rest of the page alive.
+(function(){try{var k="__ris";localStorage.setItem(k,"1");localStorage.removeItem(k);}catch(e){
+var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
+setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
+</script>
+<script src="../wiki.js"></script>
+</body></html>

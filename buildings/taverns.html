@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tavern (Leisure) chain — RIS wiki</title>
+<link rel="stylesheet" href="../wiki.css">
+<script>window.RIS_BASE="../"</script></head><body class="has-jump">
+<div class="top">
+  <div class="bar">
+  <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">Imperium <span>Surrectum</span></a>
+  <form action="../search.html" method="get" role="search">
+    <input name="q" type="search" placeholder="Search 4,258 pages — a faction, region or unit…" autocomplete="off">
+  </form>
+  <div class="right">
+    <button id="theme" type="button" title="Switch theme">theme</button>
+    <span>local preview</span>
+  </div>
+  </div>
+  <div class="jump"><a href="#levels-at-a-glance">Levels at a glance</a><a href="#tavern-leisure">Tavern (Leisure)</a><a href="#feasting-hall-leisure">Feasting Hall (Leisure)</a></div>
+</div>
+<div class="wrap">
+  <nav class="side"><h4>Start here</h4><a href="../README.html">Wiki index</a><a href="../factions.html">All factions</a><a href="../regions.html">All regions</a><a href="../settlements.html">All settlements</a><a href="../units.html">All units</a><a href="../buildings.html">All buildings</a><a href="../trade-goods.html">Trade goods</a><a href="../cultures.html">Cultures</a><a href="../religions.html">Beliefs</a><a href="../sizes.html">Settlement sizes</a><h4>Overviews</h4><a href="../factions-overview.html">Factions vs vanilla</a><a href="../map-and-regions.html">The map</a><a href="../units-overview.html">Roster vs vanilla</a><h4>Region tags</h4><a href="../tags.html">All reference tables</a><a href="../tags/terrain.html">Terrain</a><a href="../tags/climate.html">Climate</a><a href="../tags/irrigation.html">Irrigation</a><a href="../tags/ports.html">Ports</a><a href="../tags/recruitment-zones.html">Recruitment zones</a><a href="../tags/specialty-recruitment.html">Specialty recruitment</a><a href="../tags/cultural-homeland.html">Cultural homelands</a><a href="../tags/hazards-and-river-trade.html">Hazards and river trade</a><a href="../tags/fertility.html">Fertility</a><h4>Sortable views</h4><a href="../units-sortable.html">Unit roster</a><a href="../regions-sortable.html">Regions</a><a href="../factions-sortable.html">Factions</a></nav>
+  <main><div class="crumb"><a href="../README.html">RIS wiki</a> › <a href="../buildings.html">buildings</a></div><div class="lede"><h1 id="tavern-leisure-chain">Tavern (Leisure) chain</h1>
+<p><a href="../buildings.html">← all buildings</a> · <a href="../README.html">wiki index</a></p>
+<p>2 levels, each replacing the one before it — you upgrade in place rather than building alongside.</p>
+<p><strong>Tavern (Leisure) → Feasting Hall (Leisure)</strong></p>
+<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
+<div class="tw multi"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__tavern.png" alt="" width="28"></td><td>Tavern (Leisure)</td><td class="right">3,000</td><td class="right">3</td><td>large town</td><td>Feasting Hall (Leisure)</td><td class="center grp"><img src="../icons/greek__bardic_circle.png" alt="" width="28"></td><td>Feasting Hall (Leisure)</td><td class="right">6,000</td><td class="right">6</td><td>city</td><td>—</td></tr></tbody></table></div>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec"><h2 id="tavern-leisure">Tavern (Leisure)</h2>
+<p><img src="../art/greek__tavern.png" alt="Tavern (Leisure)"></p>
+<p>Drink! Drink! Drink! Life is short! The tavern fire is warm! There are heroic stories to tell! Let everyone hear how great it is to be one of our people! A Tavern is the perfect place for everyone to enjoy themselves, and let worries be drowned in ale and mead. Any man who leaves without a smile on his face and an urge to empty his bladder hasn't really been drinking like a true warrior!</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td></tr><tr><td>Upgrades to</td><td>Feasting Hall (Leisure)</td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>What it does</strong></p>
+<ul><li>+1 public order (happiness)</li><li>taxable income -10 to -5, scaling with settlement size <em>(player only)</em></li></ul>
+<details>
+<summary>Show 11 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li><li>-5 taxable income — only when <code>size1 and building_present_min_level taverns tavern and not is_player</code></li><li>-6 taxable income — only when <code>size2 and building_present_min_level taverns tavern and not is_player</code></li><li>-6 taxable income — only when <code>size3 and building_present_min_level taverns tavern and not is_player</code></li><li>-7 taxable income — only when <code>size4 and building_present_min_level taverns tavern and not is_player</code></li><li>-7 taxable income — only when <code>size5 and building_present_min_level taverns tavern and not is_player</code></li><li>-8 taxable income — only when <code>size6 and building_present_min_level taverns tavern and not is_player</code></li><li>-8 taxable income — only when <code>size7 and building_present_min_level taverns tavern and not is_player</code></li><li>-9 taxable income — only when <code>size8 and building_present_min_level taverns tavern and not is_player</code></li><li>-9 taxable income — only when <code>size9 and building_present_min_level taverns tavern and not is_player</code></li><li>-10 taxable income — only when <code>size10 and building_present_min_level taverns tavern and not is_player</code></li></ul>
+</details>
+<p><strong>Religious belief</strong> — spreads 13 beliefs, by how much depending on what the region already believes.</p>
+<details>
+<summary>Show the 13 beliefs</summary>
+<ul><li>Baltic +1</li><li>Bithynian +1</li><li>Celtic +1</li><li>Dardanian +1</li><li>delmato_pannonian (no name in the text files) +1</li><li>Germanic +1</li><li>Illyrian +1</li><li>Liburnian +1</li><li>Paeonian +1</li><li>Scythian +1</li><li>Thracian +1</li><li>Triballian +1</li><li>Venetic +1</li></ul>
+</details></section><section class="sec wide"><h2 id="feasting-hall-leisure">Feasting Hall (Leisure)</h2>
+<p><img src="../art/greek__bardic_circle.png" alt="Feasting Hall (Leisure)"></p>
+<p><strong>Feasting your men is how bonds of loyalty are made strong.</strong></p>
+<p>A noble warlord should always be generous to his men and reward their loyal service with never ending feasting and drinking! Good companionship and strong ale wash away strife and the friendships made here will mean a stronger battle-line when the time of need comes again. The Greeks may scoff at our drinking of ales and unwatered wine, but does this not speak more to how feeble they are? A true man and warrior has his drink unadulterated and he honours the gods by his inebriation.</p>
+<div class="tw multi"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td></tr></tbody></table></div>
+<p><strong>What it does</strong></p>
+<ul><li>+2 public order (happiness)</li><li>taxable income -15 to -10, scaling with settlement size <em>(player only)</em></li></ul>
+<details>
+<summary>Show 12 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li><li>+1 public order (law) — only when <code>is_toggled "tavern changes"</code></li><li>-10 taxable income — only when <code>size1 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-11 taxable income — only when <code>size2 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-11 taxable income — only when <code>size3 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-12 taxable income — only when <code>size4 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-12 taxable income — only when <code>size5 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-13 taxable income — only when <code>size6 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-13 taxable income — only when <code>size7 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-14 taxable income — only when <code>size8 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-14 taxable income — only when <code>size9 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-15 taxable income — only when <code>size10 and building_present_min_level taverns bardic_circle and not is_player</code></li></ul>
+</details>
+<p><strong>Religious belief</strong> — spreads 13 beliefs, by how much depending on what the region already believes.</p>
+<details>
+<summary>Show the 13 beliefs</summary>
+<ul><li>Baltic +2</li><li>Bithynian +2</li><li>Celtic +2</li><li>Dardanian +2</li><li>delmato_pannonian (no name in the text files) +2</li><li>Germanic +2</li><li>Illyrian +2</li><li>Liburnian +2</li><li>Paeonian +2</li><li>Scythian +2</li><li>Thracian +2</li><li>Triballian +2</li><li>Venetic +2</li></ul>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (10)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>size1</code></td><td><code>major_event "empire_size1"</code></td><td class="grp"><code>size10</code></td><td><code>major_event "empire_size10"</code></td><td class="grp"><code>size2</code></td><td><code>major_event "empire_size2"</code></td></tr><tr><td><code>size3</code></td><td><code>major_event "empire_size3"</code></td><td class="grp"><code>size4</code></td><td><code>major_event "empire_size4"</code></td><td class="grp"><code>size5</code></td><td><code>major_event "empire_size5"</code></td></tr><tr><td><code>size6</code></td><td><code>major_event "empire_size6"</code></td><td class="grp"><code>size7</code></td><td><code>major_event "empire_size7"</code></td><td class="grp"><code>size8</code></td><td><code>major_event "empire_size8"</code></td></tr><tr><td><code>size9</code></td><td><code>major_event "empire_size9"</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
+</div>
+<script>
+// See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's
+// script touches it before any try/catch. A memory stand-in keeps the rest of the page alive.
+(function(){try{var k="__ris";localStorage.setItem(k,"1");localStorage.removeItem(k);}catch(e){
+var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
+setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
+</script>
+<script src="../wiki.js"></script>
+</body></html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Textiles — RIS wiki</title>
+<link rel="stylesheet" href="../wiki.css">
+<script>window.RIS_BASE="../"</script></head><body class="has-jump">
+<div class="top">
+  <div class="bar">
+  <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">Imperium <span>Surrectum</span></a>
+  <form action="../search.html" method="get" role="search">
+    <input name="q" type="search" placeholder="Search 4,258 pages — a faction, region or unit…" autocomplete="off">
+  </form>
+  <div class="right">
+    <button id="theme" type="button" title="Switch theme">theme</button>
+    <span>local preview</span>
+  </div>
+  </div>
+  <div class="jump"><a href="#what-it-is">What it is</a><a href="#what-it-does">What it does</a><a href="#where-it-is-found">Where it is found</a></div>
+</div>
+<div class="wrap">
+  <nav class="side"><h4>Start here</h4><a href="../README.html">Wiki index</a><a href="../factions.html">All factions</a><a href="../regions.html">All regions</a><a href="../settlements.html">All settlements</a><a href="../units.html">All units</a><a href="../buildings.html">All buildings</a><a href="../trade-goods.html">Trade goods</a><a href="../cultures.html">Cultures</a><a href="../religions.html">Beliefs</a><a href="../sizes.html">Settlement sizes</a><h4>Overviews</h4><a href="../factions-overview.html">Factions vs vanilla</a><a href="../map-and-regions.html">The map</a><a href="../units-overview.html">Roster vs vanilla</a><h4>Region tags</h4><a href="../tags.html">All reference tables</a><a href="../tags/terrain.html">Terrain</a><a href="../tags/climate.html">Climate</a><a href="../tags/irrigation.html">Irrigation</a><a href="../tags/ports.html">Ports</a><a href="../tags/recruitment-zones.html">Recruitment zones</a><a href="../tags/specialty-recruitment.html">Specialty recruitment</a><a href="../tags/cultural-homeland.html">Cultural homelands</a><a href="../tags/hazards-and-river-trade.html">Hazards and river trade</a><a href="../tags/fertility.html">Fertility</a><h4>Sortable views</h4><a href="../units-sortable.html">Unit roster</a><a href="../regions-sortable.html">Regions</a><a href="../factions-sortable.html">Factions</a></nav>
+  <main><div class="crumb"><a href="../README.html">RIS wiki</a> › <a href="../trade-goods.html">goods</a></div><div class="lede"><h1 id="textiles">Textiles</h1>
+<p><a href="../trade-goods.html">← all trade goods</a> · <a href="../regions.html">all regions</a> · <a href="../README.html">wiki index</a></p>
+<p><img src="../resource-icons/textiles.png" alt="" width="48"></p></div><div class="lede-flow"><h2 id="what-it-is">What it is</h2>
+<div class="tw multi"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Subtype</td><td><strong>Ordinary trade good</strong> — no special engine handling; it works through trade and through what the mod conditions on it.</td><td class="grp">Tier</td><td><strong>2</strong></td><td class="grp">Trade value</td><td><strong>1</strong></td></tr><tr><td>Groups</td><td><a href="../trade-goods.html#fabrics-dyes">fabrics dyes</a>, <a href="../trade-goods.html#fun">fun</a></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div></div><div class="panes"><div class="pane"><section class="sec"><h2 id="what-it-does">What it does</h2>
+<details>
+<summary>Where these answers come from, and what an unestablished effect means</summary>
+<p>What a good <strong>does</strong> is read off the clauses the mod conditions on it — a requirement on a building level, on a numeric effect, or on a recruitment line, including the ones reached through the building file's own aliases. Negated clauses count: withholding something is an effect. Where nothing in the mod conditions on a good, the page says <strong>no effect established</strong> rather than describing what the word suggests.</p>
+<p>The mod calls this good <code>textiles</code> internally; that is the word the conditions on this page are written against.</p>
+</details>
+<p><strong>No effect established in the mod files.</strong> Nothing in the mod requires it, excludes it, or keys a number off it. Nothing else that could read a resource — the campaign script, the mercenary pools, the rebel-faction blocks, the spawn scripts — names it either.</p></section></div><div class="pane"><section class="sec"><h2 id="where-it-is-found">Where it is found</h2>
+<p><strong>Not placed anywhere on the map.</strong> The campaign file puts no marker for it anywhere, so no region has it as the campaign ships.</p></section></div></div></main>
+</div>
+<script>
+// See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's
+// script touches it before any try/catch. A memory stand-in keeps the rest of the page alive.
+(function(){try{var k="__ris";localStorage.setItem(k,"1");localStorage.removeItem(k);}catch(e){
+var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
+setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
+</script>
+<script src="../wiki.js"></script>
+</body></html>

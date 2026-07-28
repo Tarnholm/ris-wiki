@@ -1,0 +1,271 @@
+
+/* ── the mod's own colours ────────────────────────────────────────────────────
+   Tyrian purple #67033d and gold #fad05d, both SAMPLED out of the RIS badge rather than
+   picked to taste: the badge is 59,475 pixels of #67033d with the monogram in #fad05d /
+   #edc558. Using anything else made this look like a generic documentation site that happened
+   to be about RIS.
+
+   The accent swaps by theme because the pair is not symmetric. Gold on the dark background is
+   about 9:1 contrast and reads well; gold on white is roughly 1.7:1 and is unreadable, so the
+   light theme takes the purple as its accent instead — that is about 11:1 on white. The purple
+   bar and the gold rule stay constant across both, so the identity does not change with the
+   theme, only the thing that has to be legible as text. */
+:root{
+  --tyrian:#67033d; --tyrian-deep:#4b0230; --gold:#e8c15a;
+  --bg:#12141a; --panel:#181b22; --raised:#1e222b; --side:#0e1015; --fg:#e9e6e0; --dim:#9a958c; --line:#2a2e37;
+  --acc:#e8c15a; --acc-soft:rgba(232,193,90,.13); --shadow:0 1px 3px rgba(0,0,0,.4);
+}
+/* The light theme is parchment, not paper. White with grey rules is the look of a software
+   manual; this is a wiki about the ancient Mediterranean sitting under a purple-and-gold bar,
+   and #faf9f7 with #fff panels made the whole page read as blank. The surfaces are warm and
+   the page and the panels are separated by tone rather than by a border alone.
+   Contrast measured, not eyeballed: body text 13.4:1 on the page and 15.2:1 on a panel, muted
+   text 5.1:1, links 8.6:1 — all clear of AA, with the muted tone the tightest of them. */
+@media(prefers-color-scheme:light){
+  :root{--bg:#ded0b4; --panel:#ebe0cb; --raised:#f4ecdd; --side:#d3c3a2; --fg:#2a2318; --dim:#574a38; --line:#c4b192;
+        --acc:#7d0a49; --acc-soft:rgba(103,3,61,.10); --shadow:0 1px 3px rgba(80,60,30,.14)}
+}
+:root[data-theme="light"]{--bg:#ded0b4;--panel:#ebe0cb;--raised:#f4ecdd;--side:#d3c3a2;--fg:#2a2318;--dim:#574a38;
+  --line:#c4b192;--acc:#7d0a49;--acc-soft:rgba(103,3,61,.10);--shadow:0 1px 3px rgba(80,60,30,.14)}
+:root[data-theme="dark"]{--bg:#12141a;--panel:#181b22;--raised:#1e222b;--side:#0e1015;--fg:#e9e6e0;--dim:#9a958c;--line:#2a2e37;
+  --acc:#e8c15a;--acc-soft:rgba(232,193,90,.13);--shadow:0 1px 3px rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+/* A heading jumped to lands at the top of the window, which is underneath a sticky bar — so
+   every link in the jump strip put the section it named just out of sight, with the row of
+   factions below it looking like the top of the section. Costs nothing when nothing is sticky. */
+h1,h2,h3,h4,h5,h6{scroll-margin-top:calc(var(--topbar) + .7rem)}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased}
+
+/* top bar */
+/* The bar is the mod's purple in both themes, with its badge in it — that one strip is what
+   makes a page recognisable as RIS at a glance, before any of the words are read. */
+/* Everything that has to clear the bar reads this, so the bar can grow a second row without
+   the sidebar and every sticky table heading having to be told about it separately. */
+:root{--topbar:3.1rem}
+body.has-jump{--topbar:5.35rem}
+.top{position:sticky;top:0;z-index:20;background:var(--tyrian);border-bottom:1px solid var(--tyrian-deep);
+  box-shadow:var(--shadow)}
+.top .bar{display:flex;gap:1rem;align-items:center;padding:.55rem 1rem}
+/* The page's sections, always in reach. It scrolls sideways rather than wrapping, because a bar
+   that grows a second line on some pages and not others moves every sticky offset under it. */
+.jump{display:flex;gap:.1rem;align-items:center;overflow-x:auto;padding:0 .7rem .4rem;
+  scrollbar-width:thin}
+.jump a{color:rgba(244,234,216,.78);text-decoration:none;white-space:nowrap;font-size:.8rem;
+  padding:.15rem .45rem;border-radius:5px}
+.jump a:hover{color:var(--tyrian);background:var(--gold)}
+/* Where you are, as against where you could go. Deliberately quieter than :hover — it marks a
+   position, it is not offering an action. */
+.jump a.on{color:var(--gold);background:rgba(232,193,90,.16);font-weight:600}
+.brand{font-weight:650;letter-spacing:.01em;color:#f4ead8;text-decoration:none;white-space:nowrap;
+  display:flex;align-items:center;gap:.55rem}
+.brand img{width:26px;height:26px;border-radius:5px;display:block}
+.brand span{color:var(--gold)}
+.top form{flex:1;display:flex;max-width:34rem}
+.top input{width:100%;background:var(--bg);color:var(--fg);border:1px solid var(--line);
+  border-radius:8px;padding:.42rem .7rem;font:inherit;font-size:.9rem}
+.top input:focus{outline:2px solid var(--acc-soft);border-color:var(--acc)}
+/* Fixed light tones rather than --dim: the bar is purple in BOTH themes, so a variable that
+   goes dark grey in the light theme would be unreadable on it half the time. */
+.top .right{display:flex;gap:.9rem;align-items:center;font-size:.82rem;color:rgba(244,234,216,.72)}
+.top .right a{color:rgba(244,234,216,.72);text-decoration:none}
+.top .right a:hover{color:var(--gold)}
+#theme{background:none;border:1px solid rgba(244,234,216,.3);border-radius:6px;
+  color:rgba(244,234,216,.8);cursor:pointer;font:inherit;font-size:.78rem;padding:.2rem .5rem}
+#theme:hover{border-color:var(--gold);color:var(--gold)}
+
+/* layout */
+/* 12.5rem, down from 15. The navigation is a list of short labels and was taking 15rem of a
+   screen whose whole point is fitting three tables across; that is 40px given back to every
+   page. The type comes down with it so the longest label still fits on one line — "Hazards and
+   river trade" is 23 characters, about 154px at .84rem, and the column holds 172 inside its
+   padding. Anything longer wraps rather than being cut, which is the right failure. */
+.wrap{display:grid;grid-template-columns:12.5rem minmax(0,1fr);gap:0;align-items:start}
+nav.side{position:sticky;top:var(--topbar);height:calc(100vh - var(--topbar));overflow-y:auto;
+  border-right:1px solid var(--line);padding:1.1rem .7rem 3rem;font-size:.84rem;background:var(--side)}
+nav.side h4{margin:1.1rem 0 .35rem;font-size:.7rem;text-transform:uppercase;
+  letter-spacing:.09em;color:var(--dim);font-weight:600}
+nav.side h4:first-child{margin-top:0}
+nav.side a{display:block;color:var(--fg);text-decoration:none;padding:.2rem .45rem;
+  border-radius:6px;line-height:1.4}
+nav.side a:hover{background:var(--acc-soft);color:var(--acc)}
+nav.side a.on{background:var(--acc-soft);color:var(--acc);font-weight:600}
+/* Every page uses the full width of the window. No max-width: a cap here left the right-hand
+   side of a wide monitor empty, which is the thing being fixed. Readability is handled by
+   splitting content into columns below rather than by throwing the space away. */
+main{min-width:0;padding:1.6rem 1.6rem 5rem;width:100%}
+
+/* Two columns, each a normal-flow block holding whole sections. There is exactly ONE grid row
+   here — the two panes — so nothing inside either column can be held back by the height of
+   something in the other. Which sections go where is decided in sectionise(); see the note
+   there for why this is not a grid of sections.
+   Below ~80rem of viewport there is not room for two readable columns beside the sidebar, so
+   they stack. */
+.panes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 2.8rem;
+  align-items:start;clear:both}
+.pane{min-width:0}
+@media(max-width:80rem){.panes{grid-template-columns:1fr}}
+/* ── three surfaces, not one ──────────────────────────────────────────────────
+   Everything used to sit on the page background with a hairline under each heading, so a
+   reader had to work out where one section ended and the next began from the spacing alone.
+   There are now three tones — the page, a section card on it, and a table raised on the card —
+   which is what makes it possible to see at a glance what belongs to what.
+
+   Dark goes up in lightness, light goes up too: paper stacked on a desk, which is the reading
+   most people already have. Contrast measured on every layer rather than only the page, since
+   the raised surface is the one most text ends up on: dark 12.8:1 body / 5.4:1 muted / 9.3:1
+   links, light 13.2 / 7.3 / 8.9. */
+.sec{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:.1rem 1.15rem 1rem;margin:0 0 1.1rem}
+.sec>h2:first-child,.sec>h3:first-child{margin-top:1rem}
+/* The lede deliberately stays ON the page rather than in a card: it is the page's own
+   introduction, and boxing it would put a frame around the title's own sentence. */
+/* In a column, the unit card sits at the top of its own line rather than floating: at 164px
+   inside a half-width pane a float leaves the stat table wrapped around it. */
+.pane .lede img{float:none;max-width:100%;margin:0 0 1rem}
+.pane .lede p.imgrow{float:none;max-width:100%;margin:0 0 1rem}
+.sec>h2:first-child{margin-top:1.2rem}
+.pane>.sec:first-child>h2:first-child{margin-top:.2rem}
+/* The lede's image floats, so the section after it wraps alongside and then continues under
+   it. This is the one thing a grid cannot do: grid rows align, so a short map column sat empty
+   until the tall campaign brief beside it finished. */
+.lede{max-width:none}
+.lede img{float:left;margin:.2rem 1.8rem .8rem 0;max-width:min(42%,34rem);border-radius:8px}
+/* A row of pictures floats as ONE block, and the pictures centre against each other inside it.
+   Floating them separately hangs both from the same top edge, which on a faction page pins the
+   120px symbol level with the top quarter of the map. The map keeps the width it had; the
+   container is that plus the symbol and the gap, so nothing else on the page moves. */
+.lede p.imgrow{float:left;display:flex;align-items:center;gap:1.4rem;
+  margin:.2rem 1.8rem .8rem 0;max-width:min(56%,44rem)}
+.lede p.imgrow img{float:none;margin:0;height:auto}
+.lede p.imgrow img:first-child{flex:0 0 auto}
+.lede p.imgrow img:last-child{flex:0 1 auto;min-width:0;max-width:min(100%,34rem)}
+.lede em{display:block;clear:none;color:var(--dim);font-size:.85rem}
+.lede-flow{margin-bottom:1.5rem}
+.lede-flow>h2:first-child{margin-top:.2rem}
+/* Once the floated map ends, the next block reclaims the full width. */
+.sec{clear:both}
+@media(max-width:900px){.lede img{float:none;max-width:100%;margin-right:0}
+  .lede p.imgrow{float:none;max-width:100%;margin-right:0}}
+/* Prose paragraphs stay readable without narrowing the page: the line length is limited on
+   the paragraph, not on the container, so tables and images beside them still get the width. */
+.lede>p,.sec>p{max-width:104ch}
+/* A section holding a wide table is allowed to take the whole row rather than being squeezed
+   — the roster and building tables have more columns than a half-width column can show. */
+.sec.wide{grid-column:1/-1}
+
+/* content */
+.crumb{font-size:.8rem;color:var(--dim);margin-bottom:.5rem}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--acc)}
+h1{font-size:1.85rem;line-height:1.25;margin:.1rem 0 .6rem;letter-spacing:-.01em}
+/* The mod's own divider under the page title. It is a wide, symmetric piece of art with a boss
+   at its centre, so it is anchored left and allowed to run to whatever width the column gives
+   it; scaled by height rather than stretched, so it never distorts. */
+h1::after{content:"";display:block;height:15px;margin:.55rem 0 1rem;
+  background:url(art/ris-rule.png) left center/auto 100% no-repeat;opacity:.9}
+h2{font-size:1.28rem;margin:2.1rem 0 .6rem;padding-bottom:.3rem;border-bottom:1px solid var(--line)}
+/* An h3 divides a list into runs — the faction index uses one per culture — so it carries a
+   rule and a gold tick to be findable when scrolling, without becoming a card of its own. */
+/* The gap ABOVE a divider is what separates one run from the last, so it is the larger of the
+   two — but only just. It was 1rem over .3rem, which read as a paragraph break where a rule
+   already does the separating. */
+h3{font-size:1.06rem;margin:.5rem 0 .3rem;color:var(--fg);
+  padding:0 0 .24rem .62rem;border-bottom:1px solid var(--line);border-left:3px solid var(--gold)}
+a{color:var(--acc)}
+p{margin:.7rem 0}
+code{background:var(--acc-soft);color:var(--fg);padding:.08rem .32rem;border-radius:4px;
+  font-size:.85em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+blockquote{margin:1rem 0;padding:.65rem .95rem;border-left:3px solid var(--acc);
+  background:var(--acc-soft);border-radius:0 6px 6px 0}
+blockquote p{margin:.25rem 0}
+/* Tables size to their content. width:100% stretched an 8-row, 5-column summary across a
+   whole 4K monitor with most of it empty — the numbers ended up further from their labels the
+   more screen you had. fit-content on the wrapper keeps the border around the table rather
+   than around the empty space beside it, and max-width caps a genuinely wide table, which
+   then scrolls inside the wrapper as before. */
+.tw{border:1px solid var(--line);border-radius:8px;margin:.3rem 0 .5rem;
+  background:var(--raised);width:fit-content;max-width:100%}
+/* Scrolls only when the table really is wider than the page. See the note in the renderer: an
+   overflow container captures the sticky header, so giving one to every table cost the column
+   headings on every long list. */
+.tw.scroll{overflow:auto;max-height:calc(100vh - var(--topbar) - 2rem)}
+/* Inside a scroll container the header pins to the container, not the window, so the offset
+   that clears the site bar would push it a bar's height down its own box. */
+.tw.scroll th{top:0}
+table{border-collapse:collapse;width:auto;font-size:.9rem}
+/* Long prose in a cell would otherwise make a table as wide as its longest sentence. */
+td{max-width:70ch}
+/* A table with hundreds of rows: fixed layout, so column widths come from the header row and
+   the browser never walks the body to size them. Content-fit is only affordable when there is
+   little content to fit. */
+/* A list dealt several items to a row takes the full width — that is the point of it — and the
+   groups are separated by a rule rather than a gap so the eye can tell one item's columns from
+   the next one's. */
+.tw.multi{width:100%}
+/* Auto layout, not fixed: the columns then size to their content and the browser wraps a long
+   cell to make the whole thing fit the container, which is what lets three groups sit across a
+   page that could not hold three copies of the widest row unwrapped. */
+.tw.multi table{width:100%}
+.tw.multi th.grp,.tw.multi td.grp{border-left:1px solid var(--line);padding-left:1.1rem}
+.tw.big{width:100%;contain:paint}
+.tw.big table{width:100%;table-layout:fixed}
+.tw.big td{max-width:none;overflow:hidden;text-overflow:ellipsis}
+/* Off-screen rows are skipped until scrolled to. Without this, moving the pointer over a
+   1,172-row table restyles and repaints rows nobody is looking at, which is what made the
+   cursor stutter. contain-intrinsic-size keeps the scrollbar honest for the skipped ones. */
+.tw.big tbody tr{content-visibility:auto;contain-intrinsic-size:auto 2.05rem}
+th,td{padding:.42rem .7rem;text-align:left;vertical-align:middle;border-bottom:1px solid var(--line)}
+/* 3.1rem, not 0: the site bar is sticky at the top of the window and is that tall, so a header
+   pinned at 0 slides underneath it and is never readable. The sidebar already uses the same
+   offset. z-index keeps the heading above the rows it is holding station over. */
+/* The heading band is the section's own tone, one step under the table it sits on, so it reads
+   as a band rather than as another row. It must be opaque: it is sticky, and rows slide behind. */
+th{background:var(--panel);position:sticky;top:var(--topbar);z-index:5;font-weight:600;font-size:.82rem;
+  text-transform:uppercase;letter-spacing:.04em;color:var(--dim);white-space:nowrap}
+td.right,th.right{text-align:right;font-variant-numeric:tabular-nums}
+td.center,th.center{text-align:center}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:var(--acc-soft)}
+img{max-width:100%;height:auto;vertical-align:middle}
+img[align="right"]{margin:0 0 1rem 1.4rem;border-radius:8px;box-shadow:var(--shadow)}
+a:has(img){display:inline-block}
+ul{margin:.5rem 0 .5rem 1.3rem;padding:0}
+li{margin:.16rem 0}
+/* A fold is a control, so it should look like one. It sits on the raised tone rather than the
+   section's own — background:var(--panel) made it the same colour as the card around it, so the
+   thing a reader is meant to click was distinguishable only by its border. The marker turns
+   when it opens, which is the affordance that says "there is more here". */
+details{margin:.9rem 0;border:1px solid var(--line);border-radius:8px;background:var(--raised);
+  padding:.1rem .9rem}
+details[open]{padding-bottom:.6rem}
+summary{cursor:pointer;padding:.55rem 0;font-size:.92rem;color:var(--acc);font-weight:600;
+  list-style:none;display:flex;align-items:center;gap:.5rem}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"";width:0;height:0;flex:0 0 auto;
+  border:.34rem solid transparent;border-left-color:currentColor;
+  transition:transform .12s ease;transform-origin:.17rem 50%}
+details[open]>summary::before{transform:rotate(90deg)}
+summary:hover{color:var(--fg)}
+details .tw{border:none;background:none}
+hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
+
+/* search results */
+.res{list-style:none;margin:0;padding:0}
+.res li{border-bottom:1px solid var(--line);padding:.42rem .2rem}
+.res li:last-child{border-bottom:none}
+/* Named "kind", not "sec". It was "sec", which later became the class for a section CARD — so
+   every result's little grey label was quietly given a panel background, a border and 1.15rem
+   of padding. A generic class name meeting a generic class name.
+   (No backticks in this stylesheet: it is a template literal, and one closes it.) */
+.res .kind{color:var(--dim);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em}
+
+@media(max-width:900px){
+  .wrap{grid-template-columns:1fr}
+  nav.side{position:static;height:auto;border-right:none;border-bottom:1px solid var(--line);
+    max-height:12rem}
+  main{padding:1.2rem 1.1rem 4rem}
+  .top .right{display:none}
+}
