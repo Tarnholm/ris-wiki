@@ -1,0 +1,55 @@
+# Publish Team notes written on the wiki to the site.
+#
+# The `gollum` event fires on this repository whenever its wiki is edited. The job cannot
+# rebuild the site — that needs 222 MB of RIS source on rtris.org, which a runner cannot
+# reach — so it publishes each note as a small pre-rendered fragment under wiki-notes/,
+# which every page fetches for itself at view time. Pushing here redeploys Pages.
+name: Publish wiki notes
+
+on:
+  gollum:
+  workflow_dispatch:
+
+concurrency:
+  group: wiki-notes
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site (notes folder only)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            wiki-notes
+            .github
+          sparse-checkout-cone-mode: false
+
+      - name: Check out the wiki
+        run: git clone --depth 1 https://github.com/${{ github.repository }}.wiki.git wiki
+
+      - name: Check out the build scripts
+        run: git clone --depth 1 https://github.com/Tarnholm/Provincia.git provincia
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync notes
+        run: node provincia/scripts/sync-wiki-notes.js wiki .
+
+      - name: Commit and push if anything changed
+        run: |
+          if [ -z "$(git status --porcelain wiki-notes)" ]; then
+            echo "no note changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add wiki-notes
+          git commit -m "Publish wiki notes"
+          git push

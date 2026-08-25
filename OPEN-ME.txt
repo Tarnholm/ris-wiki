@@ -1,9 +1,0 @@
-RIS wiki — offline copy
-
-Open index.html. That is all: double-click it and it opens in your browser.
-Nothing to install, no internet needed. Everything works offline, including search.
-
-If you were sent a .zip, unzip the WHOLE folder first and then open index.html inside it.
-Opening index.html from inside the zip will show the page with no pictures.
-
-Built from the RIS wiki markdown by scripts/build-ris-wiki-site.js.

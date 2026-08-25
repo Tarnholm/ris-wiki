@@ -178,3 +178,48 @@
     });
   }
 })();
+
+// ── team notes, fetched at view time ─────────────────────────────────────────
+// A note written on the GitHub wiki reaches this site through a CI job that CANNOT rebuild
+// the site: the 222 MB of RIS source a rebuild needs lives on rtris.org, which a GitHub
+// runner cannot reach. So the job publishes each note as a small pre-rendered fragment and
+// the page fetches its own when it loads. wiki-notes/index.json lists which pages have one,
+// so a page with no note makes no second request, and the whole thing is skipped when a full
+// local rebuild has already merged the note into the HTML.
+(function () {
+  try {
+    if (location.protocol === "file:") return;              // an offline copy is a snapshot
+    if (document.getElementById("team-notes")) return;      // a rebuild already merged it
+    var main = document.querySelector("main");
+    if (!main || typeof fetch !== "function") return;
+
+    var rootPath = new URL(base || "./", location.href).pathname;
+    var here = decodeURIComponent(location.pathname);
+    if (here.indexOf(rootPath) !== 0) return;
+    var key = here.slice(rootPath.length).replace(/.html?$/, "");
+    if (!key || key === "index") key = "README";
+
+    fetch(base + "wiki-notes/index.json", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (idx) {
+        if (!idx || !idx[key]) return null;
+        return fetch(base + "wiki-notes/" + encodeURIComponent(idx[key]) + ".html", { cache: "no-cache" });
+      })
+      .then(function (r) { return r && r.ok ? r.text() : null; })
+      .then(function (html) {
+        if (!html) return;
+        var sec = document.createElement("section");
+        sec.className = "sec";
+        sec.innerHTML = '<h2 id="team-notes">Team notes</h2>' + html;
+        main.appendChild(sec);
+        var jump = document.querySelector(".jump");
+        if (jump && !jump.querySelector('a[href="#team-notes"]')) {
+          var a = document.createElement("a");
+          a.href = "#team-notes";
+          a.textContent = "Team notes";
+          jump.appendChild(a);
+        }
+      })
+      .catch(function () {});   // a missing notes folder is normal, not an error
+  } catch (e) {}
+})();
