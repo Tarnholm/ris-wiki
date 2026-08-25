@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,317 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,332 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -57,7 +57,7 @@
 <p>---</p>
 <h3 id="hannonid">Hannonid</h3>
 <p>Appears on every character, agents included · never on 17 of the cultures.</p>
-<p><strong>Effects:</strong> no stat effects</p>
+<p><strong>Effects:</strong> +5 Trading</p>
 <blockquote><p>The self-proclaimed "voice of reason" in Carthaginian politics! They are staunch defenders of the old ways, vouching for a cautious expansion around Africa, naval superiority, and centralized Carthaginian authority. The landed aristocrats tend to side with them versus the Barcids, preferring to concentrate on their African holdings. This man would desire to appease or even ally with northern states, in order to focus on expanding in Africa.</p></blockquote>
 <details>
 <summary>Cultures that never receive it (17)</summary>
@@ -119,9 +119,9 @@
 <div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>Level</th><th class="right">At points</th><th>Effects</th><th class="grp">Level</th><th class="right">At points</th><th>Effects</th><th class="grp">Level</th><th class="right">At points</th><th>Effects</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td><strong>Hasta Pura</strong></td><td class="right">1</td><td>no stat effects</td><td class="grp"><strong>Second Hastae Purae</strong></td><td class="right">2</td><td>no stat effects</td><td class="grp"><strong>Third Hastae Purae</strong></td><td class="right">3</td><td>no stat effects</td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 <details>
 <summary>What the game says at each level</summary>
-<p><strong>Hasta Pura</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle. Later it came to be awarded to soldiers who have struck down an enemy in a sally or skirmish.</p>
-<p><strong>Second Hastae Purae</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle. Later it came to be awarded to soldiers who have struck down an enemy in a sally or skirmish.</p>
-<p><strong>Third Hastae Purae</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle. Later it came to be awarded to soldiers who have struck down an enemy in a sally or skirmish.</p>
+<p><strong>Hasta Pura</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle.</p>
+<p><strong>Second Hastae Purae</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle.</p>
+<p><strong>Third Hastae Purae</strong> — This man has been awarded the Hasta Pura, a spear, possibly with a silver shaft, but without the iron tip for use in combat. This is a decoration for merit, but can also be rewarded to a soldier for the first time that he conquers in battle.</p>
 </details>
 <details>
 <summary>Cultures that never receive it (21)</summary>
@@ -602,7 +602,7 @@
 <blockquote><p>Among the captives taken in the last battle were several men of noble rank. Their kin sent emissaries with chests full of silver to negotiate their return, and after some negotiation, the general saw little profit in cruelty and accepted their offer.</p></blockquote>
 <details>
 <summary>How it is gained — 2 triggers, after a battle, character selected (1 remove points)</summary>
-<div class="tw multi" data-cols="4" data-up="3"><table><thead><tr><th>When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>after a battle</td><td>+1</td><td class="right">20%</td><td><code>IsGeneral and Trait Hostages_Ransomed &lt; 1 and ( Trait Selflessness &gt; 2 or Trait Generous &gt; 0 or Trait LenientJustice &gt; 0 or Trait Upright &gt; 0 or Trait Prim &gt; 0 or Trait Just &gt; 0 ) and WonBattle and CharacterIsLocal</code></td><td class="grp">character selected</td><td>loses1</td><td class="right">100%</td><td><code>Trait Hostages_Ransomed = 1</code></td><td class="grp"></td><td></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="4" data-up="3"><table><thead><tr><th>When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>after a battle</td><td>+1</td><td class="right">15%</td><td><code>IsGeneral and Trait Hostages_Ransomed &lt; 1 and ( Trait Selflessness &gt; 2 or Trait Generous &gt; 0 or Trait LenientJustice &gt; 0 or Trait Upright &gt; 0 or Trait Prim &gt; 0 or Trait Just &gt; 0 ) and WonBattle and not GeneralFoughtFacti…</code></td><td class="grp">character selected</td><td>loses1</td><td class="right">100%</td><td><code>Trait Hostages_Ransomed = 1</code></td><td class="grp"></td><td></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="house-in-baiae">House in Baiae</h3>

@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,317 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,332 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -33,7 +33,7 @@
 </details>
 <details>
 <summary>How it is gained — 1 trigger, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait ReligiousMania &gt;= 2 and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= awesome_temple</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait ReligiousMania &gt;= 2 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= awesome_temple</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zeno">Zeno</h3>
@@ -46,7 +46,7 @@
 </details>
 <details>
 <summary>How it is gained — 2 triggers, ending a turn in a settlement, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">80%</td><td><code>IsGeneral and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and I_TurnNumber &gt;= -60 and I_TurnNumber &lt;=  40</code></td><td class="grp">at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and not CultureType barbarian and not CultureType celtiberian and not CultureType brittonic and not CultureType germanic and not C…</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">80%</td><td><code>IsGeneral and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and I_TurnNumber &gt;= -60 and I_TurnNumber &lt;=  40</code></td><td class="grp">at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and not CultureType barbarian and not CultureType celtiberian and not CultureType brittonic and not CultureType germanic and not Cu…</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zeno-ethika">Zeno - Ethika</h3>
@@ -56,7 +56,7 @@
 <p>Acquisition is tied to traits: <a href="../traits/c.html#curious-about-humanities">Curious about Humanities</a>, <a href="../traits/c.html#cultured">Cultured</a>.</p>
 <details>
 <summary>How it is gained — 1 trigger, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and Trait Scholarly &gt;= 2 and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and not FactionwideAncillaryExists Ethika</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and Trait Scholarly &gt;= 2 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and not FactionwideAncillaryExists Ethika</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zeno-peri-hellenikes-paideias">Zeno - Peri Hellenikes Paideias</h3>
@@ -66,7 +66,7 @@
 <p>Acquisition is tied to traits: <a href="../traits/c.html#curious-about-humanities">Curious about Humanities</a>, <a href="../traits/c.html#cultured">Cultured</a>.</p>
 <details>
 <summary>How it is gained — 1 trigger, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and Trait Scholarly &gt;= 2 and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= scriptorium and not FactionwideAncillaryExists Peri_Hellenikes_Paideias</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and Trait Scholarly &gt;= 2 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= scriptorium and not FactionwideAncillaryExists Peri_Hellenikes_Paideias</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zeno-peri-pathon">Zeno - Peri Pathon</h3>
@@ -76,7 +76,7 @@
 <p>Acquisition is tied to traits: <a href="../traits/l.html#likes-sciences">Likes Sciences</a>, <a href="../traits/c.html#cultured">Cultured</a>.</p>
 <details>
 <summary>How it is gained — 1 trigger, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Sciences &gt; 0 and RemainingMPPercentage = 100 and Trait Scholarly &gt;= 2 and SettlementBuildingExists &gt;= academy and not FactionwideAncillaryExists Peri_Pathon and I_TurnNumber &gt;=  40 and I_TurnNumber &lt;=  9…</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Sciences &gt; 0 and RemainingMPPercentage &gt; 90 and Trait Scholarly &gt;= 2 and SettlementBuildingExists &gt;= academy and not FactionwideAncillaryExists Peri_Pathon and I_TurnNumber &gt;=  40 and I_TurnNumber &lt;=  92…</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zeno-of-sidon">Zeno of Sidon</h3>
@@ -86,7 +86,7 @@
 <p>Acquisition is tied to the trait: <a href="../traits/g.html#gourmet-of-life">Gourmet of Life</a>.</p>
 <details>
 <summary>How it is gained — 2 triggers, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= ludus_magnus and SettlementBuildingExists &gt;= odeon and not CultureType barbarian and not CultureType celtiberian and not CultureType britt…</code></td><td class="grp">at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= ludus_magnus and SettlementBuildingExists &gt;= odeon and not CultureType barbarian and not CultureType celtiberian and not CultureType britt…</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= ludus_magnus and SettlementBuildingExists &gt;= odeon and not CultureType barbarian and not CultureType celtiberian and not CultureType britto…</code></td><td class="grp">at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= ludus_magnus and SettlementBuildingExists &gt;= odeon and not CultureType barbarian and not CultureType celtiberian and not CultureType britto…</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zenodotus">Zenodotus</h3>
@@ -96,7 +96,7 @@
 <p>Acquisition is tied to the trait: <a href="../traits/f.html#firm-personal-morality">Firm Personal Morality</a>.</p>
 <details>
 <summary>How it is gained — 1 trigger, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= scriptorium_sp1 and IsGeneral and I_TurnNumber &gt;=  1 and I_TurnNumber &lt;=  20 and not CultureType barbarian and not CultureType celtiberian…</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= scriptorium_sp1 and IsGeneral and I_TurnNumber &gt;=  1 and I_TurnNumber &lt;=  20 and not CultureType barbarian and not CultureType celtiberian …</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zenon">Zenon</h3>
@@ -109,7 +109,7 @@
 </details>
 <details>
 <summary>How it is gained — 1 trigger, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and FactionType ptolemaic and Attribute Management &gt; 3 and IsGeneral and I_TurnNumber &gt;=  60 and I_TurnNumber &lt;=  120</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and FactionType ptolemaic and Attribute Management &gt; 3 and IsGeneral and I_TurnNumber &gt;=  60 and I_TurnNumber &lt;=  120</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="zoltes">Zoltes</h3>
@@ -136,7 +136,7 @@
 </details>
 <details>
 <summary>How it is gained — 1 trigger, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">2%</td><td><code>AgentType = family and EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= awesome_temple and not FactionType greeks and not FactionType antigonid and not FactionType seleucid and not Factio…</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">2%</td><td><code>AgentType = family and EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= awesome_temple and not FactionType greeks and not FactionType antigonid and not FactionType seleucid and not Faction…</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details></main>
 </div>
 <script>

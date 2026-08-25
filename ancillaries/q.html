@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,317 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,332 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -73,7 +73,7 @@
 </details>
 <details>
 <summary>How it is gained — 3 triggers, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait LogisticalSkill &gt;= 1 and SettlementBuildingExists &gt;= mic_2</code></td><td class="grp">ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait GoodGeneral &gt;= 1 and Trait LogisticalSkill &gt;= 1</code></td><td class="grp">ending a turn in a settlement</td><td class="right">2%</td><td><code>RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= mic_3 and Trait LogisticalSkill &gt;= 2 and IsGeneral</code></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait LogisticalSkill &gt;= 1 and SettlementBuildingExists &gt;= mic_2</code></td><td class="grp">ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait GoodGeneral &gt;= 1 and Trait LogisticalSkill &gt;= 1</code></td><td class="grp">ending a turn in a settlement</td><td class="right">2%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= mic_3 and Trait LogisticalSkill &gt;= 2 and IsGeneral</code></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="quintus-ennius">Quintus Ennius</h3>
@@ -87,7 +87,7 @@
 </details>
 <details>
 <summary>How it is gained — 2 triggers, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and IsGeneral and I_TurnNumber &gt;=  122 and I_TurnNumber &lt;=  224 and Trait PoeticSkill &gt;= 2</code></td><td class="grp">at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and IsGeneral and I_TurnNumber &gt;=  122 and I_TurnNumber &lt;=  224 and Trait PoeticSkill &gt;= 2</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and IsGeneral and I_TurnNumber &gt;=  122 and I_TurnNumber &lt;=  224 and Trait PoeticSkill &gt;= 2</code></td><td class="grp">at the end of the character's turn</td><td class="right">20%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and IsGeneral and I_TurnNumber &gt;=  122 and I_TurnNumber &lt;=  224 and Trait PoeticSkill &gt;= 2</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="quintus-ennius-annales">Quintus Ennius - Annales</h3>
@@ -97,7 +97,7 @@
 <p>Acquisition is tied to traits: <a href="../traits/c.html#curious-about-humanities">Curious about Humanities</a>, <a href="../traits/l.html#likes-sciences">Likes Sciences</a>, <a href="../traits/c.html#cultured">Cultured</a>.</p>
 <details>
 <summary>How it is gained — 2 triggers, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Sciences &gt; 0 and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and CultureType roman and Trait Scholarly &gt;= 1 and not FactionwideAncillaryExists Annales and I_TurnNumber &gt;=  300</code></td><td class="grp">ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= academy and CultureType roman and Trait Scholarly &gt;= 1 and not FactionwideAncillaryExists Annales and I_TurnNumber &gt;=  300</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Sciences &gt; 0 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and CultureType roman and Trait Scholarly &gt;= 1 and not FactionwideAncillaryExists Annales and I_TurnNumber &gt;=  300</code></td><td class="grp">ending a turn in a settlement</td><td class="right">1%</td><td><code>Trait Interested_Humanities &gt; 0 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= academy and CultureType roman and Trait Scholarly &gt;= 1 and not FactionwideAncillaryExists Annales and I_TurnNumber &gt;=  300</code></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="quintus-roscius-gallus">Quintus Roscius Gallus</h3>
@@ -111,7 +111,7 @@
 </details>
 <details>
 <summary>How it is gained — 1 trigger, at the end of the character's turn</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage = 100 and SettlementBuildingExists &gt;= odeon and IsGeneral and I_TurnNumber &gt;=  348 and I_TurnNumber &lt;=  436 and Trait RhetoricSkill &gt;= 1</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>at the end of the character's turn</td><td class="right">40%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= odeon and IsGeneral and I_TurnNumber &gt;=  348 and I_TurnNumber &lt;=  436 and Trait RhetoricSkill &gt;= 1</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details></main>
 </div>
 <script>

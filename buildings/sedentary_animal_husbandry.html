@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,317 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,332 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -31,65 +31,70 @@
 <p>This region boasts many open grasslands that might have been used for growing grain but instead animal grazing has become the dominant land use. While animal husbandry is not as efficient at feeding large numbers of people, it can be very profitable. Simply letting our herds graze freely is also a very easy way of utilizing these lands.</p>
 <p>Livestock farms are available here because it is a grassland, small island/rocky coast, river valley or floodplain region. Note that nomadic factions prefer nomadic pastoralism in grassland region instead.</p>
 <p>Note on the effects</p>
-<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5. Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
+<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5.</p>
+<p>Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>900 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Enclosures (Husbandry)</td></tr></tbody></table></div>
 <p><strong>What it does</strong></p>
-<ul><li>-3 population growth <em>(player only)</em></li></ul>
+<ul><li>+3 farming level</li><li>-2 population growth <em>(player only)</em></li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+4 farming level — only when <code>not resource livestock</code></li><li>+5 farming level — only when <code>resource livestock</code></li><li>-3 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry open_grazing_fields</code></li><li>+1 trade income — only when <code>sedentary_trade_animals</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>-2 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry open_grazing_fields</code></li><li>+1 trade income — only when <code>sedentary_trade_animals</code></li></ul>
 </details></section><section class="sec"><h2 id="enclosures-husbandry">Enclosures (Husbandry)</h2>
 <p><img src="../art/roman__enclosures.png" alt="Enclosures (Husbandry)"></p>
 <p><strong>Enclosures for managing bigger herds and supporting a meat and dairy industry</strong></p>
 <p>Though open field grazing is an easy way to raise livestock putting up enclosures makes it a lot more clear what belongs to whom and it helps shelter the precious animals from predators and thieves alike. Keeping our herds penned also ensures a reliable source of meat for the town, part of which is salted and cured so that it can keep for winter or be traded to further destinations. While similarly the milk of sheep, cattle and goats is made into prized cheeses.</p>
 <p>Livestock farms are available here because it is a grassland, small island/rocky coast, river valley or floodplain region. Note that nomadic factions prefer nomadic pastoralism in grassland region instead.</p>
 <p>Note on the effects</p>
-<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5. Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
+<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5.</p>
+<p>Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,100 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Breeding Farms (Husbandry)</td></tr></tbody></table></div>
 <p><strong>What it does</strong></p>
-<ul><li>-4 population growth <em>(player only)</em></li></ul>
+<ul><li>-2 population growth <em>(player only)</em></li></ul>
 <details>
 <summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>+6 farming level — only when <code>not resource livestock</code></li><li>+7 farming level — only when <code>resource livestock</code></li><li>-4 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry enclosures</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
+<ul><li>+4 farming level — only when <code>not resource livestock</code></li><li>+5 farming level — only when <code>resource livestock</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry enclosures</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
 </details></section></div><div class="pane"><section class="sec"><h2 id="breeding-farms-husbandry">Breeding Farms (Husbandry)</h2>
 <p><img src="../art/roman__livestock_drive.png" alt="Breeding Farms (Husbandry)"></p>
 <p><strong>Decicated breeding farms for producing high-quality livestock</strong></p>
 <p>As most animal products are luxuries the best way for this region to increase its exports is to gain a reputation for the highest quality meats, cheeses, wool and riding horses. This requires dedicated breeding farms where the breeding stock with the most desirable traits is preserved from the annual slaughter and where new, ever better, generations of animals are sired.</p>
 <p>Livestock farms are available here because it is a grassland, small island/rocky coast, river valley or floodplain region. Note that nomadic factions prefer nomadic pastoralism in grassland region instead.</p>
 <p>Note on the effects</p>
-<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5. Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
+<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5.</p>
+<p>Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,200 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Great Droveways (Husbandry)</td></tr></tbody></table></div>
 <p><strong>What it does</strong></p>
-<ul><li>-5 population growth <em>(player only)</em></li></ul>
+<ul><li>-3 population growth <em>(player only)</em></li></ul>
 <details>
 <summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>+8 farming level — only when <code>not resource livestock</code></li><li>+9 farming level — only when <code>resource livestock</code></li><li>-5 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry livestock_drive</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
+<ul><li>+6 farming level — only when <code>not resource livestock</code></li><li>+7 farming level — only when <code>resource livestock</code></li><li>-3 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry livestock_drive</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
 </details></section><section class="sec"><h2 id="great-droveways-husbandry">Great Droveways (Husbandry)</h2>
 <p><img src="../art/roman__stockbreeding_estate.png" alt="Great Droveways (Husbandry)"></p>
 <p><strong>Annual drive of cattle and other livestock to the cities for consumption</strong></p>
 <p>As this region has come to produce great quantities of meat, an offical route has developed to bring the livestock to the slaughterhouses near the great cities so that the rich can have their meat fresh. Anually great herds of cattle, pigs and even poultry such as geese, are marched down this road like a great hooved and feathered army. An army sent not to conquer but to grace the tables of our urban elites.</p>
 <p>Livestock farms are available here because it is a grassland, small island/rocky coast, river valley or floodplain region. Note that nomadic factions prefer nomadic pastoralism in grassland region instead.</p>
 <p>Note on the effects</p>
-<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5. Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
+<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5.</p>
+<p>Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,400 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Livestock Estates (Husbandry)</td></tr></tbody></table></div>
 <p><strong>What it does</strong></p>
-<ul><li>-8 population growth <em>(player only)</em></li></ul>
+<ul><li>-6 population growth <em>(player only)</em></li></ul>
 <details>
 <summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>+11 farming level — only when <code>not resource livestock</code></li><li>+12 farming level — only when <code>resource livestock</code></li><li>-8 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry stockbreeding_estate</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
+<ul><li>+9 farming level — only when <code>not resource livestock</code></li><li>+10 farming level — only when <code>resource livestock</code></li><li>-6 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry stockbreeding_estate</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li></ul>
 </details></section></div></div><section class="sec wide"><h2 id="livestock-estates-husbandry">Livestock Estates (Husbandry)</h2>
 <p><img src="../art/roman__highborn_ranches.png" alt="Livestock Estates (Husbandry)"></p>
 <p><strong>Elite ranches that produce luxury animal goods for significant profit.</strong></p>
 <p>Our noblity no longer just feed from the trough, they have monopolized it as their great livestock estates now dot the countryside. Pigs are raised in great numbers and are brought either live or cured into the cities. Cattle are in ever greater demand as well and this region has risen to meet it. Other estates breed cavalry horses for our armies and some estates even specialize in farming wild game such as boar, deer, rabbits and fowl for the most gourmet banquets.</p>
 <p>Livestock farms are available here because it is a grassland, small island/rocky coast, river valley or floodplain region. Note that nomadic factions prefer nomadic pastoralism in grassland region instead.</p>
 <p>Note on the effects</p>
-<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5. Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
+<p>Some levels of this building chain might have both positive and negative growth modifiers on the same building, this is due to a modding limitation. In these cases, all effects apply. So if it says +3 growth and -0.5 growth, your total growth is +2.5.</p>
+<p>Tip: put any building in the building queue (and only that one) and look at the 'Settlement income' and 'Settlement details' tabs to see its complete effects highlighted in green and red.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,500 denarii</td><td class="grp">Build time</td><td>10 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>What it does</strong></p>
-<ul><li>-10 population growth <em>(player only)</em></li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>-8 population growth <em>(player only)</em></li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
 <details>
 <summary>Show 7 effects that apply only in the circumstances shown</summary>
-<ul><li>+13 farming level — only when <code>not resource livestock</code></li><li>+14 farming level — only when <code>resource livestock</code></li><li>-10 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry highborn_ranches</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+2 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+3 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry highborn_ranches</code></li></ul>
+<ul><li>+11 farming level — only when <code>not resource livestock</code></li><li>+12 farming level — only when <code>resource livestock</code></li><li>-8 population growth — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry highborn_ranches</code></li><li>+1 trade income — only when <code>salt_building_supply and not sedentary_trade_animals</code></li><li>+2 trade income — only when <code>not salt_building_supply and sedentary_trade_animals</code></li><li>+3 trade income — only when <code>salt_building_supply and sedentary_trade_animals</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level sedentary_animal_husbandry highborn_ranches</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (2)</summary>
