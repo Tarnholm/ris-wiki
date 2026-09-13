@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,332 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,336 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -342,12 +342,12 @@
 <p>---</p>
 <h3 id="brewer">Brewer</h3>
 <p><img src="../ancillary-icons/explorer.png" alt="" width="44" style="float:right;margin:0 0 .3rem .6rem;border-radius:4px">never alongside <a href="s.html#slubberdegullion">Slubberdegullion</a>, <a href="w.html#wine-trader">Wine Trader</a>.</p>
-<p><strong>Effects:</strong> +1 Command, -1 Management, +1 Troop Morale</p>
-<blockquote><p>With this man around, soldiers march with a little more spring in their step, perhaps because they’re all slightly drunk. Turns out the promise of ale does wonders for morale, but not so much for managing a city.</p></blockquote>
+<p><strong>Effects:</strong> -1 Management, +1 Troop Morale</p>
+<blockquote><p>With this man around, soldiers march a bit happier, perhaps because they’re all slightly drunk. Turns out the promise of ale does wonders for morale, but not so much for managing a city.</p></blockquote>
 <p>Acquisition is tied to the trait: <a href="../traits/s.html#social-drinker">Social Drinker</a>.</p>
 <details>
 <summary>How it is gained — 4 triggers, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= irrigation_ditches and SettlementBuildingExists &lt;= wine_1 and Trait Drink &gt;= 1</code></td><td class="grp">ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= amphora_maker and Trait Drink &gt;= 1</code></td><td class="grp">ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= wine_1 and Trait Drink &gt;= 1</code></td></tr><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>IsGeneral and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= brewery and RandomPercent &lt; 10</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th class="right">Chance</th><th>Conditions</th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= irrigation_ditches and SettlementBuildingExists &lt;= wine_1 and Trait Drink &gt;= 1 and ( CultureType barbarian or CultureType celtiberian or CultureType brittonic or…</code></td><td class="grp">ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= amphora_maker and Trait Drink &gt;= 1 and ( CultureType barbarian or CultureType celtiberian or CultureType brittonic or CultureType germanic or CultureType dacian …</code></td><td class="grp">ending a turn in a settlement</td><td class="right">4%</td><td><code>RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= wine_1 and Trait Drink &gt;= 1 and ( CultureType barbarian or CultureType celtiberian or CultureType brittonic or CultureType germanic or CultureType dacian or Cult…</code></td></tr><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>IsGeneral and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= brewery and RandomPercent &lt; 10</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="britannic-warlord">Britannic Warlord</h3>
