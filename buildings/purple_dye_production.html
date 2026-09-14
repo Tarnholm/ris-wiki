@@ -25,7 +25,28 @@
 <p><strong>Murex Snail Collectors (Industry) → Purple Dye Works (Industry) → Purple Dye Factory (Industry) → Purple Dye Exports (Industry)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__trader.png" alt="" width="28"></td><td>Murex Snail Collectors (Industry)</td><td class="right">2,500</td><td class="right">2</td><td>large town</td><td>Purple Dye Works (Industry)</td><td class="center grp"><img src="../icons/roman__market.png" alt="" width="28"></td><td>Purple Dye Works (Industry)</td><td class="right">5,000</td><td class="right">4</td><td>city</td><td>Purple Dye Factory (Industry)</td></tr><tr><td class="center"><img src="../icons/roman__forum.png" alt="" width="28"></td><td>Purple Dye Factory (Industry)</td><td class="right">7,500</td><td class="right">6</td><td>large city</td><td>Purple Dye Exports (Industry)</td><td class="center grp"><img src="../icons/roman__great_forum.png" alt="" width="28"></td><td>Purple Dye Exports (Industry)</td><td class="right">15,000</td><td class="right">8</td><td>huge city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="purple-dye-works-industry">Purple Dye Works (Industry)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="murex-snail-collectors-industry">Murex Snail Collectors (Industry)</h2>
+<p><img src="../art/roman__trader.png" alt="Murex Snail Collectors (Industry)"></p>
+<p><em>The game ships no picture of its own for this level and shows the Local Barter picture instead.</em></p>
+<p><strong>A small workshop for extracting purple dye from sea snails has been established, keep your nose plugged!</strong></p>
+<p>No need to kill the poor creature, just prod it until it gives up the goods.</p>
+<p>The production of purple dye is just getting started in this region, though the smell of snail extract is already enough to keep most people at a safe distance.</p>
+<p>Tyrian Purple, prized since the Bronze Age, is a dye extracted from the murex shellfish which was first produced by the Phoenician city of Tyre. Its difficulty of manufacture, striking purple to red colour range, and resistance to fading made clothing dyed using Tyrian purple highly desirable and expensive, with an ounce of this dye more valuable than gold, at least to aristocrats.</p>
+<p>For everyone else, it’s just a bad-smelling job. But a profitable one!</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Purple Dye Works (Industry)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the purple dye resource</li><li>no building tagged <code>heavy_ind</code> is built or queued here (<code>no_other_heavy_ind</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market trader and nobuilding and resource purple_dye and no_other_heavy_ind and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+2 trade income</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
+<details>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_1</code></li></ul>
+</details></section><section class="sec wide"><h2 id="purple-dye-works-industry">Purple Dye Works (Industry)</h2>
 <p><img src="../art/roman__market.png" alt="Purple Dye Works (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Market picture instead.</em></p>
 <p><strong>A large purple dye industry is flourishing, meeting the demands of the wealthy and influential, and the smell, well, it’s just part of the process.</strong></p>
@@ -36,44 +57,18 @@
 <p>Today, it's not love but wealth that drives the dye industry, so bring on the snails, the dye, and the riches. Just remember to not breathe too deeply.</p>
 <p><em>Wording varies by culture: 3 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Purple Dye Factory (Industry)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the purple dye resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market market and nobuilding and resource purple_dye and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+4 trade income</li><li>+1 public order (law)</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
 <details>
 <summary>Show 1 effect that apply only in the circumstances shown</summary>
 <ul><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_2</code></li></ul>
-</details></section><section class="sec"><h2 id="purple-dye-exports-industry">Purple Dye Exports (Industry)</h2>
-<p><img src="../art/roman__great_forum.png" alt="Purple Dye Exports (Industry)"></p>
-<p><em>The game ships no picture of its own for this level and shows the Large Forum picture instead.</em></p>
-<p><strong>Purple dye is being exported far and wide, making the region renowned for this rare and coveted color, bringing in a tidal wave of wealth, and a reputation as the source of aristocratic luxury.</strong></p>
-<p>Even Roman emperors know where to get the finest purple!</p>
-<p>With the dye business booming, your region is now the prime exporter of Tyrian purple, being sent across all the Mediterranean.</p>
-<p>From kings to emperors, everyone who’s anyone is draping themselves in your luxury fabric.</p>
-<p>This region’s coffers are filling with gold as fast as the snails are harvested, and your merchants are enjoying a high-status life themselves.</p>
-<p>Their names are mentioned in foreign courts, not for politics or war, but for the finest purple robes that money can buy.</p>
-<p>This region now supplies your empire with purple dye, owning the colour of royalty gives us not only riches, but also a law bonus in all our regions.</p>
-<p><em>Wording varies by culture: 7 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+7 trade income</li><li>-4 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-4 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_3</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="murex-snail-collectors-industry">Murex Snail Collectors (Industry)</h2>
-<p><img src="../art/roman__trader.png" alt="Murex Snail Collectors (Industry)"></p>
-<p><em>The game ships no picture of its own for this level and shows the Local Barter picture instead.</em></p>
-<p><strong>A small workshop for extracting purple dye from sea snails has been established, keep your nose plugged!</strong></p>
-<p>No need to kill the poor creature, just prod it until it gives up the goods.</p>
-<p>The production of purple dye is just getting started in this region, though the smell of snail extract is already enough to keep most people at a safe distance.</p>
-<p>Tyrian Purple, prized since the Bronze Age, is a dye extracted from the murex shellfish which was first produced by the Phoenician city of Tyre. Its difficulty of manufacture, striking purple to red colour range, and resistance to fading made clothing dyed using Tyrian purple highly desirable and expensive, with an ounce of this dye more valuable than gold, at least to aristocrats.</p>
-<p>For everyone else, it’s just a bad-smelling job. But a profitable one!</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Purple Dye Works (Industry)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_1</code></li></ul>
-</details></section><section class="sec"><h2 id="purple-dye-factory-industry">Purple Dye Factory (Industry)</h2>
+</details></section><section class="sec wide"><h2 id="purple-dye-factory-industry">Purple Dye Factory (Industry)</h2>
 <p><img src="../art/roman__forum.png" alt="Purple Dye Factory (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
 <p><strong>Massive-scale purple dye extraction has been established, turning this region into a centre of high-status fashion, despite the smell.</strong></p>
@@ -85,12 +80,46 @@
 <p>Sure, some may question your wisdom for entering this line of work, but your coffers will silence them all! Money does not stink after all...</p>
 <p><em>Wording varies by culture: 3 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Purple Dye Exports (Industry)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the purple dye resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market forum and nobuilding and resource purple_dye and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+6 trade income</li><li>+1 public order (law)</li><li>-3 public order (happiness) <em>(player only)</em></li></ul>
 <details>
 <summary>Show 1 effect that apply only in the circumstances shown</summary>
 <ul><li>-3 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_3</code></li></ul>
-</details></section></div></div></main>
+</details></section><section class="sec wide"><h2 id="purple-dye-exports-industry">Purple Dye Exports (Industry)</h2>
+<p><img src="../art/roman__great_forum.png" alt="Purple Dye Exports (Industry)"></p>
+<p><em>The game ships no picture of its own for this level and shows the Large Forum picture instead.</em></p>
+<p><strong>Purple dye is being exported far and wide, making the region renowned for this rare and coveted color, bringing in a tidal wave of wealth, and a reputation as the source of aristocratic luxury.</strong></p>
+<p>Even Roman emperors know where to get the finest purple!</p>
+<p>With the dye business booming, your region is now the prime exporter of Tyrian purple, being sent across all the Mediterranean.</p>
+<p>From kings to emperors, everyone who’s anyone is draping themselves in your luxury fabric.</p>
+<p>This region’s coffers are filling with gold as fast as the snails are harvested, and your merchants are enjoying a high-status life themselves.</p>
+<p>Their names are mentioned in foreign courts, not for politics or war, but for the finest purple robes that money can buy.</p>
+<p>This region now supplies your empire with purple dye, owning the colour of royalty gives us not only riches, but also a law bonus in all our regions.</p>
+<p><em>Wording varies by culture: 7 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Large Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the purple dye resource</li><li>anywhere in your empire does not have the hidden resource <code>purple_dye_supply_built</code> (<code>not_purple_dye_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market great_forum and nobuilding and resource purple_dye and not_purple_dye_supply_built and direct_govs</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+7 trade income</li><li>-4 public order (happiness) <em>(player only)</em></li></ul>
+<details>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>-4 public order (happiness) — only when <code>not is_player and building_present_min_level purple_dye_production purple_dye_3</code></li></ul>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (6)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_purple_dye_supply_built</code></td><td><code>not hidden_resource purple_dye_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

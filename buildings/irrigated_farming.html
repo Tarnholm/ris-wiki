@@ -25,7 +25,7 @@
 <p><strong>Irrigation Ditches (Crops) → Basin Irrigation (Crops) → Canal Network (Crops) → Irrigation Aqueducts (Crops) → Irrigated Great Estates (Crops)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__irrigation_ditches.png" alt="" width="28"></td><td>Irrigation Ditches (Crops)</td><td class="right">1,500</td><td class="right">3</td><td>town</td><td>Basin Irrigation (Crops)</td><td class="center grp"><img src="../icons/roman__basin_irrigation.png" alt="" width="28"></td><td>Basin Irrigation (Crops)</td><td class="right">3,000</td><td class="right">5</td><td>large town</td><td>Canal Network (Crops)</td></tr><tr><td class="center"><img src="../icons/roman__canal_network.png" alt="" width="28"></td><td>Canal Network (Crops)</td><td class="right">5,000</td><td class="right">7</td><td>city</td><td>Irrigation Aqueducts (Crops)</td><td class="center grp"><img src="../icons/roman__irrigation_aquaducts.png" alt="" width="28"></td><td>Irrigation Aqueducts (Crops)</td><td class="right">7,500</td><td class="right">9</td><td>large city</td><td>Irrigated Great Estates (Crops)</td></tr><tr><td class="center"><img src="../icons/roman__great_estates.png" alt="" width="28"></td><td>Irrigated Great Estates (Crops)</td><td class="right">10,000</td><td class="right">11</td><td>huge city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="irrigation-ditches-crops">Irrigation Ditches (Crops)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="irrigation-ditches-crops">Irrigation Ditches (Crops)</h2>
 <p><img src="../art/roman__irrigation_ditches.png" alt="Irrigation Ditches (Crops)"></p>
 <p><strong>Simple ditches irrigate farmland, enabling basic cultivation</strong></p>
 <p>Civilization begins with irrigation, and irrigation begins with a ditch. With these channels directing precious water from nearby rivers or lakes to our fields, we are advancing beyond mere subsistence. With food to spare we may attract more people to the region. The maintenance of these waterworks should not be neglected and will cost some tax revenue.</p>
@@ -41,33 +41,18 @@
 <p>Tier 2: steppe, desert, small islands/rocky coast</p>
 <p>Tier 1: mountains, karst terrain</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Basin Irrigation (Crops)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li><code>irrigation_chain</code></li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and requires_gov and no_other_farm and irrigation_chain</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+2 farming level</li><li>-1 taxable income <em>(player only)</em></li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>+1 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>-1 taxable income — only when <code>building_present_min_level irrigated_farming irrigation_ditches and not is_player</code></li></ul>
-</details></section><section class="sec"><h2 id="irrigation-aqueducts-crops">Irrigation Aqueducts (Crops)</h2>
-<p><img src="../art/roman__irrigation_aquaducts.png" alt="Irrigation Aqueducts (Crops)"></p>
-<p><strong>Irrigation aqueducts support burgeoning estates</strong></p>
-<p>Though our waterworks were already extensive, good land remained underutilised just beyond the reach of canal, sluice and waterwheel. To properly exploit this outlying land, advanced engineering was required. Aqueducts were raised to tap into even more sources of freshwater and bring it where it was lacking. The fields are increasingly worked by slaves who also maintain the vast structures watering the land.</p>
-<p>Note: Some levels may have both positive and negative growth modifiers due to modding limitations. All effects apply, so +3 growth and -0.5 growth means +2.5 total growth.</p>
-<p>Strategy</p>
-<p>Irrigated farming is one of the best farming options in terms of growth potential and income. Every level slightly increases maintenance costs (tax penalty). Its farming bonus (+1 = +80 income on average &amp; +0.5 growth) is increased if the region has grain resource, and sulphur has the same effect on tiers 3-5. Irrigated farming offers a trade bonus for cash crops (fruits, olives, grapes, papyrus, cotton, flax, dates), increased at tier 5. At tiers 4-5, the slave trade hub resource enables a tax bonus.</p>
-<p>Availability</p>
-<p>Irrigated farming is available only in regions with water sources (river, lake, springs, oasis). Not available in sub-arctic, alpine, oceanic, temperate and continental climates. Also not available in forest and wetlands terrain.</p>
-<p>Limited to:</p>
-<p>Tier 5: river valley, floodplains, grassland</p>
-<p>Tier 4: mountain valley, plateau</p>
-<p>Tier 3: hills</p>
-<p>Tier 2: steppe, desert, small islands/rocky coast</p>
-<p>Tier 1: mountains, karst terrain</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>9 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Irrigated Great Estates (Crops)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>-4 taxable income <em>(player only)</em></li></ul>
-<details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>+7 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+8 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>+1 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li><li>-4 taxable income — only when <code>building_present_min_level irrigated_farming irrigation_aquaducts and not is_player</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="basin-irrigation-crops">Basin Irrigation (Crops)</h2>
+</details></section><section class="sec wide"><h2 id="basin-irrigation-crops">Basin Irrigation (Crops)</h2>
 <p><img src="../art/roman__basin_irrigation.png" alt="Basin Irrigation (Crops)"></p>
 <p><strong>Using basins to flood and fertilize fields boosts crop yields</strong></p>
 <p>As water is plentiful in this region, our farmers have begun to construct embankments around fields nearest to rivers to create basins that can be strategically flooded. Certain crops like wheat, barley and pulses thrive when they get their feet wet. The water streaming into these basins also deposits river silt, fertilizing the fields. While these basins produce food crops in bulk, higher lying fields are used for other crops. The embankments are vulnerable to erosion and need constant maintenance.</p>
@@ -83,12 +68,18 @@
 <p>Tier 2: steppe, desert, small islands/rocky coast</p>
 <p>Tier 1: mountains, karst terrain</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Canal Network (Crops)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li><code>irrigation_chain</code></li><li>the region does not have the hidden resource <code>mountains</code> and the region does not have the hidden resource <code>karst_terrain</code> (<code>irrigation_tier_2</code>)</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and requires_gov and no_other_farm and irrigation_chain and irrigation_tier_2</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>-2 taxable income <em>(player only)</em></li></ul>
 <details>
 <summary>Show 4 effects that apply only in the circumstances shown</summary>
 <ul><li>+3 farming level — only when <code>not resource grain</code></li><li>+4 farming level — only when <code>resource grain</code></li><li>+1 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>-2 taxable income — only when <code>building_present_min_level irrigated_farming basin_irrigation and not is_player</code></li></ul>
-</details></section><section class="sec"><h2 id="canal-network-crops">Canal Network (Crops)</h2>
+</details></section><section class="sec wide"><h2 id="canal-network-crops">Canal Network (Crops)</h2>
 <p><img src="../art/roman__canal_network.png" alt="Canal Network (Crops)"></p>
 <p><strong>A large canal network enables large-scale agriculture</strong></p>
 <p>The state has decreed that new irrigation works be put into place in this region. With this support, a network of canals has been built beyond anything the farmers could have managed on their own. Not any one person understands the full workings of the great network of dikes, sluices, and embankments. Our waterworks have evolved from a humble ditch into a symbol of the power of the state. And also much like the state, it has grown very expensive to maintain.</p>
@@ -104,12 +95,45 @@
 <p>Tier 2: steppe, desert, small islands/rocky coast</p>
 <p>Tier 1: mountains, karst terrain</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>7 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Irrigation Aqueducts (Crops)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li><code>irrigation_chain</code></li><li><code>irrigation_tier_3</code></li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and requires_gov and no_other_farm and irrigation_chain and irrigation_tier_3</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>-3 taxable income <em>(player only)</em></li></ul>
 <details>
 <summary>Show 4 effects that apply only in the circumstances shown</summary>
 <ul><li>+5 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+6 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>+1 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>-3 taxable income — only when <code>building_present_min_level irrigated_farming canal_network and not is_player</code></li></ul>
-</details></section></div></div><section class="sec wide"><h2 id="irrigated-great-estates-crops">Irrigated Great Estates (Crops)</h2>
+</details></section><section class="sec wide"><h2 id="irrigation-aqueducts-crops">Irrigation Aqueducts (Crops)</h2>
+<p><img src="../art/roman__irrigation_aquaducts.png" alt="Irrigation Aqueducts (Crops)"></p>
+<p><strong>Irrigation aqueducts support burgeoning estates</strong></p>
+<p>Though our waterworks were already extensive, good land remained underutilised just beyond the reach of canal, sluice and waterwheel. To properly exploit this outlying land, advanced engineering was required. Aqueducts were raised to tap into even more sources of freshwater and bring it where it was lacking. The fields are increasingly worked by slaves who also maintain the vast structures watering the land.</p>
+<p>Note: Some levels may have both positive and negative growth modifiers due to modding limitations. All effects apply, so +3 growth and -0.5 growth means +2.5 total growth.</p>
+<p>Strategy</p>
+<p>Irrigated farming is one of the best farming options in terms of growth potential and income. Every level slightly increases maintenance costs (tax penalty). Its farming bonus (+1 = +80 income on average &amp; +0.5 growth) is increased if the region has grain resource, and sulphur has the same effect on tiers 3-5. Irrigated farming offers a trade bonus for cash crops (fruits, olives, grapes, papyrus, cotton, flax, dates), increased at tier 5. At tiers 4-5, the slave trade hub resource enables a tax bonus.</p>
+<p>Availability</p>
+<p>Irrigated farming is available only in regions with water sources (river, lake, springs, oasis). Not available in sub-arctic, alpine, oceanic, temperate and continental climates. Also not available in forest and wetlands terrain.</p>
+<p>Limited to:</p>
+<p>Tier 5: river valley, floodplains, grassland</p>
+<p>Tier 4: mountain valley, plateau</p>
+<p>Tier 3: hills</p>
+<p>Tier 2: steppe, desert, small islands/rocky coast</p>
+<p>Tier 1: mountains, karst terrain</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>9 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Irrigated Great Estates (Crops)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li><code>irrigation_chain</code></li><li><code>irrigation_tier_4</code></li><li><code>faction_sed_estate_farming</code></li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and requires_gov and no_other_farm and irrigation_chain and irrigation_tier_4 and faction_sed_estate_farming</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>-4 taxable income <em>(player only)</em></li></ul>
+<details>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>+7 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+8 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>+1 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li><li>-4 taxable income — only when <code>building_present_min_level irrigated_farming irrigation_aquaducts and not is_player</code></li></ul>
+</details></section><section class="sec wide"><h2 id="irrigated-great-estates-crops">Irrigated Great Estates (Crops)</h2>
 <p><img src="../art/roman__great_estates.png" alt="Irrigated Great Estates (Crops)"></p>
 <p><strong>Vast, slave-worked estates that are highly productive but cause social unrest</strong></p>
 <p>Over time these lands have needed much investment to make them truly profitable, and so those who can invest the most have come to acquire the land. Here on their great Latifundia, our elites see their wealth increase, thanks to thousands of slaves labouring well-watered fields stretching to the horizon. The overseers have become experts in disciplining slaves and maintaining the irrigation works built over generations. The dispossessed farmers have had no choice but to seek employment in the cities.</p>
@@ -126,6 +150,12 @@
 <p>Tier 1: mountains, karst terrain</p>
 <p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>11 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li><code>irrigation_chain</code></li><li><code>irrigation_tier_5</code></li><li><code>faction_sed_estate_farming</code></li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and requires_gov and no_other_farm and irrigation_chain and irrigation_tier_5 and faction_sed_estate_farming</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>-1 population growth <em>(player only)</em></li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
 <details>
@@ -133,9 +163,9 @@
 <ul><li>+9 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+10 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>+2 trade income — only when <code>resource fruits or resource olive_oil or resource wine or resource papyrus or resource cotton or resource flax or resource dates</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-5 taxable income — only when <code>not slave_trade_building_supply and is_player</code></li><li>-1 population growth — only when <code>building_present_min_level irrigated_farming great_estates and not is_player</code></li><li>-5 taxable income — only when <code>not slave_trade_building_supply and building_present_min_level irrigated_farming great_estates and not is_player</code></li><li>-2 public order (happiness) — only when <code>building_present_min_level irrigated_farming great_estates and not is_player</code></li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (2)</summary>
+<summary>What the shorthands in those conditions stand for (18)</summary>
 <p>These are the mod's own, quoted from the game files unchanged.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td><td class="grp"><code>sulphur_building_supply</code></td><td><code>hidden_resource sulphur_supply_built factionwide</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>faction_sed_estate_farming</code></td><td><code>factions { paeonia, kush, timbuktu, cappadocia, chrysaoria, cilicians, lycia, pontus, armenia, armenia_minor, colchians, iberians, sophene, commagene, egypt, acarnania, achaea, acragas, aetolia, argos, athens, boeotia, bosporan, byzantium, chersonesus, chios, cius, elis, emporion, gortyn, heraclea_pontica, issa, knossos, kydonia, lyttos, massalia, messene, miletus, olbia, pentapolis, priene, rhodes, selge, sinope, sparta, syracuse, taras, thessaly, trapezus, sarsinates, cyzicus, antigonid, bactria, cyrene, histria, epirus, lysiad, megalopolis, carmo, asta, arse, pergamon, ptolemaic, seleucid, ptolemaic_rebels, seleucid_rebels, seleucid_rebels2, mauryan, indians, volsinii, picentes, sarsinates, bruttians, lucanians, mamertines, messapians, capua, italics, arados, tyre, hasmonean, osrhoene, sidon, characene, atropatene, chorasmia, persis, parni, carthage, gades, roman, romans_julii, roman_rebels_1, roman_rebels_2, roman_senate, bithynia, cabyle, odrysians, }</code></td><td class="grp"><code>irrigation_chain</code></td><td><code>not hidden_resource forest and not hidden_resource wetlands and not_extreme_cold and not hidden_resource oceanic and not hidden_resource temperate and not hidden_resource continental and water</code></td><td class="grp"><code>irrigation_tier_2</code></td><td><code>not_mountains and not_karst_terrain</code></td></tr><tr><td><code>irrigation_tier_3</code></td><td><code>not_mountains and not_karst_terrain and not hidden_resource steppe and not_desert and not_small_islands</code></td><td class="grp"><code>irrigation_tier_4</code></td><td><code>not_mountains and not_karst_terrain and not hidden_resource steppe and not_desert and not_small_islands and not_hills</code></td><td class="grp"><code>irrigation_tier_5</code></td><td><code>not_mountains and not_karst_terrain and not hidden_resource steppe and not_desert and not_small_islands and not_hills and not hidden_resource mountain_valley and not hidden_resource plateau</code></td></tr><tr><td><code>no_other_farm</code></td><td><code>no_building_tagged food queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_desert</code></td><td><code>not hidden_resource desert</code></td></tr><tr><td><code>not_extreme_cold</code></td><td><code>not hidden_resource sub_artic and not hidden_resource alpine</code></td><td class="grp"><code>not_hills</code></td><td><code>not hidden_resource hills</code></td><td class="grp"><code>not_karst_terrain</code></td><td><code>not hidden_resource karst_terrain</code></td></tr><tr><td><code>not_mountains</code></td><td><code>not hidden_resource mountains</code></td><td class="grp"><code>not_small_islands</code></td><td><code>not hidden_resource small_islands_and_rocky_coast</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr><tr><td><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td><td class="grp"><code>sulphur_building_supply</code></td><td><code>hidden_resource sulphur_supply_built factionwide</code></td><td class="grp"><code>water</code></td><td><code>hidden_resource irrigation_river or hidden_resource irrigation_springs or hidden_resource irrigation_lake or hidden_resource irrigation_oasis</code></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

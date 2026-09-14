@@ -25,7 +25,7 @@
 <p><strong>Hunting Grounds (Rural) → Fur Market (Rural) → Wild Animals Supply (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__hunters.png" alt="" width="28"></td><td>Hunting Grounds (Rural)</td><td class="right">800</td><td class="right">2</td><td>town</td><td>Fur Market (Rural)</td><td class="center grp"><img src="../icons/roman__fur_market.png" alt="" width="28"></td><td>Fur Market (Rural)</td><td class="right">3,500</td><td class="right">3</td><td>large town</td><td>Wild Animals Supply (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__wild_animals_supply.png" alt="" width="28"></td><td>Wild Animals Supply (Rural)</td><td class="right">10,000</td><td class="right">5</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="hunting-grounds-rural">Hunting Grounds (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="hunting-grounds-rural">Hunting Grounds (Rural)</h2>
 <p><img src="../art/roman__hunters.png" alt="Hunting Grounds (Rural)"></p>
 <p><strong>The wild whispers, but only hunters hear. A place for those who pursue prey and the thrill of the chase.</strong></p>
 <p>Hunting, an art so ancient it’s practically prehistoric, older than farms, fences, and possibly even fire, if you believe the old tales.</p>
@@ -35,32 +35,50 @@
 <p>Out here, the deer don’t just leap; they bound to escape hungry hunters! The thrill of the chase, the reverent silence (or boisterous shouts), it’s the wild calling, and only a true hunter answers.</p>
 <p>The religions of the barbarians were generally more nature-oriented, as they hunted far more than their 'civilised' neighbours. It is possible that the Celtic god Cernunnos, the 'horned god', was connected to the practice, as he shared many traits with other pagan hunting deities.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>800 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Fur Market (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource wild_animals and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>+1 trade income — only when <code>faction_sed_estate_farming</code></li><li>+1 population growth — only when <code>not faction_sed_estate_farming</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="fur-market-rural">Fur Market (Rural)</h2>
+</details></section><section class="sec wide"><h2 id="fur-market-rural">Fur Market (Rural)</h2>
 <p><img src="../art/roman__fur_market.png" alt="Fur Market (Rural)"></p>
 <p><strong>Pelts, bargains, and a wild tale (or ten). A lively place where wit and pelts are worth their weight in coin.</strong></p>
 <p>Trading fur is both profitable and entertaining; a marketplace where the pelts are almost as prized as the tales that come with them.</p>
 <p>Here, merchants haggle over wolf hides and hares, spinning stories that make the simplest hunt sound like a Herculean labour. Soldiers stock up for warmth, citizens for fashion, and the merchants laugh all the way to the coin purse.</p>
 <p>From sleek fox pelts to shaggy wolf hides, and from warm cloaks to outrageous hats, every fur has its value, and a price only the clever can negotiate.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Wild Animals Supply (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource wild_animals and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>+1 public order (happiness)</li></ul></section><section class="sec"><h2 id="wild-animals-supply-rural">Wild Animals Supply (Rural)</h2>
+<ul><li>+2 trade income</li><li>+1 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="wild-animals-supply-rural">Wild Animals Supply (Rural)</h2>
 <p><img src="../art/roman__wild_animals_supply.png" alt="Wild Animals Supply (Rural)"></p>
 <p><strong>Pelts, bargains, and a wild tale (or ten). A lively place where wit and pelts are worth their weight in coin.</strong></p>
 <p>Trading furs and other pelts is both profitable and entertaining; a marketplace where the pelts are almost as prized as the tales that come with them.</p>
 <p>Here, merchants haggle over wolf hides and hares, spinning stories that make the simplest hunt sound like a Herculean labour. Soldiers stock up for warmth, citizens for fashion, and the merchants laugh all the way to the coin purse.</p>
 <p>From sleek fox pelts to shaggy wolf hides and exotic panther skins, and from warm cloaks to outrageous hats, every fur has its value, and a price only the clever can negotiate.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>anywhere in your empire does not have the hidden resource <code>wild_animals_supply_built</code> (<code>not_wild_animals_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource wild_animals and not_wild_animals_supply_built and direct_govs</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+3 trade income</li><li>+2 public order (happiness)</li></ul>
 <details>
-<summary>What the shorthands in those conditions stand for (1)</summary>
+<summary>What the shorthands in those conditions stand for (6)</summary>
 <p>These are the mod's own, quoted from the game files unchanged.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>faction_sed_estate_farming</code></td><td>any one of 1 alternatives — too long to quote here</td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></div></div></main>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>faction_sed_estate_farming</code></td><td><code>factions { paeonia, kush, timbuktu, cappadocia, chrysaoria, cilicians, lycia, pontus, armenia, armenia_minor, colchians, iberians, sophene, commagene, egypt, acarnania, achaea, acragas, aetolia, argos, athens, boeotia, bosporan, byzantium, chersonesus, chios, cius, elis, emporion, gortyn, heraclea_pontica, issa, knossos, kydonia, lyttos, massalia, messene, miletus, olbia, pentapolis, priene, rhodes, selge, sinope, sparta, syracuse, taras, thessaly, trapezus, sarsinates, cyzicus, antigonid, bactria, cyrene, histria, epirus, lysiad, megalopolis, carmo, asta, arse, pergamon, ptolemaic, seleucid, ptolemaic_rebels, seleucid_rebels, seleucid_rebels2, mauryan, indians, volsinii, picentes, sarsinates, bruttians, lucanians, mamertines, messapians, capua, italics, arados, tyre, hasmonean, osrhoene, sidon, characene, atropatene, chorasmia, persis, parni, carthage, gades, roman, romans_julii, roman_rebels_1, roman_rebels_2, roman_senate, bithynia, cabyle, odrysians, }</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_wild_animals_supply_built</code></td><td><code>not hidden_resource wild_animals_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

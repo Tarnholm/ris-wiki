@@ -25,18 +25,24 @@
 <p><strong>Small Treasury → Treasury → Great Treasury → Imperial Treasury</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__treasury.png" alt="" width="28"></td><td><a href="#small-treasury">Small Treasury</a></td><td class="right">5,000</td><td class="right">2</td><td>town</td><td>Treasury</td><td class="center grp"><img src="../icons/roman__large_treasury.png" alt="" width="28"></td><td><a href="#treasury">Treasury</a></td><td class="right">10,000</td><td class="right">8</td><td>large town</td><td>Great Treasury</td></tr><tr><td class="center"><img src="../icons/roman__great_treasury.png" alt="" width="28"></td><td><a href="#great-treasury">Great Treasury</a></td><td class="right">15,000</td><td class="right">12</td><td>city</td><td>Imperial Treasury</td><td class="center grp"><img src="../icons/roman__imperial_treasury.png" alt="" width="28"></td><td><a href="#imperial-treasury">Imperial Treasury</a></td><td class="right">19,000</td><td class="right">14</td><td>large city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="small-treasury">Small Treasury</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="small-treasury">Small Treasury</h2>
 <p><img src="../art/roman__treasury.png" alt="Small Treasury"></p>
 <p><strong>This building represents the wealth this region has amassed. By capturing other factional treasuries, you will drastically hurt your enemies and cripple their economy.</strong></p>
 <p>Even a small capital must keep its coin somewhere, lest it end up in the hands of thieves, or worse, politicians.</p>
 <p>Every city requires a secure place to store its wealth, and this small treasury ensures that tax revenue does not mysteriously vanish between collection and expenditure. Guarded by trusted officials (or at least the ones who haven't been caught yet), it holds the funds necessary for governance, military upkeep, and the occasional lavish festival to keep the people from rioting.</p>
 <p><em>Wording varies by culture: 5 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Treasury</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 13 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the hidden resource <code>capital</code></li><li>Direct Rule or Homeland — or — the settlement is the AI's</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { carthaginian, iberian, eastern, anatolian, illyrian, thracian, iranian, arab, indian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and hidden_resource capital and direct_govs or not is_player</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <details>
 <summary>Show 3 effects that apply only in the circumstances shown</summary>
 <ul><li>+1 trade income — only when <code>hidden_resource capital</code></li><li>+5 taxable income — only when <code>hidden_resource capital</code></li><li>+1 public order (law) — only when <code>hidden_resource capital</code></li></ul>
-</details></section><section class="sec"><h2 id="treasury">Treasury</h2>
+</details></section><section class="sec wide"><h2 id="treasury">Treasury</h2>
 <p><img src="../art/roman__large_treasury.png" alt="Treasury"></p>
 <p><strong>This building represents the wealth this region has amassed. By capturing other factional treasuries, you will drastically hurt your enemies and cripple their economy.</strong></p>
 <p>A great city needs a great treasury, and great accountants to ensure nobody ‘misplaces’ the coin.</p>
@@ -44,11 +50,17 @@
 <p>In Roman mythology, Saturn ruled during the Golden Age, and he continued to be associated with wealth. His temple housed the treasury, the aerarium, where the Roman Republic's reserves of gold and silver were stored. The state archives and the insignia and official scale for the weighing of metals were also housed there.</p>
 <p><em>Wording varies by culture: 5 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Great Treasury</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 13 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the hidden resource <code>capital</code></li><li>Direct Rule or Homeland — or — the settlement is the AI's</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { carthaginian, iberian, eastern, anatolian, illyrian, thracian, iranian, arab, indian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and hidden_resource capital and direct_govs or not is_player</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <details>
 <summary>Show 3 effects that apply only in the circumstances shown</summary>
 <ul><li>+2 trade income — only when <code>hidden_resource capital</code></li><li>+10 taxable income — only when <code>hidden_resource capital</code></li><li>+1 public order (law) — only when <code>hidden_resource capital</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="great-treasury">Great Treasury</h2>
+</details></section><section class="sec wide"><h2 id="great-treasury">Great Treasury</h2>
 <p><img src="../art/roman__great_treasury.png" alt="Great Treasury"></p>
 <p><strong>This building represents the wealth this region has amassed. By capturing other factional treasuries, you will drastically hurt your enemies and cripple their economy.</strong></p>
 <p>The Senate and People of Rome ensure that every coin is accounted for. Mostly.</p>
@@ -56,22 +68,39 @@
 <p>In Roman mythology, Saturn ruled during the Golden Age, and he continued to be associated with wealth. His temple housed the treasury, the aerarium, where the Roman Republic's reserves of gold and silver were stored. The state archives and the insignia and official scale for the weighing of metals were also housed there.</p>
 <p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>12 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Imperial Treasury</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 13 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the hidden resource <code>capital</code></li><li>Direct Rule or Homeland — or — the settlement is the AI's</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { carthaginian, iberian, eastern, anatolian, illyrian, thracian, iranian, arab, indian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and hidden_resource capital and direct_govs or not is_player</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <details>
 <summary>Show 3 effects that apply only in the circumstances shown</summary>
 <ul><li>+2 trade income — only when <code>hidden_resource capital</code></li><li>+15 taxable income — only when <code>hidden_resource capital</code></li><li>+2 public order (law) — only when <code>hidden_resource capital</code></li></ul>
-</details></section><section class="sec"><h2 id="imperial-treasury">Imperial Treasury</h2>
+</details></section><section class="sec wide"><h2 id="imperial-treasury">Imperial Treasury</h2>
 <p><img src="../art/roman__imperial_treasury.png" alt="Imperial Treasury"></p>
 <p><strong>This building represents the wealth this region has amassed. By capturing other factional treasuries, you will drastically hurt your enemies and cripple their economy.</strong></p>
 <p>Rome’s might is built on its wealth. And its wealth is built on everyone else’s misfortune.</p>
 <p>The Republic is no more; an Empire rises in its place. With provinces stretched across the known world, the imperial treasury overflows with tax revenues, war spoils, and tributes from humbled rulers. Coin flows like the Tiber, making sure that the legions are never unpaid, building monuments, and ensuring Rome’s eternal rule. Of course, with such great wealth comes even greater corruption, but what is Rome without a few scandals?</p>
 <p><em>Wording varies by culture: 4 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>19,000 denarii</td><td class="grp">Build time</td><td>14 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 13 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the hidden resource <code>capital</code></li><li>Direct Rule or Homeland — or — the settlement is the AI's</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { carthaginian, iberian, eastern, anatolian, illyrian, thracian, iranian, arab, indian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and hidden_resource capital and direct_govs or not is_player</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <details>
 <summary>Show 3 effects that apply only in the circumstances shown</summary>
 <ul><li>+3 trade income — only when <code>hidden_resource capital</code></li><li>+20 taxable income — only when <code>hidden_resource capital</code></li><li>+2 public order (law) — only when <code>hidden_resource capital</code></li></ul>
-</details></section></div></div></main>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (2)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

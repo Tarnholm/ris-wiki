@@ -25,7 +25,7 @@
 <p><strong>Herb gatherer (Urban) → Perfume Maker (Urban) → Medicine and Perfume Export (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__trader.png" alt="" width="28"></td><td>Herb gatherer (Urban)</td><td class="right">1,000</td><td class="right">2</td><td>large town</td><td>Perfume Maker (Urban)</td><td class="center grp"><img src="../icons/roman__market.png" alt="" width="28"></td><td>Perfume Maker (Urban)</td><td class="right">3,500</td><td class="right">4</td><td>city</td><td>Medicine and Perfume Export (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__forum.png" alt="" width="28"></td><td>Medicine and Perfume Export (Urban)</td><td class="right">7,000</td><td class="right">6</td><td>large city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="herb-gatherer-urban">Herb gatherer (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="herb-gatherer-urban">Herb gatherer (Urban)</h2>
 <p><img src="../art/roman__trader.png" alt="Herb gatherer (Urban)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Barter picture instead.</em></p>
 <p><strong>Where nature’s first-aid kit is gathered and prepared, and someone’s probably about to feel better.</strong></p>
@@ -33,8 +33,14 @@
 <p>Here, herdsmen and specialist herbalists can sell the special herbs they encounter in the wild, often having to venture to the most inconvenient mountain tops and ledges to get at the most valuable plants. The herdsmen have it doubly though as they need to find the plant before their flock does as many of them are quite tasty as well. Once here the finest herbs are carefully plucked and expertly prepared by skilled hands that know the difference between a healing plant and something that will leave you in bed for a week.</p>
 <p>Whether it's for a sore throat, a nasty fever, or just a “bad day” after battle, these leaves, roots, and flowers are the ancient world’s answer to every ache, pain, and broken heart (though not necessarily in that order).</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Perfume Maker (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource perfumes and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 population health</li></ul></section></div><div class="pane"><section class="sec"><h2 id="perfume-maker-urban">Perfume Maker (Urban)</h2>
+<ul><li>+1 population health</li></ul></section><section class="sec wide"><h2 id="perfume-maker-urban">Perfume Maker (Urban)</h2>
 <p><img src="../art/roman__market.png" alt="Perfume Maker (Urban)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Market picture instead.</em></p>
 <p><strong>Where luxury meets medicine, and you leave smelling like a god (hopefully not a sweaty one).</strong></p>
@@ -43,15 +49,32 @@
 <p>Imported oils, exotic flowers, and maybe a dash of magic are mixed to create fragrances fit for the highest of nobles and most sophisticated of underlings.</p>
 <p>If you like smelling rich and fancy (or just want to mask the smell of city life), this is your spot.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,500 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Medicine and Perfume Export (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource perfumes and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 population health</li><li>+2 trade income</li></ul></section><section class="sec"><h2 id="medicine-and-perfume-export-urban">Medicine and Perfume Export (Urban)</h2>
+<ul><li>+1 population health</li><li>+2 trade income</li></ul></section><section class="sec wide"><h2 id="medicine-and-perfume-export-urban">Medicine and Perfume Export (Urban)</h2>
 <p><img src="../art/roman__forum.png" alt="Medicine and Perfume Export (Urban)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
 <p><strong>The source of good health and good smells.</strong></p>
 <p>In this extensive workshop both medicines and perfumes are produced from the herbs that are gathered from the hills as well as those that grown withing the courtyards. The scents that enrich this place will soon be available near you, at an extravangant price. While the most exclusive medicines using Silphium, Mastic, Hellebore, and Asafoetida are carefully prepared to be sold to the most expert healers of the empire.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>Direct Rule or Homeland</li><li>anywhere in your empire does not have the hidden resource <code>perfumes_supply_built</code> (<code>not_perfumes_supply_built</code>)</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource perfumes and direct_govs and not_perfumes_supply_built</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 population health</li><li>+3 trade income</li></ul></section></div></div></main>
+<ul><li>+2 population health</li><li>+3 trade income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_perfumes_supply_built</code></td><td><code>not hidden_resource perfumes_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

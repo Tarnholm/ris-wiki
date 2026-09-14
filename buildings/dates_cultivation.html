@@ -25,7 +25,7 @@
 <p><strong>Date Palm Plantation (Rural) → Palm Wine Maker (Rural) → Date &amp; Palm Wine Market (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__farms_1.png" alt="" width="28"></td><td>Date Palm Plantation (Rural)</td><td class="right">800</td><td class="right">3</td><td>town</td><td>Palm Wine Maker (Rural)</td><td class="center grp"><img src="../icons/roman__farms_2.png" alt="" width="28"></td><td>Palm Wine Maker (Rural)</td><td class="right">2,200</td><td class="right">4</td><td>large town</td><td>Date &amp; Palm Wine Market (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__farms_3.png" alt="" width="28"></td><td>Date &amp; Palm Wine Market (Rural)</td><td class="right">3,600</td><td class="right">6</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="date-palm-plantation-rural">Date Palm Plantation (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="date-palm-plantation-rural">Date Palm Plantation (Rural)</h2>
 <p><img src="../art/roman__farms_1.png" alt="Date Palm Plantation (Rural)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Farms+1 picture instead.</em></p>
 <p><strong>A simple yet essential operation, sweetening daily life one palm at a time, this modest date plantation provides a sweet addition to the region’s produce.</strong></p>
@@ -34,20 +34,32 @@
 <p>This small date plantation grows the sweet fruits that sustain traders, farmers, and anyone with a sweet tooth. More dates mean more wealth, but also more sticky fingers among the workers, keep an eye on them!</p>
 <p>Though modest in size, it keeps both bellies and markets content, ensuring there’s a little sweetness amid the desert heat.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>800 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Palm Wine Maker (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource dates and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 population growth</li></ul></section><section class="sec"><h2 id="palm-wine-maker-rural">Palm Wine Maker (Rural)</h2>
+<ul><li>+1 population growth</li></ul></section><section class="sec wide"><h2 id="palm-wine-maker-rural">Palm Wine Maker (Rural)</h2>
 <p><img src="../art/roman__farms_2.png" alt="Palm Wine Maker (Rural)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Farms+2 picture instead.</em></p>
 <p><strong>A place where the nectar of the deserts is made.</strong></p>
 <p>As the demand for dates grows, so too does this plantation. Expanded fields and better irrigation allow for a more substantial harvest, feeding both the local populace and trade caravans passing through. But where there is sweetness there is also the potential to make a good strong drink. This workshop turns the sap of the palm tries or the date fruit into a delightfull refreshment.</p>
 <p>With alcohol now in the offering, expect more caravans to stop by and perhaps linger in the town.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,200 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Date &amp; Palm Wine Market (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource dates and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li><li>+1 trade income</li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>+1 population growth — only when <code>not hidden_resource irrigation_oasis</code></li><li>+2 population growth — only when <code>hidden_resource irrigation_oasis</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="date-palm-wine-market-rural">Date &amp; Palm Wine Market (Rural)</h2>
+</details></section><section class="sec wide"><h2 id="date-palm-wine-market-rural">Date &amp; Palm Wine Market (Rural)</h2>
 <p><img src="../art/roman__farms_3.png" alt="Date &amp; Palm Wine Market (Rural)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Farms+3 picture instead.</em></p>
 <p><strong>A vast plantation where dates rain from the trees like blessings, producing enough fruit to sweeten the coffers of the whole region.</strong></p>
@@ -56,12 +68,23 @@
 <p>With vast fields of palm trees bearing fruit, the region is renowned for its dates, date wine and palm wine exports, drawing merchants from across the Mediterranean.</p>
 <p>The workers toil, the palms sway, and the wealth flows in. Just don’t let the camels eat the profits!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,600 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource dates and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li><li>+2 trade income</li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>+1 population growth — only when <code>not hidden_resource irrigation_oasis</code></li><li>+2 population growth — only when <code>hidden_resource irrigation_oasis</code></li></ul>
-</details></section></div></div></main>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (3)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

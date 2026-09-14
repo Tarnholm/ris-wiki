@@ -25,7 +25,7 @@
 <p><strong>Grape Orchards (Rural) → Vineyard (Rural) → Winery (Rural) → Wine Exports (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__wine_1.png" alt="" width="28"></td><td>Grape Orchards (Rural)</td><td class="right">1,200</td><td class="right">2</td><td>town</td><td>Vineyard (Rural)</td><td class="center grp"><img src="../icons/roman__wine_2.png" alt="" width="28"></td><td>Vineyard (Rural)</td><td class="right">2,400</td><td class="right">3</td><td>large town</td><td>Winery (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__wine_3.png" alt="" width="28"></td><td>Winery (Rural)</td><td class="right">3,600</td><td class="right">5</td><td>city</td><td>Wine Exports (Rural)</td><td class="center grp"><img src="../icons/roman__wine_supply.png" alt="" width="28"></td><td>Wine Exports (Rural)</td><td class="right">12,000</td><td class="right">8</td><td>large city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="grape-orchards-rural">Grape Orchards (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="grape-orchards-rural">Grape Orchards (Rural)</h2>
 <p><img src="../art/roman__wine_1.png" alt="Grape Orchards (Rural)"></p>
 <p><strong>A modest vineyard producing wine that’s (mostly) drinkable, enough to keep the locals happy and the barrels full.</strong></p>
 <p>Oh, the labour that must be undertaken for the sake of the vine!</p>
@@ -35,16 +35,14 @@
 <p>In this modest vineyard, local farmers crush grapes with enthusiasm, sometimes with their feet, sometimes with their imagination.</p>
 <p>The wine produced here may not win awards, but at least it won’t make you blind.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,200 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Vineyard (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wine resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource wine and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li></ul></section><section class="sec"><h2 id="wine-exports-rural">Wine Exports (Rural)</h2>
-<p><img src="../art/roman__wine_supply.png" alt="Wine Exports (Rural)"></p>
-<p><strong>Amphoras of wine are exported in abundance, bringing wealth, and perhaps a few worthy headaches.</strong></p>
-<p>Across our lands, the toast rises to the region that keeps the amphoras filled and the hearts light.</p>
-<p>This region is now the very heart of wine commerce, supplying fine vintages to distant lands and filling coffers with gold. The locals may complain about their best grapes being shipped off, but can hardly argue when the gold rolling in from amphoras sent abroad speaks for itself. Even the most discerning merchants from far-off lands cannot resist the temptation of this liquid treasure, and word of its quality spreads faster than a drunk in a toga.</p>
-<p>The wine may go, but the prosperity stays, and that’s a trade the locals are more than happy to make.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>12,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li><li>+3 trade income</li><li>+1 public order (happiness)</li></ul></section></div><div class="pane"><section class="sec"><h2 id="vineyard-rural">Vineyard (Rural)</h2>
+<ul><li>+1 farming level</li></ul></section><section class="sec wide"><h2 id="vineyard-rural">Vineyard (Rural)</h2>
 <p><img src="../art/roman__wine_2.png" alt="Vineyard (Rural)"></p>
 <p><strong>A well-established vineyard, because life without wine is just barbaric.</strong></p>
 <p>The grapes are growing, the barrels are filling, and the local festival just got a lot more interesting, thanks to the gossip flowing as freely as the wine.</p>
@@ -52,8 +50,14 @@
 <p>And as barrels stack high, local festivals take on a livelier air, spilling into the streets and offering merriment to all brave enough to partake.</p>
 <p>The vineyard may be humble, but the wine… it’s almost heroic.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,400 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Winery (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wine resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource wine and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li><li>+1 public order (happiness)</li><li>+1 trade income</li></ul></section><section class="sec"><h2 id="winery-rural">Winery (Rural)</h2>
+<ul><li>+1 farming level</li><li>+1 public order (happiness)</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="winery-rural">Winery (Rural)</h2>
 <p><img src="../art/roman__wine_3.png" alt="Winery (Rural)"></p>
 <p><strong>The wine industry thrives, bringing cheers, fortune, and a few sleepy heads the next morning.</strong></p>
 <p>A bustling city needs its wine, and this winery aims to meet the demand, no matter the hour, nor the hangover.</p>
@@ -61,8 +65,33 @@
 <p>Merchants sing its praises, nobles toast its flavour, and even the slaves working the presses find a moment of cheer in every sip.</p>
 <p>This city’s fame for wine has grown faster than the vines themselves, drawing trade from far and wide.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,600 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Wine Exports (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wine resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource wine and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li><li>+2 trade income</li><li>+2 public order (happiness)</li></ul></section></div></div></main>
+<ul><li>+1 farming level</li><li>+2 trade income</li><li>+2 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="wine-exports-rural">Wine Exports (Rural)</h2>
+<p><img src="../art/roman__wine_supply.png" alt="Wine Exports (Rural)"></p>
+<p><strong>Amphoras of wine are exported in abundance, bringing wealth, and perhaps a few worthy headaches.</strong></p>
+<p>Across our lands, the toast rises to the region that keeps the amphoras filled and the hearts light.</p>
+<p>This region is now the very heart of wine commerce, supplying fine vintages to distant lands and filling coffers with gold. The locals may complain about their best grapes being shipped off, but can hardly argue when the gold rolling in from amphoras sent abroad speaks for itself. Even the most discerning merchants from far-off lands cannot resist the temptation of this liquid treasure, and word of its quality spreads faster than a drunk in a toga.</p>
+<p>The wine may go, but the prosperity stays, and that’s a trade the locals are more than happy to make.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>12,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wine resource</li><li>anywhere in your empire does not have the hidden resource <code>wine_supply_built</code> (<code>not_wine_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource wine and not_wine_supply_built and direct_govs</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 farming level</li><li>+3 trade income</li><li>+1 public order (happiness)</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_wine_supply_built</code></td><td><code>not hidden_resource wine_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

@@ -22,13 +22,19 @@
   <main><div class="crumb"><a href="../README.html">RIS wiki</a> › <a href="../buildings.html">buildings</a></div><div class="lede"><h1 id="government-dependency">Government (dependency)</h1>
 <p><a href="../buildings.html">← all buildings</a> · <a href="../README.html">wiki index</a></p>
 <p>A single-level building: there is nothing to upgrade it into.</p>
-<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec"><h2 id="dependency">Dependency</h2>
+<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="dependency">Dependency</h2>
 <p><img src="../art/roman__gov1.png" alt="Dependency"></p>
 <p><strong>Dependent polity or integrated ally</strong></p>
 <p>These lucky people are allies and friends of the Roman people. The title of Amicus is given to any allied state, but to be Socius et Amicus is to be bound with Rome in a treaty of mutual assistance. If they are in need Rome shall answer and if Rome calls upon them they shall support us to the best of their ability. Beyond that they manage their own affairs and maintain their own institutions and traditions. Many of the Socii are completely exempted from tribute, while others may have some additional obligations to Rome.</p>
 <p>Full AOR recruiting: See Region Information Building for more details. No Factional recruitment. It increases the spread of the local cultures present within the region.</p>
 <p><em>Wording varies by culture: 3 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the settlement is yours</li><li>Building this item requires the destruction of an existing government building</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region does not have the hidden resource <code>capital</code> (<code>not_capital</code>)</li><li>Not Homeland region</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and is_player and no_other_government and nobuilding and not_capital and not_homeland</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>-50 taxable income</li><li>-5 trade income</li><li>+1 public order (law)</li><li>+2 public order (happiness)</li></ul>
 <p><strong>Religious belief</strong> — spreads 51 beliefs, by how much depending on what the region already believes.</p>
@@ -36,7 +42,12 @@
 <summary>Show the 51 beliefs</summary>
 <ul><li>Aeolian +4 to +16</li><li>Arab +4 to +16</li><li>Arcadian +4 to +16</li><li>Armenian +4 to +16</li><li>Assyrian +4 to +16</li><li>Baltic +4 to +16</li><li>Bithynian +4 to +16</li><li>Bosporan +4 to +16</li><li>Cappadocian +4 to +16</li><li>Carian +4 to +16</li><li>Caucasian +4 to +16</li><li>Celtic +4 to +16</li><li>Cilician +4 to +16</li><li>Cypriot Greek +4 to +16</li><li>Dardanian +4 to +16</li><li>delmato_pannonian (no name in the text files) +4 to +16</li><li>Dorian +4 to +16</li><li>Egyptian +4 to +16</li><li>Epirote +4 to +16</li><li>Ethiopian +4 to +16</li><li>Germanic +4 to +16</li><li>Greco-Bactrian +4 to +16</li><li>Iberian +4 to +16</li><li>Illyrian +4 to +16</li><li>Indian +4 to +16</li><li>Indo-Greek +4 to +16</li><li>Ionian +4 to +16</li><li>Iranian +4 to +16</li><li>Isaurian +4 to +16</li><li>Italic +4 to +16</li><li>Judaean +4 to +16</li><li>Liburnian +4 to +16</li><li>Libyan +4 to +16</li><li>Lycaonian +4 to +16</li><li>Lycian +4 to +16</li><li>Lydian +4 to +16</li><li>Macedonian +4 to +16</li><li>Mesopotamian +4 to +16</li><li>Mysian +4 to +16</li><li>Northwest Greek +4 to +16</li><li>Paeonian +4 to +16</li><li>Pamphylian +4 to +16</li><li>Pamphylian Greek +4 to +16</li><li>Paphlagonian +4 to +16</li><li>Phoenician +4 to +16</li><li>Phrygian +4 to +16</li><li>Pisidian +4 to +16</li><li>Scythian +4 to +16</li><li>Thracian +4 to +16</li><li>Triballian +4 to +16</li><li>Venetic +4 to +16</li></ul>
 </details>
-<blockquote><p><strong>Excludes:</strong> building this rules out Homeland at Homeland or above. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section></main>
+<blockquote><p><strong>Excludes:</strong> building this rules out Homeland at Homeland or above. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>homeland</code></td><td>any one of 221 alternatives — too long to quote here</td><td class="grp"><code>no_other_government</code></td><td><code>no_building_tagged government queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_capital</code></td><td><code>not hidden_resource capital</code></td></tr><tr><td><code>not_homeland</code></td><td><code>not homeland and not building_present_min_level governmentD gov4</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

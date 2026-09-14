@@ -25,7 +25,7 @@
 <p><strong>Dyes Collectors (Urban) → Dye Works (Urban) → Dye Exports (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__dyes_1.png" alt="" width="28"></td><td>Dyes Collectors (Urban)</td><td class="right">1,000</td><td class="right">2</td><td>large town</td><td>Dye Works (Urban)</td><td class="center grp"><img src="../icons/roman__dyes_2.png" alt="" width="28"></td><td>Dye Works (Urban)</td><td class="right">2,500</td><td class="right">3</td><td>city</td><td>Dye Exports (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__dyes_supply.png" alt="" width="28"></td><td>Dye Exports (Urban)</td><td class="right">8,000</td><td class="right">6</td><td>large city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="dyes-collectors-urban">Dyes Collectors (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="dyes-collectors-urban">Dyes Collectors (Urban)</h2>
 <p><img src="../art/roman__dyes_1.png" alt="Dyes Collectors (Urban)"></p>
 <p><strong>Basic collection of natural dye ingredients, supporting the simple but essential dyeing of fabrics.</strong></p>
 <p>In a world where clothing whispers power and colours proclaim rank, the dye industry stands as the hidden heart of wealth and prestige.</p>
@@ -33,8 +33,14 @@
 <p>In the mines where metal is mined wonderous red cinnabar can sometimes be found, while in the western deserts of Egypt as well as a few lucky islands alum is gathered, needed to better fix dye to fabric. From plants like woad and weld, yielding cool blues and bright yellows, to kermes bugs crushed for rich reds, collectors need to traverse wild lands to pluck out nature’s brightest hues. Each ingredient is precious, though none quite so revered as the infamous murex snail, which leaves behind an aroma as powerful as the dye itself.</p>
 <p>Every hue tells a tale: madder red for the battle-tested, saffron yellow for the affluent, and deep indigo for the mysterious. Some colours are so rare that only the noblest can wear them without fearing a swift rebuke!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Dye Works (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dyes resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource dyes and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 trade income</li><li>+2 taxable income</li></ul></section></div><div class="pane"><section class="sec"><h2 id="dye-works-urban">Dye Works (Urban)</h2>
+<ul><li>+1 trade income</li><li>+2 taxable income</li></ul></section><section class="sec wide"><h2 id="dye-works-urban">Dye Works (Urban)</h2>
 <p><img src="../art/roman__dyes_2.png" alt="Dye Works (Urban)"></p>
 <p><strong>A large dye industry is flourishing, meeting the demands of the wealthy and influential.</strong></p>
 <p>If there’s colour in the world, it’s found here, in a place where cloth becomes the canvas of status. From the shores of far-off lands to the fields and mines of neighbouring regions, skilled collectors gather the vibrant ingredients that turn humble fabric into symbols of status.</p>
@@ -42,15 +48,32 @@
 <p>The Dye Works represent a leap in dye-making sophistication, offering an entire rainbow of shades to those with coin to spare. Warriors prize madder red for its bold, fierce hue, while aristocrats favour saffron yellow for its sunny warmth. Workers here have mastered exotic dyes, each with its own lore, and prices high enough to make merchants smile.</p>
 <p>Even the gods might envy the colours created within these walls, a vivid testament to craftsmanship, rarity, and luxury.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Dye Exports (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dyes resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource dyes and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>+4 taxable income</li></ul></section><section class="sec"><h2 id="dye-exports-urban">Dye Exports (Urban)</h2>
+<ul><li>+2 trade income</li><li>+4 taxable income</li></ul></section><section class="sec wide"><h2 id="dye-exports-urban">Dye Exports (Urban)</h2>
 <p><img src="../art/roman__dyes_supply.png" alt="Dye Exports (Urban)"></p>
 <p><strong>A grand centre of dye exports, crafting refined hues for those with taste, and wealth, to match.</strong></p>
 <p>The pinnacle of colour-crafting mastery, where dyes are spun from myth and luxury drips from every thread.</p>
 <p>In the extensive Dyeworks, skilled artisans practice their secrets of hue and saturation, conjuring shades so rich they almost glow in the dark. The hands and arms of the workers are stained with the rare and expensive ingredients they work with that go one to dye the garments of the richest of the rich. From indian indigo that could dye the ocean itself, to the finest armenian kermes and sinopean earth. This is where colour ascends to artistry; the hues here are rich, rare, and speak of fortunes exchanged. Every garment dyed here adds to the factory’s fame, as traders from distant lands covet the colours found nowhere else. The result is nothing short of a spectacle, and the wealth that pours into this region is nearly as precious as the dyes themselves.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dyes resource</li><li>Direct Rule or Homeland</li><li>anywhere in your empire does not have the hidden resource <code>dyes_supply_built</code> (<code>not_dyes_supply_built</code>)</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource dyes and direct_govs and not_dyes_supply_built</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>+6 taxable income</li></ul></section></div></div></main>
+<ul><li>+3 trade income</li><li>+6 taxable income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_dyes_supply_built</code></td><td><code>not hidden_resource dyes_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

@@ -25,7 +25,7 @@
 <p><strong>Elephant Hunters (Rural) → Ivory Workshop (Rural) → Ivory Trader (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__ivory_1.png" alt="" width="28"></td><td>Elephant Hunters (Rural)</td><td class="right">2,500</td><td class="right">3</td><td>town</td><td>Ivory Workshop (Rural)</td><td class="center grp"><img src="../icons/roman__ivory_2.png" alt="" width="28"></td><td>Ivory Workshop (Rural)</td><td class="right">4,000</td><td class="right">4</td><td>large town</td><td>Ivory Trader (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__ivory_3.png" alt="" width="28"></td><td>Ivory Trader (Rural)</td><td class="right">6,000</td><td class="right">6</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="elephant-hunters-rural">Elephant Hunters (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="elephant-hunters-rural">Elephant Hunters (Rural)</h2>
 <p><img src="../art/roman__ivory_1.png" alt="Elephant Hunters (Rural)"></p>
 <p><strong>Where courage meets colossal tusks, bringing back ivory and a hint of legend.</strong></p>
 <p>They venture where only the brave or the foolish go!</p>
@@ -33,24 +33,47 @@
 <p>Each tusk carries a tale of bravery, with hunters hailed as heroes, at least, those who make it back!</p>
 <p>Ivory is the symbol of wealth and status; every gleaming tusk whispers of audacious feats, wily tracking, and the luck to dodge a stomping herd.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Ivory Workshop (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the elephants resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource elephants and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 trade income</li></ul></section><section class="sec"><h2 id="ivory-workshop-rural">Ivory Workshop (Rural)</h2>
+<ul><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="ivory-workshop-rural">Ivory Workshop (Rural)</h2>
 <p><img src="../art/roman__ivory_2.png" alt="Ivory Workshop (Rural)"></p>
 <p><strong>Turning tusks into treasures for those who live to impress, or at least try.</strong></p>
 <p>From tusks to treasure, the hands of artisans shape wonders.</p>
 <p>Here, skilled artisans work the ivory with delicate tools and even more delicate patience, transforming rough tusks into masterpieces fit for gods and kings alike.</p>
 <p>Sculptures of mythic heroes, divine figures, and luxurious ornaments emerge from this workshop, each piece a testament to skill and elegance. And of course, the finest patrons of the city pay handsomely for these ornate carvings, eager to show off their taste (and silver) to the world.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Ivory Trader (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the elephants resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource elephants and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li></ul></section></div><div class="pane"><section class="sec"><h2 id="ivory-trader-rural">Ivory Trader (Rural)</h2>
+<ul><li>+3 trade income</li></ul></section><section class="sec wide"><h2 id="ivory-trader-rural">Ivory Trader (Rural)</h2>
 <p><img src="../art/roman__ivory_3.png" alt="Ivory Trader (Rural)"></p>
 <p><strong>A trading house of rare wonders, where ivory is weighed by tusk, price, and ego alike.</strong></p>
 <p>A shop of treasures that glows like an Mida’s treasury.</p>
 <p>The ivory trader’s establishment is a haven of elegance, with gleaming ivory on display, tusks sculpted into gods, creatures, and emblems of wealth. It’s a place where the well-to-do and the envious alike come to gawk at these rare items from distant lands, each piece a small fortune on its own.</p>
 <p>Ivory has a way of proclaiming status, and the more a patron spends, the more their reputation grows, as does the trader’s purse, which fills as quickly as his pride.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the elephants resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource elephants and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+5 trade income</li></ul></section></div></div></main>
+<ul><li>+5 trade income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (3)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

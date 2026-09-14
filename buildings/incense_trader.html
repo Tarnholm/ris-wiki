@@ -25,7 +25,7 @@
 <p><strong>Incense Resin Collectors (Urban) → Incense Trader (Urban) → Incense Caravan (Urban) → Incense Exports (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__incense_1.png" alt="" width="28"></td><td>Incense Resin Collectors (Urban)</td><td class="right">2,000</td><td class="right">3</td><td>large town</td><td>Incense Trader (Urban)</td><td class="center grp"><img src="../icons/roman__incense_2.png" alt="" width="28"></td><td>Incense Trader (Urban)</td><td class="right">5,000</td><td class="right">5</td><td>city</td><td>Incense Caravan (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__incense_3.png" alt="" width="28"></td><td>Incense Caravan (Urban)</td><td class="right">10,000</td><td class="right">8</td><td>large city</td><td>Incense Exports (Urban)</td><td class="center grp"><img src="../icons/roman__incense_supply.png" alt="" width="28"></td><td>Incense Exports (Urban)</td><td class="right">19,000</td><td class="right">12</td><td>huge city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="incense-resin-collectors-urban">Incense Resin Collectors (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="incense-resin-collectors-urban">Incense Resin Collectors (Urban)</h2>
 <p><img src="../art/roman__incense_1.png" alt="Incense Resin Collectors (Urban)"></p>
 <p><strong>A modest incense trader has set up shop, enough to perfume a few temples and homes.</strong></p>
 <p>Without incense, how would we speak to the gods? Or cover the smell of those who can't bathe daily?</p>
@@ -33,16 +33,14 @@
 <p>In this small establishment, exotic scents from distant lands are bartered, with traders making just enough to keep their incense burning… and their noses clear.</p>
 <p>Incense not only perfumes the temples but also lines the pockets of those cunning enough to control its flow. Yet, a small operation like this is but a whiff of what could be.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Incense Trader (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the incense resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource incense and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>+1 public order (happiness)</li></ul></section><section class="sec"><h2 id="incense-caravan-urban">Incense Caravan (Urban)</h2>
-<p><img src="../art/roman__incense_3.png" alt="Incense Caravan (Urban)"></p>
-<p><strong>A large-scale incense trading hub now thrives, perfuming both temples and pockets with vast profits.</strong></p>
-<p>They say wealth smells sweet, but this is absurd.</p>
-<p>The incense trade has exploded in this region, with a vast network of traders and suppliers now funneling the finest fragrances from distant lands into every corner of the city. Nobles and priests alike clamor for the best, while traders revel in the wealth that flows as steadily as the incense smoke.</p>
-<p>The sheer scale of this operation may turn heads, just try not to sneeze.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Incense Exports (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+4 trade income</li><li>+2 population growth</li><li>+3 public order (happiness)</li></ul></section></div><div class="pane"><section class="sec"><h2 id="incense-trader-urban">Incense Trader (Urban)</h2>
+<ul><li>+2 trade income</li><li>+1 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="incense-trader-urban">Incense Trader (Urban)</h2>
 <p><img src="../art/roman__incense_2.png" alt="Incense Trader (Urban)"></p>
 <p><strong>A significant incense trader now fills the streets with exotic scents and heavier purses.</strong></p>
 <p>If the gods desire more incense, who are we to deny them? And if we profit in the process, so be it.</p>
@@ -50,8 +48,28 @@
 <p>This larger incense trading operation has secured more trade routes and now moves vast quantities of the sacred scent, perfuming the wealthier homes and grander temples of the city.</p>
 <p>The city smells sweeter, and the coin purse heavier, but with great aroma comes greater taxes.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Incense Caravan (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the incense resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource incense and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>+1 population growth</li><li>+2 public order (happiness)</li></ul></section><section class="sec"><h2 id="incense-exports-urban">Incense Exports (Urban)</h2>
+<ul><li>+3 trade income</li><li>+1 population growth</li><li>+2 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="incense-caravan-urban">Incense Caravan (Urban)</h2>
+<p><img src="../art/roman__incense_3.png" alt="Incense Caravan (Urban)"></p>
+<p><strong>A large-scale incense trading hub now thrives, perfuming both temples and pockets with vast profits.</strong></p>
+<p>They say wealth smells sweet, but this is absurd.</p>
+<p>The incense trade has exploded in this region, with a vast network of traders and suppliers now funneling the finest fragrances from distant lands into every corner of the city. Nobles and priests alike clamor for the best, while traders revel in the wealth that flows as steadily as the incense smoke.</p>
+<p>The sheer scale of this operation may turn heads, just try not to sneeze.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Incense Exports (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the incense resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource incense and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+4 trade income</li><li>+2 population growth</li><li>+3 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="incense-exports-urban">Incense Exports (Urban)</h2>
 <p><img src="../art/roman__incense_supply.png" alt="Incense Exports (Urban)"></p>
 <p><strong>Incense is now being exported far and wide, enriching the region with each fragrant shipment.</strong></p>
 <p>Gold for scent? A fair exchange!</p>
@@ -59,8 +77,19 @@
 <p>The wealth flows in as fast as the incense flows out, making the region rich on the fragrance that perfumes the palaces and temples of distant lands.</p>
 <p>This has become the land where incense travels far and wide, filling foreign lands with sacred smoke.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>19,000 denarii</td><td class="grp">Build time</td><td>12 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Large Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the incense resource</li><li>anywhere in your empire does not have the hidden resource <code>incense_supply_built</code> (<code>not_incense_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market great_forum and nobuilding and resource incense and not_incense_supply_built and direct_govs</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+5 trade income</li><li>+2 population growth</li><li>+4 public order (happiness)</li></ul></section></div></div></main>
+<ul><li>+5 trade income</li><li>+2 population growth</li><li>+4 public order (happiness)</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_incense_supply_built</code></td><td><code>not hidden_resource incense_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

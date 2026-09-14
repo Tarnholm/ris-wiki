@@ -25,7 +25,7 @@
 <p><strong>Olive Grove (Rural) → Olive Press (Rural) → Olive Oil Mill (Rural) → Olive Oil Exports (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__olive_1.png" alt="" width="28"></td><td>Olive Grove (Rural)</td><td class="right">1,000</td><td class="right">3</td><td>town</td><td>Olive Press (Rural)</td><td class="center grp"><img src="../icons/roman__olive_2.png" alt="" width="28"></td><td>Olive Press (Rural)</td><td class="right">2,000</td><td class="right">4</td><td>large town</td><td>Olive Oil Mill (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__olive_3.png" alt="" width="28"></td><td>Olive Oil Mill (Rural)</td><td class="right">3,000</td><td class="right">5</td><td>city</td><td>Olive Oil Exports (Rural)</td><td class="center grp"><img src="../icons/roman__olive_supply.png" alt="" width="28"></td><td>Olive Oil Exports (Rural)</td><td class="right">8,000</td><td class="right">8</td><td>large city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="olive-grove-rural">Olive Grove (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="olive-grove-rural">Olive Grove (Rural)</h2>
 <p><img src="../art/roman__olive_1.png" alt="Olive Grove (Rural)"></p>
 <p><strong>A small olive grove has taken root, where the future of olive oil begins, one olive at a time.</strong></p>
 <p>Behold, the quiet olive tree, though slow to grow, yields a prized fruit whose oil is worth its weight in gold, or at least a few amphoras of it.</p>
@@ -33,8 +33,42 @@
 <p>This small orchard may look simple, but it is the seed from which an empire’s oil flows.</p>
 <p>Olive oil was common in ancient Greek, Punic and Roman cuisine. According to Herodotus, Apollodorus, Plutarch, Pausanias, Ovid and other sources, the city of Athens obtained its name because Athenians considered olive oil essential, preferring the offering of the goddess Athena (an olive tree) over the offering of Poseidon (a spring of salt water gushing out of a cliff). Many ancient presses still exist in the Eastern Mediterranean region, and some dating to the Roman period are still in use today.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Olive Press (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource olive_oil and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li></ul></section><section class="sec"><h2 id="olive-oil-exports-rural">Olive Oil Exports (Rural)</h2>
+<ul><li>+1 farming level</li></ul></section><section class="sec wide"><h2 id="olive-press-rural">Olive Press (Rural)</h2>
+<p><img src="../art/roman__olive_2.png" alt="Olive Press (Rural)"></p>
+<p><strong>A vast olive grove now dominates the landscape, producing olive oil fit for export and indulgence, but also for lamps, tables, and tales.</strong></p>
+<p>These new millstones will crush every drop out of the olives and give us a record yield.</p>
+<p>Once the realm of lone craftsmen and their families, oil production here has swelled to an industrious scale. Slaves and free workers alike now toil under the watchful gaze of foremen, feeding olives into the mills that stand like hungry gods. Oil flows freely, filling amphoras bound for distant lands, and this region has become synonymous with that green-gold liquid, as essential to the table as bread or wine. This is no small family affair now, this is olive oil on a large scale, and the grove’s expansion brings wealth to both lord and labourer. Soon, tales of this smooth, fragrant oil will spread as far as our ships can sail.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Olive Oil Mill (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource olive_oil and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 farming level</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="olive-oil-mill-rural">Olive Oil Mill (Rural)</h2>
+<p><img src="../art/roman__olive_3.png" alt="Olive Oil Mill (Rural)"></p>
+<p><strong>Olive oil production has become an industry of epic proportions, fueling trade and tales alike.</strong></p>
+<p>Production here has grown to such a scale that even the gods are rumoured to envy our success.</p>
+<p>What began as a modest grove has grown into a vast enterprise, each mill churning out oil of such a high-quality that it’s claimed to heal wounds or make even a soldier’s sandals softer.</p>
+<p>Locals boast that their oil is the “nectar of the gods” and whisper that one taste could bring tears to a Spartan.</p>
+<p>Now, the demand from foreign lands, noble households, and the finest kitchens keeps the mills busy day and night. Amphoras of this prized liquid line the docks, each one a promise of our enduring legacy, sealed with the scent of olives. It is said that the smoothness of this oil has convinced even Gauls to put down their mead for a moment and try a taste!</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Olive Oil Exports (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource olive_oil and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+2 farming level</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="olive-oil-exports-rural">Olive Oil Exports (Rural)</h2>
 <p><img src="../art/roman__olive_supply.png" alt="Olive Oil Exports (Rural)"></p>
 <p><strong>Amphoras of olive oil are now shipped across the known world, bringing wealth and a taste of home to foreign lands.</strong></p>
 <p>This region now supplies your capital with olive oil, giving a growth boost.</p>
@@ -43,24 +77,19 @@
 <p>Whether it’s used to anoint kings or to make even the most barbarian of diets tolerable, this oil has found its way into the hearts, and stomachs, of distant lands.</p>
 <p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>anywhere in your empire does not have the hidden resource <code>olive_supply_built</code> (<code>not_olive_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource olive_oil and not_olive_supply_built and direct_govs</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 farming level</li><li>+2 trade income</li><li>+4 taxable income</li></ul></section></div><div class="pane"><section class="sec"><h2 id="olive-press-rural">Olive Press (Rural)</h2>
-<p><img src="../art/roman__olive_2.png" alt="Olive Press (Rural)"></p>
-<p><strong>A vast olive grove now dominates the landscape, producing olive oil fit for export and indulgence, but also for lamps, tables, and tales.</strong></p>
-<p>These new millstones will crush every drop out of the olives and give us a record yield.</p>
-<p>Once the realm of lone craftsmen and their families, oil production here has swelled to an industrious scale. Slaves and free workers alike now toil under the watchful gaze of foremen, feeding olives into the mills that stand like hungry gods. Oil flows freely, filling amphoras bound for distant lands, and this region has become synonymous with that green-gold liquid, as essential to the table as bread or wine. This is no small family affair now, this is olive oil on a large scale, and the grove’s expansion brings wealth to both lord and labourer. Soon, tales of this smooth, fragrant oil will spread as far as our ships can sail.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Olive Oil Mill (Rural)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 farming level</li><li>+1 trade income</li></ul></section><section class="sec"><h2 id="olive-oil-mill-rural">Olive Oil Mill (Rural)</h2>
-<p><img src="../art/roman__olive_3.png" alt="Olive Oil Mill (Rural)"></p>
-<p><strong>Olive oil production has become an industry of epic proportions, fueling trade and tales alike.</strong></p>
-<p>Production here has grown to such a scale that even the gods are rumoured to envy our success.</p>
-<p>What began as a modest grove has grown into a vast enterprise, each mill churning out oil of such a high-quality that it’s claimed to heal wounds or make even a soldier’s sandals softer.</p>
-<p>Locals boast that their oil is the “nectar of the gods” and whisper that one taste could bring tears to a Spartan.</p>
-<p>Now, the demand from foreign lands, noble households, and the finest kitchens keeps the mills busy day and night. Amphoras of this prized liquid line the docks, each one a promise of our enduring legacy, sealed with the scent of olives. It is said that the smoothness of this oil has convinced even Gauls to put down their mead for a moment and try a taste!</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Olive Oil Exports (Rural)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+2 farming level</li><li>+1 trade income</li></ul></section></div></div></main>
+<ul><li>+2 farming level</li><li>+2 trade income</li><li>+4 taxable income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_olive_supply_built</code></td><td><code>not hidden_resource olive_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

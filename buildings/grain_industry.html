@@ -25,7 +25,41 @@
 <p><strong>Milling District (Urban) → Brewing Quarter (Urban) → Baking Guild (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__mill.png" alt="" width="28"></td><td>Milling District (Urban)</td><td class="right">1,500</td><td class="right">3</td><td>large town</td><td>Brewing Quarter (Urban)</td><td class="center grp"><img src="../icons/roman__brewery.png" alt="" width="28"></td><td>Brewing Quarter (Urban)</td><td class="right">3,000</td><td class="right">4</td><td>city</td><td>Baking Guild (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__bakery.png" alt="" width="28"></td><td>Baking Guild (Urban)</td><td class="right">6,000</td><td class="right">5</td><td>large city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="baking-guild-urban">Baking Guild (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="milling-district-urban">Milling District (Urban)</h2>
+<p><img src="../art/roman__mill.png" alt="Milling District (Urban)"></p>
+<p><strong>Grain goes in, flour (and life) comes out.</strong></p>
+<p>The Milling District spans entire quarters of the city, where countless grinding wheels work day and night. This industrial heartland draws grain caravans from across the realm, funnelling harvests through an intricate network of warehouses, water channels, and stone mills that never sleep. Here, master millers oversee armies of workers who sort, clean, and grind endless streams of grain into the flour that feeds tens of thousands. The district's maze of workshops, storage vaults, and transport canals forms the system that feeds its people, transforming seasonal harvests into year-round abundance. From the main mills powered by diverted rivers to the smaller neighbourhood operations serving local bakers, this milling district ensures no citizen goes without bread.</p>
+<p>In a world fueled by grain, the mill is a quiet hero, ensuring every crumb is savoured by the grateful populace.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Brewing Quarter (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource grain and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 population growth</li></ul>
+<details>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 taxable income — only when <code>not hidden_resource irrigation_river</code></li><li>+6 taxable income — only when <code>hidden_resource irrigation_river</code></li></ul>
+</details></section><section class="sec wide"><h2 id="brewing-quarter-urban">Brewing Quarter (Urban)</h2>
+<p><img src="../art/roman__brewery.png" alt="Brewing Quarter (Urban)"></p>
+<p><strong>Where the city's flour is made ready.</strong></p>
+<p>Here, all the flour from many mills comes together. No longer just a collection of workshops but a meticulously planned industrial behemoth within the city. You see vast, multi-storied structures dedicated to the advanced cleaning, sifting, and mixing of flour, ensuring a consistent quality that feeds a metropolis. Conveyor systems transport the processed flour directly into storage silos, each capable of holding enough to feed an army for a month. Workers watch over everything, making sure it all runs smoothly. This is where raw grain turns into good flour, ready to go to the city's bakeries.</p>
+<p>It's the step between the fields and the bread people eat every day.</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Baking Guild (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource grain and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<details>
+<summary>Show 8 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 population growth — only when <code>beer_factions</code></li><li>+2 population growth — only when <code>not beer_factions</code></li><li>+6 taxable income — only when <code>not hidden_resource irrigation_river and not beer_factions</code></li><li>+6 taxable income — only when <code>not hidden_resource irrigation_river and beer_factions</code></li><li>+6 taxable income — only when <code>hidden_resource irrigation_river and beer_factions</code></li><li>+10 taxable income — only when <code>hidden_resource irrigation_river and not beer_factions</code></li><li>+2 public order (happiness) — only when <code>beer_factions</code></li><li>+1 trade income — only when <code>beer_factions</code></li></ul>
+</details></section><section class="sec wide"><h2 id="baking-guild-urban">Baking Guild (Urban)</h2>
 <p><img src="../art/roman__bakery.png" alt="Baking Guild (Urban)"></p>
 <p><strong>Bread so fresh and soft, it’ll make your legions weep.</strong></p>
 <p>The Baking Guild District represents a vast confederation of ovens, workshops, and distribution centers that ensures fresh bread reaches every neighborhood before dawn breaks. Master bakers coordinate enormous operations where hundreds of workers press, shape, and bake these goods in carefully timed shifts. Massive communal ovens, some large enough to bake for entire districts, dominate the skyline with their tall chimneys. Networks of apprentices and delivery carts spread out like arteries from these centres, carrying warm loaves to markets, homes, and temples across the region.</p>
@@ -34,6 +68,12 @@
 <p>Archaeological research conducted in Britain identified five different kinds of Roman baking, including baking in the ashes, baking surrounding hot ashes, the sub testu method, and baking in earthenware vessels. The most basic method of baking was cooking in ashes. The hot ashes and tiles were used to heat the bread. The sub testu method involved baking bread underneath a hot cover or hot coals. These baking covers are typically ceramics with pie-shaped lids and foot-long sides. Although none of the examples have handles or holes at the top, some have flanges on the sides. Bread could also be cooked in earthenware vessels. Pastry cooks were known as pastillarium and bakers of sweetmeats and cakes were termed dulciarius or crustularius. These were respected professions in ancient Rome. By the end of the Republic, private bakers known as pistores used mills to mass produce bread. Trajan is said to have established a collegium pistorum to help ensure the continuous supply of bread.</p>
 <p><em>Wording varies by culture: 3 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource grain and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+2 population growth</li></ul>
 <details>
@@ -41,32 +81,10 @@
 <ul><li>+10 taxable income — only when <code>not hidden_resource irrigation_river and not beer_factions</code></li><li>+10 taxable income — only when <code>not hidden_resource irrigation_river and beer_factions</code></li><li>+10 taxable income — only when <code>hidden_resource irrigation_river and beer_factions</code></li><li>+15 taxable income — only when <code>hidden_resource irrigation_river and not beer_factions</code></li><li>+2 public order (happiness) — only when <code>beer_factions</code></li><li>+1 trade income — only when <code>beer_factions</code></li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (1)</summary>
+<summary>What the shorthands in those conditions stand for (4)</summary>
 <p>These are the mod's own, quoted from the game files unchanged.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>beer_factions</code></td><td><code>not factions { greek, roman, w_hellenistic, }</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></div><div class="pane"><section class="sec"><h2 id="milling-district-urban">Milling District (Urban)</h2>
-<p><img src="../art/roman__mill.png" alt="Milling District (Urban)"></p>
-<p><strong>Grain goes in, flour (and life) comes out.</strong></p>
-<p>The Milling District spans entire quarters of the city, where countless grinding wheels work day and night. This industrial heartland draws grain caravans from across the realm, funnelling harvests through an intricate network of warehouses, water channels, and stone mills that never sleep. Here, master millers oversee armies of workers who sort, clean, and grind endless streams of grain into the flour that feeds tens of thousands. The district's maze of workshops, storage vaults, and transport canals forms the system that feeds its people, transforming seasonal harvests into year-round abundance. From the main mills powered by diverted rivers to the smaller neighbourhood operations serving local bakers, this milling district ensures no citizen goes without bread.</p>
-<p>In a world fueled by grain, the mill is a quiet hero, ensuring every crumb is savoured by the grateful populace.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Brewing Quarter (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 population growth</li></ul>
-<details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+3 taxable income — only when <code>not hidden_resource irrigation_river</code></li><li>+6 taxable income — only when <code>hidden_resource irrigation_river</code></li></ul>
-</details></section><section class="sec"><h2 id="brewing-quarter-urban">Brewing Quarter (Urban)</h2>
-<p><img src="../art/roman__brewery.png" alt="Brewing Quarter (Urban)"></p>
-<p><strong>Where the city's flour is made ready.</strong></p>
-<p>Here, all the flour from many mills comes together. No longer just a collection of workshops but a meticulously planned industrial behemoth within the city. You see vast, multi-storied structures dedicated to the advanced cleaning, sifting, and mixing of flour, ensuring a consistent quality that feeds a metropolis. Conveyor systems transport the processed flour directly into storage silos, each capable of holding enough to feed an army for a month. Workers watch over everything, making sure it all runs smoothly. This is where raw grain turns into good flour, ready to go to the city's bakeries.</p>
-<p>It's the step between the fields and the bread people eat every day.</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Baking Guild (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<details>
-<summary>Show 8 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 population growth — only when <code>beer_factions</code></li><li>+2 population growth — only when <code>not beer_factions</code></li><li>+6 taxable income — only when <code>not hidden_resource irrigation_river and not beer_factions</code></li><li>+6 taxable income — only when <code>not hidden_resource irrigation_river and beer_factions</code></li><li>+6 taxable income — only when <code>hidden_resource irrigation_river and beer_factions</code></li><li>+10 taxable income — only when <code>hidden_resource irrigation_river and not beer_factions</code></li><li>+2 public order (happiness) — only when <code>beer_factions</code></li><li>+1 trade income — only when <code>beer_factions</code></li></ul>
-</details></section></div></div></main>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>beer_factions</code></td><td><code>not factions { greek, roman, w_hellenistic, }</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

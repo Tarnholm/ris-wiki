@@ -25,7 +25,7 @@
 <p><strong>Lumber Camp (Rural) → Sawmill (Rural) → Timber Exports (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__loggers.png" alt="" width="28"></td><td>Lumber Camp (Rural)</td><td class="right">700</td><td class="right">2</td><td>town</td><td>Sawmill (Rural)</td><td class="center grp"><img src="../icons/roman__lumber_camp.png" alt="" width="28"></td><td>Sawmill (Rural)</td><td class="right">2,100</td><td class="right">3</td><td>large town</td><td>Timber Exports (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__sawmill.png" alt="" width="28"></td><td>Timber Exports (Rural)</td><td class="right">8,400</td><td class="right">5</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="lumber-camp-rural">Lumber Camp (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="lumber-camp-rural">Lumber Camp (Rural)</h2>
 <p><img src="../art/roman__loggers.png" alt="Lumber Camp (Rural)"></p>
 <p><strong>Warmth, and shelter from the elements, can be found here naturally.</strong></p>
 <p>Wood has been a staple of life and trade for as long as humans have cut down trees.</p>
@@ -35,12 +35,18 @@
 <p>Strategy</p>
 <p>The construction bonus to walls only applies to tier 1 wooden pallisades.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>700 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Sawmill (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the timber resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource timber and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>construction cost bonus military +10</li><li>construction cost bonus other +10</li><li>+3 taxable income</li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>construction cost bonus religious +5 — only when <code>factions { barbarian, germanic, brittonic, celtiberian, dacian, thracian, illyrian, }</code></li><li>construction cost bonus defensive +10 — only when <code>not building_present_min_level defenses wooden_pallisade</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="sawmill-rural">Sawmill (Rural)</h2>
+</details></section><section class="sec wide"><h2 id="sawmill-rural">Sawmill (Rural)</h2>
 <p><img src="../art/roman__lumber_camp.png" alt="Sawmill (Rural)"></p>
 <p><strong>The place where kingdoms rise and logs fall, and from which empires are both built and fuelled.</strong></p>
 <p>At the sawmill, trees are taken apart piece by piece to become smooth planks and beams.</p>
@@ -50,12 +56,18 @@
 <p>Strategy</p>
 <p>The construction bonus to walls only applies to tier 1 wooden pallisades.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,100 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Timber Exports (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the timber resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource timber and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>construction cost bonus military +20</li><li>construction cost bonus other +15</li><li>+4 taxable income</li><li>+1 trade income</li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>construction cost bonus religious +10 — only when <code>factions { barbarian, germanic, brittonic, celtiberian, dacian, thracian, illyrian, }</code></li><li>construction cost bonus defensive +20 — only when <code>not building_present_min_level defenses wooden_pallisade</code></li></ul>
-</details></section><section class="sec"><h2 id="timber-exports-rural">Timber Exports (Rural)</h2>
+</details></section><section class="sec wide"><h2 id="timber-exports-rural">Timber Exports (Rural)</h2>
 <p><img src="../art/roman__sawmill.png" alt="Timber Exports (Rural)"></p>
 <p><strong>From great ships of war to humble homes, this is where wood goes from raw to royal.</strong></p>
 <p>Where timber is chopped, shaped, and cursed into service for an ever-growing nation, this region is the heart of woodwork and wood wars.</p>
@@ -64,12 +76,23 @@
 <p>Strategy</p>
 <p>The construction bonus to walls only applies to tier 1 wooden pallisades.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,400 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the timber resource</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li><li>anywhere in your empire does not have the hidden resource <code>timber_supply_built</code> (<code>not_timber_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource timber and building_present_min_level market market and water_transport and not_timber_supply_built and direct_govs</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>construction cost bonus military +20</li><li>construction cost bonus other +20</li><li>+5 taxable income</li><li>+3 trade income</li></ul>
 <details>
 <summary>Show 2 effects that apply only in the circumstances shown</summary>
 <ul><li>construction cost bonus religious +10 — only when <code>factions { barbarian, germanic, brittonic, celtiberian, dacian, thracian, illyrian, }</code></li><li>construction cost bonus defensive +20 — only when <code>not building_present_min_level defenses wooden_pallisade</code></li></ul>
-</details></section></div></div></main>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (6)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_timber_supply_built</code></td><td><code>not hidden_resource timber_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

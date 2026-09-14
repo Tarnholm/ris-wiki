@@ -25,7 +25,39 @@
 <p><strong>Horse Trainer (Rural) → Horse Breeder (Rural) → Fine Horses Exports (Rural)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__horse_1.png" alt="" width="28"></td><td>Horse Trainer (Rural)</td><td class="right">2,500</td><td class="right">3</td><td>town</td><td>Horse Breeder (Rural)</td><td class="center grp"><img src="../icons/roman__horse_2.png" alt="" width="28"></td><td>Horse Breeder (Rural)</td><td class="right">5,000</td><td class="right">5</td><td>large town</td><td>Fine Horses Exports (Rural)</td></tr><tr><td class="center"><img src="../icons/roman__horse_supply.png" alt="" width="28"></td><td>Fine Horses Exports (Rural)</td><td class="right">15,000</td><td class="right">8</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="fine-horses-exports-rural">Fine Horses Exports (Rural)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="horse-trainer-rural">Horse Trainer (Rural)</h2>
+<p><img src="../art/roman__horse_1.png" alt="Horse Trainer (Rural)"></p>
+<p><strong>Turning wild steeds into war-ready wonders.</strong></p>
+<p>To train a horse is to tame thunder on four legs.</p>
+<p>Here, the delicate art of transforming wild stallions into loyal companions takes place. These trainers know that a horse is more than a beast of burden, it’s a partner in battle, a symbol of wealth, and a trusted friend in difficult times. With careful skill and a nose for the finest stock, the horse trainers craft steeds that make men and gods alike envious.</p>
+<p>Soon, every soldier and noble dreams of riding a horse bred here, galloping into battle like the very wind.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Horse Breeder (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the horses resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource horses and no_other_rural_exploits and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 trade income</li><li>+8 taxable income</li></ul></section><section class="sec wide"><h2 id="horse-breeder-rural">Horse Breeder (Rural)</h2>
+<p><img src="../art/roman__horse_2.png" alt="Horse Breeder (Rural)"></p>
+<p><strong>Breeding tomorrow’s champions, hoof by hoof.</strong></p>
+<p>This renowned stable produces steeds with strength, speed, and spirit, shaping each generation to be faster and mightier than the last. The breeder’s careful eye and experience yield a stock of horses that captivate nobles, and soon every hero worth his sword demands a steed from these lands.</p>
+<p>These horses are fit for everything, from chariot races to the heat of battle, each hoofbeat resounding like thunder across the plains.</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Fine Horses Exports (Rural)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the horses resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource horses and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+2 trade income</li><li>+16 taxable income</li></ul>
+<details>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+2 public order (happiness) — only when <code>factions { scythian, }</code></li></ul>
+</details></section><section class="sec wide"><h2 id="fine-horses-exports-rural">Fine Horses Exports (Rural)</h2>
 <p><img src="../art/roman__horse_supply.png" alt="Fine Horses Exports (Rural)"></p>
 <p><strong>Where we harness the power of the wild to serve our mighty armies (for a price)!</strong></p>
 <p>Gold glitters, but a fine horse inspires.</p>
@@ -34,32 +66,23 @@
 <p>Taxes from wealthy buyers and foreign nobles fill the coffers, and generals eye these fine steeds to increase the cavalry ranks.</p>
 <p>For with every hoofbeat, these horses bring prestige, power, and profit to the empire.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the horses resource</li><li>anywhere in your empire does not have the hidden resource <code>horse_supply_built</code> (<code>not_horse_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource horses and not_horse_supply_built and direct_govs</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+3 trade income</li><li>+18 taxable income</li></ul>
 <details>
 <summary>Show 1 effect that apply only in the circumstances shown</summary>
 <ul><li>+2 public order (happiness) — only when <code>factions { scythian, }</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="horse-trainer-rural">Horse Trainer (Rural)</h2>
-<p><img src="../art/roman__horse_1.png" alt="Horse Trainer (Rural)"></p>
-<p><strong>Turning wild steeds into war-ready wonders.</strong></p>
-<p>To train a horse is to tame thunder on four legs.</p>
-<p>Here, the delicate art of transforming wild stallions into loyal companions takes place. These trainers know that a horse is more than a beast of burden, it’s a partner in battle, a symbol of wealth, and a trusted friend in difficult times. With careful skill and a nose for the finest stock, the horse trainers craft steeds that make men and gods alike envious.</p>
-<p>Soon, every soldier and noble dreams of riding a horse bred here, galloping into battle like the very wind.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Horse Breeder (Rural)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 trade income</li><li>+8 taxable income</li></ul></section><section class="sec"><h2 id="horse-breeder-rural">Horse Breeder (Rural)</h2>
-<p><img src="../art/roman__horse_2.png" alt="Horse Breeder (Rural)"></p>
-<p><strong>Breeding tomorrow’s champions, hoof by hoof.</strong></p>
-<p>This renowned stable produces steeds with strength, speed, and spirit, shaping each generation to be faster and mightier than the last. The breeder’s careful eye and experience yield a stock of horses that captivate nobles, and soon every hero worth his sword demands a steed from these lands.</p>
-<p>These horses are fit for everything, from chariot races to the heat of battle, each hoofbeat resounding like thunder across the plains.</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Fine Horses Exports (Rural)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>+16 taxable income</li></ul>
+</details>
 <details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>+2 public order (happiness) — only when <code>factions { scythian, }</code></li></ul>
-</details></section></div></div></main>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_horse_supply_built</code></td><td><code>not hidden_resource horse_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

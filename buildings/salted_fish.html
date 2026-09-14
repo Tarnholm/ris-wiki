@@ -25,7 +25,44 @@
 <p><strong>Fish Salter (Urban) → Salted Fish Market (Urban) → Garum Factory (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__salted_fish_1.png" alt="" width="28"></td><td>Fish Salter (Urban)</td><td class="right">1,800</td><td class="right">2</td><td>large town</td><td>Salted Fish Market (Urban)</td><td class="center grp"><img src="../icons/roman__salted_fish_2.png" alt="" width="28"></td><td>Salted Fish Market (Urban)</td><td class="right">4,200</td><td class="right">4</td><td>city</td><td>Garum Factory (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__salted_fish_3.png" alt="" width="28"></td><td>Garum Factory (Urban)</td><td class="right">8,400</td><td class="right">6</td><td>large city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="garum-factory-urban">Garum Factory (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="fish-salter-urban">Fish Salter (Urban)</h2>
+<p><img src="../art/roman__salted_fish_1.png" alt="Fish Salter (Urban)"></p>
+<p><strong>A preserver and enhancer of the daily catch.</strong></p>
+<p>Many kinds of fish benefit from salting and maturing to bring out the true flavour. By packing fresh fish in coarse salt and drying them on wooden racks, local fishermen can preserve their catch for months rather than days. In some places drying or smoking is also popular but these methods are also improved immensely with the addition of salt.</p>
+<p>Preserved, these fish can now travel far and wide, feeding nobles, cities, and kings, even those who’ve never seen the sea. Thanks to the wonders of salt, what starts as a catch at dawn becomes the lasting sustenance of distant lands.</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,800 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Salted Fish Market (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the fish resource</li><li>Local Market at Local Barter or above is built here</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and resource fish and building_present_min_level market trader and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 population health</li></ul>
+<details>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+1 trade income — only when <code>salt_building_supply</code></li></ul>
+</details></section><section class="sec wide"><h2 id="salted-fish-market-urban">Salted Fish Market (Urban)</h2>
+<p><img src="../art/roman__salted_fish_2.png" alt="Salted Fish Market (Urban)"></p>
+<p><strong>A market of salted fish, feeding both locals and distant lands.</strong></p>
+<p>Salted fish is a treasure as valuable as the golden sun itself, well, at least to the hungry.</p>
+<p>A salted fish market gathers these small workshops under one roof, giving merchants a steady supply and ensuring fair weights and measures.</p>
+<p>What would otherwise be an expensive meal becomes affordable and a great stream of coin flows to the fishmongers who keep the empire well-fed, one salty fish at a time.</p>
+<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,200 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Garum Factory (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the fish resource</li><li>Local Market at Local Market or above is built here</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and resource fish and building_present_min_level market market and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+2 population health</li></ul>
+<details>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 trade income — only when <code>not salt_building_supply</code></li><li>+2 trade income — only when <code>salt_building_supply</code></li></ul>
+</details></section><section class="sec wide"><h2 id="garum-factory-urban">Garum Factory (Urban)</h2>
 <p><img src="../art/roman__salted_fish_3.png" alt="Garum Factory (Urban)"></p>
 <p><strong>A major production hub for garum, exporting amphorae of “liquid gold” across the region.</strong></p>
 <p>Garum is the finishing touch on any good meal, and it is produced right here in the great vats of this factory.</p>
@@ -34,6 +71,12 @@
 <p>The demand for garum enriches both the factory's owners and the local economy, making it a centre of commerce and cultural influence, but also creates a rather… distinct fragrance that wafts across the coast.</p>
 <p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,400 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of <code>roman, greek, carthaginian, pontus, anatolian, iberian, libyans, e_hellenistic, w_hellenistic</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the fish resource</li><li>the region has the salt resource — or — anywhere in your empire has the hidden resource <code>salt_supply_built</code> (<code>salt_building_supply</code>)</li><li>Local Market at Forum or above is built here</li><li>Government Building</li><li>Trade Port is built here</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { roman, greek, carthaginian, pontus, anatolian, iberian, libyans, e_hellenistic, w_hellenistic, } and nobuilding and resource fish and salt_building_supply and building_present_min_level market forum and requires_gov and building_present port_buildings</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+4 trade income</li><li>+2 population health</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
 <details>
@@ -41,35 +84,10 @@
 <ul><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level slave_market slave_market</code></li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (1)</summary>
+<summary>What the shorthands in those conditions stand for (4)</summary>
 <p>These are the mod's own, quoted from the game files unchanged.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>salt_building_supply</code></td><td><code>resource salt or hidden_resource salt_supply_built factionwide</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></div><div class="pane"><section class="sec"><h2 id="fish-salter-urban">Fish Salter (Urban)</h2>
-<p><img src="../art/roman__salted_fish_1.png" alt="Fish Salter (Urban)"></p>
-<p><strong>A preserver and enhancer of the daily catch.</strong></p>
-<p>Many kinds of fish benefit from salting and maturing to bring out the true flavour. By packing fresh fish in coarse salt and drying them on wooden racks, local fishermen can preserve their catch for months rather than days. In some places drying or smoking is also popular but these methods are also improved immensely with the addition of salt.</p>
-<p>Preserved, these fish can now travel far and wide, feeding nobles, cities, and kings, even those who’ve never seen the sea. Thanks to the wonders of salt, what starts as a catch at dawn becomes the lasting sustenance of distant lands.</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,800 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Salted Fish Market (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 population health</li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>+1 trade income — only when <code>salt_building_supply</code></li></ul>
-</details></section><section class="sec"><h2 id="salted-fish-market-urban">Salted Fish Market (Urban)</h2>
-<p><img src="../art/roman__salted_fish_2.png" alt="Salted Fish Market (Urban)"></p>
-<p><strong>A market of salted fish, feeding both locals and distant lands.</strong></p>
-<p>Salted fish is a treasure as valuable as the golden sun itself, well, at least to the hungry.</p>
-<p>A salted fish market gathers these small workshops under one roof, giving merchants a steady supply and ensuring fair weights and measures.</p>
-<p>What would otherwise be an expensive meal becomes affordable and a great stream of coin flows to the fishmongers who keep the empire well-fed, one salty fish at a time.</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,200 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Garum Factory (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+2 population health</li></ul>
-<details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 trade income — only when <code>not salt_building_supply</code></li><li>+2 trade income — only when <code>salt_building_supply</code></li></ul>
-</details></section></div></div></main>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>salt_building_supply</code></td><td><code>resource salt or hidden_resource salt_supply_built factionwide</code></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

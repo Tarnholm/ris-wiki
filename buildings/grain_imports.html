@@ -25,17 +25,7 @@
 <p><strong>Grain Imports (Food trade) → Large Grain Imports (Food trade) → Grain Import Network (Food trade)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw" data-cols="7" data-up="1"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th>Excludes</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__grain.png" alt="" width="28"></td><td>Grain Imports (Food trade)</td><td class="right">2,500</td><td class="right">1</td><td>town</td><td>Large Grain Imports (Food trade)</td><td>Small Granary (Food trade)</td></tr><tr><td class="center"><img src="../icons/roman__grain_1.png" alt="" width="28"></td><td>Large Grain Imports (Food trade)</td><td class="right">5,000</td><td class="right">1</td><td>large town</td><td>Grain Import Network (Food trade)</td><td>Small Granary (Food trade)</td></tr><tr><td class="center"><img src="../icons/roman__grain_2.png" alt="" width="28"></td><td>Grain Import Network (Food trade)</td><td class="right">10,000</td><td class="right">1</td><td>large city</td><td>—</td><td>Small Granary (Food trade)</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="large-grain-imports-food-trade">Large Grain Imports (Food trade)</h2>
-<p><img src="../art/roman__grain_1.png" alt="Large Grain Imports (Food trade)"></p>
-<p><strong>An expanded grain network increases population growth further, but at the expense of trade income.</strong></p>
-<p>A full stomach today means no riots tomorrow, even if there are less coins in our coffers!</p>
-<p>With the city’s hunger for bread ever growing, the grain trade has taken on a life of its own. This is no longer a trickle of sacks but a well-organized river of grain from far-flung fields. Caravans roll in day and night, the markets bustle, and the granaries fill as fast as they empty.</p>
-<p>Merchants, sensing the city’s dependence, seem to raise prices with every shipment, yet the alternative, an empty stomach, is too dangerous to contemplate. Perhaps the merchants think they’re running an empire of their own with these prices. Peace has its price, and here it’s paid in grain and gold.</p>
-<p>The people may not notice the rising costs, but the city’s leaders certainly do. Nonetheless, the masses stay content, and isn’t that worth every coin?</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Grain Import Network (Food trade)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+4 population growth</li><li>+4 public order (happiness)</li><li>-20 taxable income</li><li>-1 trade income</li></ul>
-<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section></div><div class="pane"><section class="sec"><h2 id="grain-imports-food-trade">Grain Imports (Food trade)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="grain-imports-food-trade">Grain Imports (Food trade)</h2>
 <p><img src="../art/roman__grain.png" alt="Grain Imports (Food trade)"></p>
 <p><strong>Grain imports boost population growth, though the extra mouths don’t do trade any favors.</strong></p>
 <p>To fill their bellies, we must first empty our coffers.</p>
@@ -43,18 +33,51 @@
 <p>But when bellies are full, tempers stay cool, and the governor sleeps soundly. Sure, the treasury may weep, but the people rejoice, and for now, peace reigns.</p>
 <p>For a few extra coins, even the most rebellious citizen is content to wait in line for his ration.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Large Grain Imports (Food trade)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Barter or above is built here</li><li>Roads or Trading Port or River Port or above</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market trader and any_transport</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+2 population growth</li><li>+2 public order (happiness)</li><li>-10 taxable income</li><li>-1 trade income</li></ul>
-<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec"><h2 id="grain-import-network-food-trade">Grain Import Network (Food trade)</h2>
+<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="large-grain-imports-food-trade">Large Grain Imports (Food trade)</h2>
+<p><img src="../art/roman__grain_1.png" alt="Large Grain Imports (Food trade)"></p>
+<p><strong>An expanded grain network increases population growth further, but at the expense of trade income.</strong></p>
+<p>A full stomach today means no riots tomorrow, even if there are less coins in our coffers!</p>
+<p>With the city’s hunger for bread ever growing, the grain trade has taken on a life of its own. This is no longer a trickle of sacks but a well-organized river of grain from far-flung fields. Caravans roll in day and night, the markets bustle, and the granaries fill as fast as they empty.</p>
+<p>Merchants, sensing the city’s dependence, seem to raise prices with every shipment, yet the alternative, an empty stomach, is too dangerous to contemplate. Perhaps the merchants think they’re running an empire of their own with these prices. Peace has its price, and here it’s paid in grain and gold.</p>
+<p>The people may not notice the rising costs, but the city’s leaders certainly do. Nonetheless, the masses stay content, and isn’t that worth every coin?</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Grain Import Network (Food trade)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Paved Roads or Trading Port or River Port or above</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market market and any_transport_2</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+4 population growth</li><li>+4 public order (happiness)</li><li>-20 taxable income</li><li>-1 trade income</li></ul>
+<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="grain-import-network-food-trade">Grain Import Network (Food trade)</h2>
 <p><img src="../art/roman__grain_2.png" alt="Grain Import Network (Food trade)"></p>
 <p><strong>Vast grain imports increase the population growth, but trade suffers as food imports dominate resources.</strong></p>
 <p>Nothing says great nation like importing food from a thousand miles away!</p>
 <p>This city’s appetite has gotten even greater, and only a vast network of foreign farms can keep it from the specter of hunger. Now, entire fleets are dedicated to importing grain, an impressive logistical might that would make even a Greek philosopher scratch his head in admiration. From Alexandria’s wheat fields to the shores of Sicily, the bounty flows, nourishing every citizen, artisan, and soldier.</p>
 <p>It’s almost enough to make one forget the astronomical costs. The coffers may be emptied and trade profits exhausted, but for a city this big, what’s a little expense if it means keeping the peace? Let the merchants smirk, for as long as the ever-hungry masses are fed, our people endures.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market market and water_transport</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>population growth +6 to +8</li><li>happiness +6 to +8</li><li>-20 taxable income</li><li>trade base income -3 to -2</li></ul>
-<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section></div></div></main>
+<blockquote><p><strong>Excludes:</strong> building this rules out Small Granary (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
+<details>
+<summary>What the shorthands in those conditions stand for (7)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>any_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port or building_present_min_level hinterland_roads roads</code></td><td class="grp"><code>any_transport_2</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port or building_present_min_level hinterland_roads paved_roads</code></td><td class="grp"><code>can_import_grain</code></td><td><code>hidden_resource can_build_grain_imports factionwide</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_granary</code></td><td><code>not building_present food_storage and not building_present food_storage queued</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

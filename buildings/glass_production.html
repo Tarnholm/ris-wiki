@@ -25,7 +25,22 @@
 <p><strong>Small Glass Reworking Shop (Urban) → Large Glass Reworking Shop (Urban) → Glassware Workshop (Urban) → Fine Glassware Artisans (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__glass_production_1.png" alt="" width="28"></td><td>Small Glass Reworking Shop (Urban)</td><td class="right">1,000</td><td class="right">2</td><td>large town</td><td>Large Glass Reworking Shop (Urban)</td><td class="center grp"><img src="../icons/roman__glass_production_2.png" alt="" width="28"></td><td>Large Glass Reworking Shop (Urban)</td><td class="right">2,500</td><td class="right">4</td><td>city</td><td>Glassware Workshop (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__glass_production_3.png" alt="" width="28"></td><td>Glassware Workshop (Urban)</td><td class="right">5,000</td><td class="right">6</td><td>large city</td><td>Fine Glassware Artisans (Urban)</td><td class="center grp"><img src="../icons/roman__glass_production_4.png" alt="" width="28"></td><td>Fine Glassware Artisans (Urban)</td><td class="right">7,500</td><td class="right">8</td><td>huge city</td><td>—</td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="large-glass-reworking-shop-urban">Large Glass Reworking Shop (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="small-glass-reworking-shop-urban">Small Glass Reworking Shop (Urban)</h2>
+<p><img src="../art/roman__glass_production_1.png" alt="Small Glass Reworking Shop (Urban)"></p>
+<p><strong>A small glass workshop has been established, where beauty is blown into shape, if it doesn’t crack along the way.</strong></p>
+<p>Guaranteed to make any wife smile… until she drops it!</p>
+<p>In this small workshop, imported raw glass bricks or beads are carefully melted to craft into beautiful, if slightly lopsided, vases and cups. This is where beauty is blown into shape, if it doesn’t crack along the way.</p>
+<p>Their creations are a fragile marvel, each piece carrying the risk of shattering with the gentlest knock, a test of nerves for both maker and buyer! But when successful, the results are dazzling, leaving onlookers marvelling at their transparent beauty, and perhaps sparking a dream or two of owning such a treasure.</p>
+<p>The work is risky, but for the artisan, each glass is a small victory against the odds (and occasional sneezes).</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Large Glass Reworking Shop (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource glass and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="large-glass-reworking-shop-urban">Large Glass Reworking Shop (Urban)</h2>
 <p><img src="../art/roman__glass_production_2.png" alt="Large Glass Reworking Shop (Urban)"></p>
 <p><strong>A large glass industry has developed, and its creations now adorn both the humble and the noble alike.</strong></p>
 <p>“See how breath shapes the vessel? Remarkable, just don’t sneeze!”</p>
@@ -34,27 +49,14 @@
 <p>As glass becomes a hot local commodity, the artisans fancy themselves philosophers of form and function. With each successful creation, they inch closer to making the humble drinking cup a thing of legend.</p>
 <p>Soon, nobles and merchants alike will clamour to toast in glasses so fine, they might even survive a careless servant’s grip. Now, if we could only acquire access to the lands of the Levant and Egypt where this raw glass is made we could establish a truly great industry here.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Glassware Workshop (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource glass and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li></ul></section><section class="sec"><h2 id="fine-glassware-artisans-urban">Fine Glassware Artisans (Urban)</h2>
-<p><img src="../art/roman__glass_production_4.png" alt="Fine Glassware Artisans (Urban)"></p>
-<p><strong>Fine glassware is now exported far and wide, turning fragile beauty into hard profit.</strong></p>
-<p>“A master craftsman can name his price, and with work this fine, the price is high!”</p>
-<p>Our glass industry has transformed into a true empire, with goods sought after by distant kingdoms and envied even by our rivals.</p>
-<p>This complex hums with activity, artisans working at peak skill, creating pieces so fine that to drink from them feels like a privilege.</p>
-<p>From noble courts to the altars of the gods, our glass finds its way into the homes and hearts of many, adorning tables, shrines, and the wealthy’s curious cabinets. Merchants travel far and wide to secure our wares, bringing tales of our glasswork to every corner of the known world.</p>
-<p>This region may be humble, but its glass is priceless, attracting a price as magnificent as its reputation.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+6 trade income</li></ul></section></div><div class="pane"><section class="sec"><h2 id="small-glass-reworking-shop-urban">Small Glass Reworking Shop (Urban)</h2>
-<p><img src="../art/roman__glass_production_1.png" alt="Small Glass Reworking Shop (Urban)"></p>
-<p><strong>A small glass workshop has been established, where beauty is blown into shape, if it doesn’t crack along the way.</strong></p>
-<p>Guaranteed to make any wife smile… until she drops it!</p>
-<p>In this small workshop, imported raw glass bricks or beads are carefully melted to craft into beautiful, if slightly lopsided, vases and cups. This is where beauty is blown into shape, if it doesn’t crack along the way.</p>
-<p>Their creations are a fragile marvel, each piece carrying the risk of shattering with the gentlest knock, a test of nerves for both maker and buyer! But when successful, the results are dazzling, leaving onlookers marvelling at their transparent beauty, and perhaps sparking a dream or two of owning such a treasure.</p>
-<p>The work is risky, but for the artisan, each glass is a small victory against the odds (and occasional sneezes).</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Large Glass Reworking Shop (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+1 trade income</li></ul></section><section class="sec"><h2 id="glassware-workshop-urban">Glassware Workshop (Urban)</h2>
+<ul><li>+2 trade income</li></ul></section><section class="sec wide"><h2 id="glassware-workshop-urban">Glassware Workshop (Urban)</h2>
 <p><img src="../art/roman__glass_production_3.png" alt="Glassware Workshop (Urban)"></p>
 <p><strong>The glass industry has grown into a vast enterprise, producing wares so fine they might even survive a clumsy servant.</strong></p>
 <p>“Even the gods would be impressed!”</p>
@@ -64,8 +66,35 @@
 <p>When the city’s finest men drink, it is in cups crafted by these very hands, and rumour has it that even the gods might look upon our wares with envy. As the glass leaves the factory by the amphora-load, we establish our status as the true glassmakers of the world.</p>
 <p>This region is now famed for its glassware, known throughout the world for its clarity and elegance.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Fine Glassware Artisans (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market forum and nobuilding and resource glass and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+4 trade income</li></ul></section></div></div></main>
+<ul><li>+4 trade income</li></ul></section><section class="sec wide"><h2 id="fine-glassware-artisans-urban">Fine Glassware Artisans (Urban)</h2>
+<p><img src="../art/roman__glass_production_4.png" alt="Fine Glassware Artisans (Urban)"></p>
+<p><strong>Fine glassware is now exported far and wide, turning fragile beauty into hard profit.</strong></p>
+<p>“A master craftsman can name his price, and with work this fine, the price is high!”</p>
+<p>Our glass industry has transformed into a true empire, with goods sought after by distant kingdoms and envied even by our rivals.</p>
+<p>This complex hums with activity, artisans working at peak skill, creating pieces so fine that to drink from them feels like a privilege.</p>
+<p>From noble courts to the altars of the gods, our glass finds its way into the homes and hearts of many, adorning tables, shrines, and the wealthy’s curious cabinets. Merchants travel far and wide to secure our wares, bringing tales of our glasswork to every corner of the known world.</p>
+<p>This region may be humble, but its glass is priceless, attracting a price as magnificent as its reputation.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Large Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>advanced_crafts_factions and building_present_min_level market great_forum and nobuilding and resource glass and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+6 trade income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (4)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

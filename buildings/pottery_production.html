@@ -25,16 +25,7 @@
 <p><strong>Pottery Kiln (Urban) → Amphora Maker (Urban) → Fine Pottery Factory (Urban)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__amphora_maker.png" alt="" width="28"></td><td>Pottery Kiln (Urban)</td><td class="right">1,500</td><td class="right">2</td><td>large town</td><td>Amphora Maker (Urban)</td><td class="center grp"><img src="../icons/roman__pottery_factory.png" alt="" width="28"></td><td>Amphora Maker (Urban)</td><td class="right">4,500</td><td class="right">5</td><td>city</td><td>Fine Pottery Factory (Urban)</td></tr><tr><td class="center"><img src="../icons/roman__fine_pottery_factory.png" alt="" width="28"></td><td>Fine Pottery Factory (Urban)</td><td class="right">7,500</td><td class="right">9</td><td>large city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="amphora-maker-urban">Amphora Maker (Urban)</h2>
-<p><img src="../art/roman__pottery_factory.png" alt="Amphora Maker (Urban)"></p>
-<p><strong>A large pottery industry has been established, meeting demand for both form and function.</strong></p>
-<p>Now we’re talking! Amphoras, vases, and… slightly fewer cracks!</p>
-<p>The potter’s trade, an unglamorous but indispensable art, is blossoming here. How else would our wine flow, our olive oil stay fresh, or our garum be transported without the potter’s sturdy handiwork? The great Butades of Sicyon himself once immortalized his daughter’s lover in clay, the first portrait bust born from his love-struck inspiration. Yet, for all their skill, the potters are no heroes in song or tale; their toil is quiet, steady, vital.</p>
-<p>The utility of the potter is less important than the shiny trinket of the goldsmith: an indictment of our people fall from virtue.</p>
-<p>Now, with expanded workshops and larger kilns, pottery production is booming. The shelves fill with amphoras, jugs, and vases, practical and decorated with care. This town will never lack for storage or beauty again!</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,500 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Fine Pottery Factory (Urban)</td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>+10 taxable income</li></ul></section></div><div class="pane"><section class="sec"><h2 id="pottery-kiln-urban">Pottery Kiln (Urban)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="pottery-kiln-urban">Pottery Kiln (Urban)</h2>
 <p><img src="../art/roman__amphora_maker.png" alt="Pottery Kiln (Urban)"></p>
 <p><strong>A modest pottery workshop been set up, supplying local markets with sturdy, if modest, ceramics.</strong></p>
 <p>It's not much, but it holds water!</p>
@@ -43,8 +34,29 @@
 <p>On the bench, the weary slave concentrates on his important task. The brush-strokes, firm, regular and artistic. Uniformity an ideal rather than a practice. At least that rather than entirely absent.</p>
 <p>In this region, pottery is in its infancy. The small workshop bustles, producing wares that, while perhaps lacking in beauty, serve their purpose. Just try not to drop anything!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,500 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Amphora Maker (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pottery resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource pottery and no_other_urban_exploits and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+10 taxable income</li></ul></section><section class="sec"><h2 id="fine-pottery-factory-urban">Fine Pottery Factory (Urban)</h2>
+<ul><li>+10 taxable income</li></ul></section><section class="sec wide"><h2 id="amphora-maker-urban">Amphora Maker (Urban)</h2>
+<p><img src="../art/roman__pottery_factory.png" alt="Amphora Maker (Urban)"></p>
+<p><strong>A large pottery industry has been established, meeting demand for both form and function.</strong></p>
+<p>Now we’re talking! Amphoras, vases, and… slightly fewer cracks!</p>
+<p>The potter’s trade, an unglamorous but indispensable art, is blossoming here. How else would our wine flow, our olive oil stay fresh, or our garum be transported without the potter’s sturdy handiwork? The great Butades of Sicyon himself once immortalized his daughter’s lover in clay, the first portrait bust born from his love-struck inspiration. Yet, for all their skill, the potters are no heroes in song or tale; their toil is quiet, steady, vital.</p>
+<p>The utility of the potter is less important than the shiny trinket of the goldsmith: an indictment of our people fall from virtue.</p>
+<p>Now, with expanded workshops and larger kilns, pottery production is booming. The shelves fill with amphoras, jugs, and vases, practical and decorated with care. This town will never lack for storage or beauty again!</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,500 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Fine Pottery Factory (Urban)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pottery resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource pottery and requires_gov</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+2 trade income</li><li>+10 taxable income</li></ul></section><section class="sec wide"><h2 id="fine-pottery-factory-urban">Fine Pottery Factory (Urban)</h2>
 <p><img src="../art/roman__fine_pottery_factory.png" alt="Fine Pottery Factory (Urban)"></p>
 <p><strong>A massive pottery industry is thriving, turning this region famous for being a beacon of ceramic excellence, and even kings and queens have been known to seek out our wares.. The kilns are at full blaze, and the pottery flows like an endless river of art and function.</strong></p>
 <p>From humble clay to grand amphoras, this region now produces the finest wares, admired across the lands!</p>
@@ -52,8 +64,19 @@
 <p>The artisans pour their souls into the clay, transforming mere mud into delicate treasures. From robust storage vessels to artful wine jugs, each pot bears witness to the skill of its maker.</p>
 <p>If it's clay, we certainly make it.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>9 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pottery resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource pottery and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>+15 taxable income</li></ul></section></div></div></main>
+<ul><li>+3 trade income</li><li>+15 taxable income</li></ul>
+<details>
+<summary>What the shorthands in those conditions stand for (3)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

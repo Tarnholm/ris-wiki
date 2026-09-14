@@ -22,13 +22,19 @@
   <main><div class="crumb"><a href="../README.html">RIS wiki</a> › <a href="../buildings.html">buildings</a></div><div class="lede"><h1 id="copper-industry">Copper Industry</h1>
 <p><a href="../buildings.html">← all buildings</a> · <a href="../README.html">wiki index</a></p>
 <p>A single-level building: there is nothing to upgrade it into.</p>
-<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec"><h2 id="copper-exports-special-exports">Copper Exports (Special exports)</h2>
+<p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="copper-exports-special-exports">Copper Exports (Special exports)</h2>
 <p><img src="../art/roman__copper_supply.png" alt="Copper Exports (Special exports)"></p>
 <p><strong>Copper’s the secret sauce of wealth, trade it, use it, wear it.</strong></p>
 <p>The copper market is where wealth flows as freely as the molten metal itself.</p>
 <p>Traders swap ingots, crafted goods, and, let’s be honest, a fair amount of gossip. Copper may not be the flashiest metal, but it’s the one that keeps everything ticking: from armor for your soldiers to the cups in your kitchen.</p>
 <p>It’s a bustling hub of industry, commerce, and endless haggling for that extra shiny trinket.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>14,000 denarii</td><td class="grp">Build time</td><td>10 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the copper resource</li><li>Direct Rule or Homeland</li><li>Mines (Industry) at Deep Mining Complex (Industry) or above is built here</li><li>no building tagged <code>metals</code> is built or queued here (<code>no_other_metals</code>)</li><li>anywhere in your empire does not have the hidden resource <code>copper_supply_built</code> (<code>not_copper_supply_built</code>)</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource copper and direct_govs and building_present_min_level mines mines+1 and no_other_metals and not_copper_supply_built</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+2 trade income</li><li>-3 public order (happiness)</li><li>-2 population growth</li></ul>
 <details>
@@ -36,9 +42,9 @@
 <ul><li>mine resource +4 — only when <code>not no_other_government and is_player</code></li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (1)</summary>
+<summary>What the shorthands in those conditions stand for (5)</summary>
 <p>These are the mod's own, quoted from the game files unchanged.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_government</code></td><td><code>no_building_tagged government queued</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_government</code></td><td><code>no_building_tagged government queued</code></td><td class="grp"><code>no_other_metals</code></td><td><code>no_building_tagged metals queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_copper_supply_built</code></td><td><code>not hidden_resource copper_supply_built factionwide</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

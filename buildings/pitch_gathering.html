@@ -25,36 +25,59 @@
 <p><strong>Tar Gatherer (Industry) → Pitch Rendering Kilns (Industry) → Pitch Exports (Industry)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
 <div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__trader.png" alt="" width="28"></td><td>Tar Gatherer (Industry)</td><td class="right">1,000</td><td class="right">2</td><td>town</td><td>Pitch Rendering Kilns (Industry)</td><td class="center grp"><img src="../icons/roman__market.png" alt="" width="28"></td><td>Pitch Rendering Kilns (Industry)</td><td class="right">2,000</td><td class="right">4</td><td>large town</td><td>Pitch Exports (Industry)</td></tr><tr><td class="center"><img src="../icons/roman__forum.png" alt="" width="28"></td><td>Pitch Exports (Industry)</td><td class="right">6,000</td><td class="right">6</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
-<p>Costs in denarii, build time in turns.</p></section><div class="panes"><div class="pane"><section class="sec"><h2 id="pitch-exports-industry">Pitch Exports (Industry)</h2>
-<p><img src="../art/roman__forum.png" alt="Pitch Exports (Industry)"></p>
-<p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
-<p><strong>A great industry supplying pitch to our factions shipyards.</strong></p>
-<p>All over the coasts great shipyards turn out and maintain numerous warships and ships of trade. But to do so they require massive amounts of pitch to keep our sailors from a watery grave. This region has developed the production capacity to meet this demand. Throughout the evening and the night the sky lights up from the fires of the rendering kilns.</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
-<p><strong>What it does</strong></p>
-<ul><li>+12 taxable income</li><li>+2 trade income</li><li>-1 population growth <em>(player only)</em></li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>construction cost bonus defensive +15 — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li><li>-1 population growth — only when <code>building_present_min_level pitch_gathering pitch_supply and not is_player</code></li><li>-1 public order (happiness) — only when <code>building_present_min_level pitch_gathering pitch_supply and not is_player</code></li></ul>
-</details></section></div><div class="pane"><section class="sec"><h2 id="tar-gatherer-industry">Tar Gatherer (Industry)</h2>
+<p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="tar-gatherer-industry">Tar Gatherer (Industry)</h2>
 <p><img src="../art/roman__trader.png" alt="Tar Gatherer (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Barter picture instead.</em></p>
 <p><strong>A site for gathering pitch.</strong></p>
 <p>At this remote site workers gather the mysterious and usefull substances that can make any surface waterproof, especially handy for ships, which you generally want to be watertight. In Mesopotamia and at the dead sea liquid naptha and bitumen naturally bubble up from depths unknown. While in the forests of the mediterranean and the north resinous woods like pine are gathered and burned in clay pits to produce tar. No matter the source the work is dirty, smelly and difficult.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Pitch Rendering Kilns (Industry)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>no building tagged <code>heavy_ind</code> is built or queued here (<code>no_other_heavy_ind</code>)</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and nobuilding and resource pitch and no_other_heavy_ind and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
-<ul><li>+8 taxable income</li></ul></section><section class="sec"><h2 id="pitch-rendering-kilns-industry">Pitch Rendering Kilns (Industry)</h2>
+<ul><li>+8 taxable income</li></ul></section><section class="sec wide"><h2 id="pitch-rendering-kilns-industry">Pitch Rendering Kilns (Industry)</h2>
 <p><img src="../art/roman__market.png" alt="Pitch Rendering Kilns (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Market picture instead.</em></p>
 <p><strong>Pitch processing kilns further refine the gathered pitch.</strong></p>
 <p>The pitch that is gathered here was previously directly brought to town, but now that we have build up the kilns necessary to further refine the pitch we can create a more valuable product.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Pitch Exports (Industry)</td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>Government Building</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource pitch and requires_gov</code></li></ul>
+</details>
 <p><strong>What it does</strong></p>
 <ul><li>+10 taxable income</li><li>+1 trade income</li><li>-1 population growth <em>(player only)</em></li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
 <details>
 <summary>Show 3 effects that apply only in the circumstances shown</summary>
 <ul><li>construction cost bonus defensive +10 — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li><li>-1 population growth — only when <code>building_present_min_level pitch_gathering pitch_2 and not is_player</code></li><li>-1 public order (happiness) — only when <code>building_present_min_level pitch_gathering pitch_2 and not is_player</code></li></ul>
-</details></section></div></div></main>
+</details></section><section class="sec wide"><h2 id="pitch-exports-industry">Pitch Exports (Industry)</h2>
+<p><img src="../art/roman__forum.png" alt="Pitch Exports (Industry)"></p>
+<p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
+<p><strong>A great industry supplying pitch to our factions shipyards.</strong></p>
+<p>All over the coasts great shipyards turn out and maintain numerous warships and ships of trade. But to do so they require massive amounts of pitch to keep our sailors from a watery grave. This region has developed the production capacity to meet this demand. Throughout the evening and the night the sky lights up from the fires of the rendering kilns.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
+<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>anywhere in your empire does not have the hidden resource <code>pitch_supply_built</code> (<code>not_pitch_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
+<details>
+<summary>Show the condition as the game files write it</summary>
+<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource pitch and not_pitch_supply_built and direct_govs</code></li></ul>
+</details>
+<p><strong>What it does</strong></p>
+<ul><li>+12 taxable income</li><li>+2 trade income</li><li>-1 population growth <em>(player only)</em></li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
+<details>
+<summary>Show 3 effects that apply only in the circumstances shown</summary>
+<ul><li>construction cost bonus defensive +15 — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li><li>-1 population growth — only when <code>building_present_min_level pitch_gathering pitch_supply and not is_player</code></li><li>-1 public order (happiness) — only when <code>building_present_min_level pitch_gathering pitch_supply and not is_player</code></li></ul>
+</details>
+<details>
+<summary>What the shorthands in those conditions stand for (5)</summary>
+<p>These are the mod's own, quoted from the game files unchanged.</p>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_pitch_supply_built</code></td><td><code>not hidden_resource pitch_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+</details></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's
