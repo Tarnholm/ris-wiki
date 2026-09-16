@@ -44,8 +44,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+1 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+2 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li></ul>
+<summary>Show 6 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+1 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+2 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>No additional trade bonus due to only base jewellery resources: gold, silver, elephants (ivory). But no decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>No additional trade bonus due to only decoration jewellery resources: gemstones, amber, glass. But no base jewellery resources: gold, silver, elephants (ivory) — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>Additional trade bonus due to both base jewellery resources: gold, silver, elephants (ivory), and decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li></ul>
 </details></section><section class="sec wide"><h2 id="artisan-jeweller-industry">Artisan Jeweller (Industry)</h2>
 <p><img src="../art/roman__market.png" alt="Artisan Jeweller (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Local Market picture instead.</em></p>
@@ -63,8 +63,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li><li>-1 population growth <em>(player only)</em></li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+3 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+3 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+4 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-1 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_2</code></li></ul>
+<summary>Show 7 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+3 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+4 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>No additional trade bonus due to only base jewellery resources: gold, silver, elephants (ivory). But no decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>No additional trade bonus due to only decoration jewellery resources: gemstones, amber, glass. But no base jewellery resources: gold, silver, elephants (ivory) — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>Additional trade bonus due to both base jewellery resources: gold, silver, elephants (ivory), and decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-1 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_2</code></li></ul>
 </details></section><section class="sec wide"><h2 id="jewellers-quarter-industry">Jewellers Quarter (Industry)</h2>
 <p><img src="../art/roman__forum.png" alt="Jewellers Quarter (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
@@ -83,8 +83,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+2 public order (happiness)</li><li>-2 population growth <em>(player only)</em></li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+4 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+4 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+5 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_3</code></li></ul>
+<summary>Show 7 effects that apply only in the circumstances shown</summary>
+<ul><li>+4 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+4 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+5 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>No additional trade bonus due to only base jewellery resources: gold, silver, elephants (ivory). But no decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>No additional trade bonus due to only decoration jewellery resources: gemstones, amber, glass. But no base jewellery resources: gold, silver, elephants (ivory) — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>Additional trade bonus due to both base jewellery resources: gold, silver, elephants (ivory), and decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_3</code></li></ul>
 </details></section><section class="sec wide"><h2 id="jewellery-exports-industry">Jewellery Exports (Industry)</h2>
 <p><img src="../art/roman__great_forum.png" alt="Jewellery Exports (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Large Forum picture instead.</em></p>
@@ -101,10 +101,10 @@
 <ul><li><code>factions { all, } and building_present_min_level market great_forum and nobuilding and not_jewelry_supply_built and direct_govs and resource gemstones or resource gold or resource silver</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 public order (happiness)</li><li>-2 population growth <em>(player only)</em></li></ul>
+<ul><li>+2 public order (happiness)</li><li>-2 population growth <em>(player only)</em></li><li>(Capital) Trade bonus: +20%</li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+5 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+5 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+7 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_3</code></li></ul>
+<summary>Show 7 effects that apply only in the circumstances shown</summary>
+<ul><li>+5 trade income — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>+5 trade income — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>+7 trade income — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>No additional trade bonus due to only base jewellery resources: gold, silver, elephants (ivory). But no decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and not jeweller_secondary_resource</code></li><li>No additional trade bonus due to only decoration jewellery resources: gemstones, amber, glass. But no base jewellery resources: gold, silver, elephants (ivory) — only when <code>not jeweller_primary_resource and jeweller_secondary_resource</code></li><li>Additional trade bonus due to both base jewellery resources: gold, silver, elephants (ivory), and decoration jewellery resources: gemstones, amber, glass — only when <code>jeweller_primary_resource and jeweller_secondary_resource</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level jewelry jewelry_3</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (7)</summary>

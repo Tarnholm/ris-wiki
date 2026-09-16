@@ -43,8 +43,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+1 trade income</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+2 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 3 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="salt-refiner-industry">Salt Refiner (Industry)</h2>
 <p><img src="../art/roman__salt_2.png" alt="Salt Refiner (Industry)"></p>
 <p><strong>A significant salt extraction center has been established, supplying the region and beyond.</strong></p>
@@ -64,8 +64,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+2 trade income</li><li>+1 population growth</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level salt_production salt_2</code></li></ul>
+<summary>Show 4 effects that apply only in the circumstances shown</summary>
+<ul><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level salt_production salt_2</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="salt-exports-industry">Salt Exports (Industry)</h2>
 <p><img src="../art/roman__salt_supply.png" alt="Salt Exports (Industry)"></p>
 <p><strong>Salt is now being exported on a large scale, enriching the region and beyond.</strong></p>
@@ -81,10 +81,10 @@
 <ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource salt and not_salt_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>+1 population growth</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>+3 trade income</li><li>+1 population growth</li><li>-2 public order (happiness) <em>(player only)</em></li><li>(Faction) Husbandry farms (tier 2-5) gain +10% trade bonus (does not stack with local salt)</li><li>(Faction) Fish salting industries gain +10% trade bonus (does not stack with local salt)</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+6 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level salt_production salt_supply</code></li></ul>
+<summary>Show 4 effects that apply only in the circumstances shown</summary>
+<ul><li>+6 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level salt_production salt_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (6)</summary>

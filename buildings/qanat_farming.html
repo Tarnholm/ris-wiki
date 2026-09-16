@@ -24,7 +24,7 @@
 <p>3 levels, each replacing the one before it — you upgrade in place rather than building alongside.</p>
 <p><strong>Qanat Well (Crops) → Qanat Network (Crops) → Subterranean Aquaducts (Crops)</strong></p>
 <p>Pictures are the game's own building art. Where a culture ships none of its own, the game falls back to another culture's, and that is what is shown here.</p></div><section class="sec wide"><h2 id="levels-at-a-glance">Levels at a glance</h2>
-<div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__qanat_well.png" alt="" width="56"></td><td>Qanat Well (Crops)</td><td class="right">1,800</td><td class="right">4</td><td>town</td><td>Qanat Network (Crops)</td><td class="center grp"><img src="../icons/roman__qanat_network.png" alt="" width="56"></td><td>Qanat Network (Crops)</td><td class="right">3,200</td><td class="right">5</td><td>large town</td><td>Subterranean Aquaducts (Crops)</td></tr><tr><td class="center"><img src="../icons/roman__expanded_qanats.png" alt="" width="56"></td><td>Subterranean Aquaducts (Crops)</td><td class="right">5,400</td><td class="right">7</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="6" data-up="2"><table><thead><tr><th class="center"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th><th class="center grp"></th><th>Level</th><th class="right">Cost</th><th class="right">Build time</th><th>Minimum settlement</th><th>Upgrades to</th></tr></thead><tbody><tr><td class="center"><img src="../icons/roman__qanat_well.png" alt="" width="56"></td><td>Qanat Well (Crops)</td><td class="right">1,800</td><td class="right">5</td><td>town</td><td>Qanat Network (Crops)</td><td class="center grp"><img src="../icons/roman__qanat_network.png" alt="" width="56"></td><td>Qanat Network (Crops)</td><td class="right">3,200</td><td class="right">7</td><td>large town</td><td>Subterranean Aquaducts (Crops)</td></tr><tr><td class="center"><img src="../icons/roman__expanded_qanats.png" alt="" width="56"></td><td>Subterranean Aquaducts (Crops)</td><td class="right">5,400</td><td class="right">9</td><td>city</td><td>—</td><td class="center grp"></td><td></td><td class="right"></td><td class="right"></td><td></td><td></td></tr></tbody></table></div>
 <p>Costs in denarii, build time in turns.</p></section><section class="sec wide"><h2 id="qanat-well-crops">Qanat Well (Crops)</h2>
 <p><img src="../art/roman__qanat_well.png" alt="Qanat Well (Crops)"></p>
 <p><strong>A well and tunnel system that brings underground water to the surface.</strong></p>
@@ -37,7 +37,7 @@
 <p>Limited to:</p>
 <p>Tier 3: mountain valley, desert, plateau, steppe</p>
 <p>Tier 2: mountains</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,800 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Qanat Network (Crops)</td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,800 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Qanat Network (Crops)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>irrigation_aquifer</code></li></ul>
 <details>
@@ -47,8 +47,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+2 farming level</li><li>-3 taxable income <em>(player only)</em></li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-3 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_well</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-3 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_well</code></li><li>From tier 2 onwards this line will gain +1 farming due to resource: grain — only when <code>resource grain</code></li><li>From tier 3 onwards this line will gain +1 farming due to resource: sulphur — only when <code>sulphur_building_supply and not resource grain</code></li><li>Trade bonus due to resources: dates, fruits, cotton, flax, or hemp — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li></ul>
 </details></section><section class="sec wide"><h2 id="qanat-network-crops">Qanat Network (Crops)</h2>
 <p><img src="../art/roman__qanat_network.png" alt="Qanat Network (Crops)"></p>
 <p><strong>An interconnected network of underground canals for large-scale irrigation.</strong></p>
@@ -61,7 +61,7 @@
 <p>Limited to:</p>
 <p>Tier 3: mountain valley, desert, plateau, steppe</p>
 <p>Tier 2: mountains</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,200 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Subterranean Aquaducts (Crops)</td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,200 denarii</td><td class="grp">Build time</td><td>7 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Subterranean Aquaducts (Crops)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>irrigation_aquifer</code></li></ul>
 <details>
@@ -71,8 +71,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>-4 taxable income <em>(player only)</em></li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+3 farming level — only when <code>not resource grain</code></li><li>+4 farming level — only when <code>resource grain</code></li><li>+1 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-4 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_network</code></li></ul>
+<summary>Show 7 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 farming level — only when <code>not resource grain</code></li><li>+4 farming level — only when <code>resource grain</code></li><li>+1 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-4 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_network</code></li><li>Additional +1 farming due to resource: grain — only when <code>resource grain</code></li><li>From tier 3 onwards this line will gain +1 farming due to resource: sulphur — only when <code>sulphur_building_supply and not resource grain</code></li><li>Trade bonus due to resources: dates, fruits, cotton, flax, or hemp — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li></ul>
 </details></section><section class="sec wide"><h2 id="subterranean-aquaducts-crops">Subterranean Aquaducts (Crops)</h2>
 <p><img src="../art/roman__expanded_qanats.png" alt="Subterranean Aquaducts (Crops)"></p>
 <p><strong>The pinnacle of qanat engineering, creating large, fertile oases.</strong></p>
@@ -85,7 +85,7 @@
 <p>Limited to:</p>
 <p>Tier 3: mountain valley, desert, plateau, steppe</p>
 <p>Tier 2: mountains</p>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,400 denarii</td><td class="grp">Build time</td><td>7 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,400 denarii</td><td class="grp">Build time</td><td>9 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>irrigation_aquifer</code></li><li>your faction is one of 24 factions, listed in the condition below (<code>faction_qanat_farming</code>)</li><li>the region has the hidden resource <code>mountain_valley</code> — or — the region has the hidden resource <code>plateau</code> — or — the region has the hidden resource <code>desert</code> — or — the region has the hidden resource <code>steppe</code> — or — the region has the hidden resource <code>hills</code></li></ul>
 <details>
@@ -95,8 +95,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>-1 population growth <em>(player only)</em></li><li>-5 taxable income <em>(player only)</em></li></ul>
 <details>
-<summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>+5 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+6 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>-1 population growth — only when <code>not is_player and building_present_min_level qanat_farming expanded_qanats</code></li><li>+2 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-5 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_network</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 9 effects that apply only in the circumstances shown</summary>
+<ul><li>+5 farming level — only when <code>not resource grain and not sulphur_building_supply</code></li><li>+6 farming level — only when <code>resource grain or sulphur_building_supply</code></li><li>-1 population growth — only when <code>not is_player and building_present_min_level qanat_farming expanded_qanats</code></li><li>+2 trade income — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>-5 taxable income — only when <code>not is_player and building_present_min_level qanat_farming qanat_network</code></li><li>+5 taxable income — only when <code>slave_trade_building_supply</code></li><li>Additional +1 farming due to resources: grain, sulphur — only when <code>resource grain or sulphur_building_supply</code></li><li>Trade bonus due to resources: dates, fruits, cotton, flax, or hemp — only when <code>resource fruits or resource cotton or resource flax or resource hemp or resource dates</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (6)</summary>

@@ -43,8 +43,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>construction cost bonus military +5</li><li>construction time bonus other +15</li><li>construction cost bonus other +5</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +10 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+2 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+4 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_1</code></li></ul>
+<summary>Show 6 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +10 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+2 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+4 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_1</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="stone-cutter-industry">Stone Cutter (Industry)</h2>
 <p><img src="../art/roman__stone_2.png" alt="Stone Cutter (Industry)"></p>
 <p><strong>A significant stone quarry, supplying large amounts of building material for regional projects.</strong></p>
@@ -64,8 +64,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>construction cost bonus military +10</li><li>construction time bonus other +20</li><li>construction cost bonus other +15</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +25 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_2</code></li></ul>
+<summary>Show 6 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +25 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_2</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="stone-exports-industry">Stone Exports (Industry)</h2>
 <p><img src="../art/roman__stone_supply.png" alt="Stone Exports (Industry)"></p>
 <p><strong>Send stones far and wide, and watch the world build itself in your image. - Stone is now being exported on a large scale, building the wealth of the region one block at a time.</strong></p>
@@ -83,10 +83,10 @@
 <ul><li><code>factions { all, } and building_present_min_level market market and water_transport and nobuilding and resource stone and not_stone_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>construction cost bonus military +10</li><li>construction time bonus other +30</li><li>construction cost bonus other +15</li><li>+1 trade income</li><li>-3 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>construction cost bonus military +10</li><li>construction time bonus other +30</li><li>construction cost bonus other +15</li><li>+1 trade income</li><li>-3 public order (happiness) <em>(player only)</em></li><li>(Capital) +1 construction point (faster construction) at the cost of a 10% tax penalty</li></ul>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +35 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +20 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+5 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-3 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_supply</code></li></ul>
+<summary>Show 6 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +35 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +20 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+5 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-3 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (7)</summary>
