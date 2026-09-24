@@ -25,8 +25,12 @@
 <p>A single-level building: there is nothing to upgrade it into.</p></div><section class="sec wide"><h2 id="direct-rule">Direct Rule</h2>
 <p><img src="../art/roman__gov3.png" alt="Direct Rule"></p>
 <p><strong>Direct Rule</strong></p>
-<p>Allows recruitment of tier 2 AOR units, and all factional units (requires colony level 1 outside unit's origin regions for units up to tier 3, and colony level 2 for top tier units). It increases spread of the local cultures present within the region in 50%.</p>
-<p><em>Wording varies by culture: 4 versions of this description exist in the game files.</em></p>
+<p>Our state has chosen to exert its control over this region, not trusting the local people to properly act in our interest we have set our own officials in charge of administration, taxation and all matters of governance. Our laws now prevail in these lands rather than their own ancient customs. It is true that these people may not appreciate us taking such a direct interest in their lives but in time they may come to see the benefits of living in our new order.</p>
+<p>Strategy</p>
+<p>Direct Rule represents our state exerting direct control on this region through the appointment of state officials. As such you will enjoy full tax and trade revenues, while offering a good chance of converting the local culture given further investment.</p>
+<p>You will also have acces to all relevant buildings such as grain imports, resource exports, colonies, garrisons and law courts. Temples will spread your own culture when upgraded. Your full factional roster is available when colonies are built.</p>
+<p>The advantages are the unlocking the full economic potential of the region and reducing corruption with garrisons and law courts. But at a higher cost and with unhappiness from reduced autonomy that increases with settlement size.</p>
+<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the settlement is yours</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Building this item requires the destruction of an existing government building</li><li>Not Homeland region</li></ul>
@@ -37,8 +41,8 @@
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (law)</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>-2 public order (happiness) — only when <code>religion macedonian &gt; 74 and factions { seleucid, ptolemaic, }</code></li><li>-4 public order (happiness) — only when <code>religion macedonian &lt; 75 and religion macedonian &gt; 49 and factions { seleucid, ptolemaic, }</code></li><li>-6 public order (happiness) — only when <code>religion macedonian &lt; 50 and factions { seleucid, ptolemaic, }</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>-2 public order (happiness) — only when <code>building_present_min_level core_building governors_house and not building_present_min_level core_building governors_villa</code></li><li>-3 public order (happiness) — only when <code>building_present_min_level core_building governors_villa and not building_present_min_level core_building governors_palace</code></li><li>-4 public order (happiness) — only when <code>building_present_min_level core_building governors_palace and not building_present_min_level core_building proconsuls_palace</code></li><li>-5 public order (happiness) — only when <code>building_present_min_level core_building proconsuls_palace and not building_present_min_level core_building imperial_palace</code></li><li>-6 public order (happiness) — only when <code>building_present_min_level core_building imperial_palace</code></li></ul>
 </details>
 <p><strong>Religious belief</strong> — spreads 51 beliefs, by how much depending on what the region already believes.</p>
 <details>
