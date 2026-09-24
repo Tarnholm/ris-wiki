@@ -1,4 +1,4 @@
-# Publish Team notes written on the wiki to the site.
+# Publish Team notes and team pages written on the wiki to the site.
 #
 # The `gollum` event fires on this repository whenever its wiki is edited. The job cannot
 # rebuild the site — that needs 222 MB of RIS source on rtris.org, which a runner cannot
@@ -27,6 +27,10 @@ jobs:
           sparse-checkout: |
             wiki-notes
             .github
+            team
+            team.html
+            README.html
+            index.html
           sparse-checkout-cone-mode: false
 
       - name: Check out the wiki
@@ -44,12 +48,12 @@ jobs:
 
       - name: Commit and push if anything changed
         run: |
-          if [ -z "$(git status --porcelain wiki-notes)" ]; then
+          if [ -z "$(git status --porcelain wiki-notes team team.html README.html index.html)" ]; then
             echo "no note changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add wiki-notes
-          git commit -m "Publish wiki notes"
+          git add wiki-notes team team.html README.html index.html
+          git commit -m "Publish wiki notes and team pages"
           git push
