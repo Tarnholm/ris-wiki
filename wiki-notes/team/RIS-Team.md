@@ -1,0 +1,56 @@
+# RIS Team
+
+## Founder & Head of Coding & Gameplay
+
+- Ahowl11
+
+## Head of Art, Units & Texture
+
+- Balbor
+- exi
+
+## Head of Scripting & Tools
+
+- Apple
+- Wopper
+
+## Head of Testing & Q/A
+
+- Lollygagging
+
+## Art, Units & Textures
+
+- pl00tonovy
+- Swagger
+- tone
+
+## Coding & Gameplay
+
+- Hadrian
+- Lusitanio
+
+## Testing & Q/A
+
+- Tenore
+- Neep
+
+## Historian
+
+- Trarco
+
+## RIS Leadership
+
+- Jorellaf
+
+## Head of Research & Texts
+
+- Mausolos of Mylasa
+
+## Developer
+
+- Quinn Inuit
+- jottel
+- NakedSpur
+- TheStricker8P
+- Grimbold
+- moscaflaca
