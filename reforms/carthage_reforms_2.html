@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Barcid Reforms — RTR: Imperium Surrectum</title>
-<link rel="stylesheet" href="../wiki.css">
+<link rel="stylesheet" href="../wiki.css?v=4de611a1b4">
 <script>window.RIS_BASE="../"</script></head><body class="has-jump">
 <div class="top">
   <div class="bar">
@@ -27,11 +27,19 @@
 <blockquote><p>The Libyans have undergone major transformations during the course of the wars with the Romans, or the Punic Wars as they are often known. Under the influence of these repeated military encounters, many of their techniques (and much of their equipment) started to be 'borrowed' from their Roman foe. The Libyans moved more towards the Roman way of fighting, and although nowhere near a manipular army, they definitely separated more from the Greek influence of their predecessors. During Hannibal's Italian campaign, most famously, many of his soldiers were re-equiped with Roman weapons looted from the battlefield.</p>
 <p>The reform unit available for recruitment now reflects this development. Check the recruitment scroll to view its details.</p></blockquote></div><div class="lede-flow"><h2 id="how-to-get-it">How to get it</h2>
 <p>It fires when <strong>any one</strong> of these holds:</p>
-<ul><li>the campaign counter <code>italian_cities_owned</code> is at least 2 (see below) and the campaign counter <code>sicilian_cities_owned</code> is at least 5 (see below)</li><li>the faction is not <a href="../factions/carthage.html">Carthage</a> and it is turn 122 (240 BC) or later</li></ul>
+<ul><li>the conditions below are met</li><li>the faction is not <a href="../factions/carthage.html">Carthage</a> and it is turn 122 (240 BC) or later</li></ul>
+<p>At least 2 settlements that lie in Italy (41 regions) are held by <a href="../factions/carthage.html">Carthage</a> (counted at the end of its turn).</p>
+<details>
+<summary>The script, step by step</summary>
 <p><strong><code>italian_cities_owned</code></strong> is kept by the campaign script. It changes:</p>
 <ul><li>At the end of <a href="../factions/carthage.html">Carthage</a>'s turn: is set to <code>italian_tally</code></li><li><code>italian_tally</code>:</li><li>At the end of the turn, for each settlement that lies in Italy (41 regions): goes up by 1</li></ul>
+</details>
+<p>At least 5 settlements that lie in Sicily (17 regions) are held by <a href="../factions/carthage.html">Carthage</a> (counted at the end of its turn).</p>
+<details>
+<summary>The script, step by step</summary>
 <p><strong><code>sicilian_cities_owned</code></strong> is kept by the campaign script. It changes:</p>
 <ul><li>At the end of <a href="../factions/carthage.html">Carthage</a>'s turn: is set to <code>sicilian_tally</code></li><li><code>sicilian_tally</code>:</li><li>At the end of the turn, for each settlement that lies in Sicily (17 regions): goes up by 1</li></ul>
+</details>
 <p>The game checks this at the end of every round.</p></div><section class="sec wide"><h2 id="what-it-unlocks">What it unlocks</h2>
 <p><strong>2 units can be recruited once it fires:</strong></p>
 <div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>Unit</th><th>Who can raise it</th><th></th><th class="grp">Unit</th><th>Who can raise it</th><th></th><th class="grp"></th><th></th><th></th><th class="grp"></th><th></th><th></th></tr></thead><tbody><tr><td><a href="../units/african_infantry.html">African Infantry</a></td><td><a href="../factions/carthage.html">Carthage</a>, <a href="../factions/gades.html">Gades</a></td><td></td><td class="grp"><a href="../units/carthaginian_lonchophoroi.html">Carthaginian Lonchophoroi</a></td><td><a href="../factions/carthage.html">Carthage</a>, <a href="../factions/gades.html">Gades</a></td><td></td><td class="grp"></td><td></td><td></td><td class="grp"></td><td></td><td></td></tr></tbody></table></div></section></main>
@@ -43,5 +51,5 @@
 var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
 setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
 </script>
-<script src="../wiki.js"></script>
+<script src="../wiki.js?v=5930032b12"></script>
 </body></html>

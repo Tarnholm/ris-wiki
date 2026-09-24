@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Gracchan Reforms — RTR: Imperium Surrectum</title>
-<link rel="stylesheet" href="../wiki.css">
+<link rel="stylesheet" href="../wiki.css?v=4de611a1b4">
 <script>window.RIS_BASE="../"</script></head><body class="has-jump">
 <div class="top">
   <div class="bar">
@@ -28,9 +28,14 @@
 <p>By bypassing the Senate and appealing directly to the masses, Gracchus championed the cause of the Populares. However, he drew the ire of the Optimates, who saw their wealth, vast estates, and traditional constitutional authority directly threatened by him. Led by conservative senators, a mob attacked Gracchus and his supporters on the Capitoline Hill. The Tribune was beaten to death, and his body was thrown into the Tiber River. </p>
 <p>This assassination marked a dark turning point in Roman history. The sacred immunity of the tribunate has been violated, opening the door to a terrifying era of political violence in Rome. </p>
 <p>Tiberius land reforms survived his death; family allies, including his younger brother Gaius, took places on the land commission set up by the law and distributed land over the next few years. A decade later, Gaius too became Tribune of the Plebs and proposed much more wide-ranging reforms, such as the famous 'Bread Dole', subject of popular acclaim, which also led to his death.</p></blockquote></div><div class="lede-flow"><h2 id="how-to-get-it">How to get it</h2>
-<p>It fires when the campaign counter <code>gracchi_event_done</code> is exactly 1 (see below).</p>
+<p>It fires when the conditions below are met.</p>
+<p>Checked at the start of each turn, all of these hold:</p>
+<ul><li>it is turn 100 (246 BC) or later</li><li>a 35% chance each time it is checked</li><li><a href="polybian_reforms.html">Polybian Reform</a> has happened</li><li>at least 5 of these buildings stand in settlements of <code>roman</code> — <strong>no faction is called <code>roman</code>, so this is never met</strong>: <strong>Irrigated Great Estates (Crops)</strong>, <strong>Great Estates (Crops)</strong>, <strong>Livestock Estates (Husbandry)</strong>, <strong>Irrigation Aqueducts (Crops)</strong>, <strong>Crop Rotation (Crops)</strong> or <strong>Great Droveways (Husbandry)</strong></li><li>then a further 35% chance</li></ul>
+<details>
+<summary>The script, step by step</summary>
 <p><strong><code>gracchi_event_done</code></strong> is kept by the campaign script. It changes:</p>
-<ul><li>At the start of each turn, if <code>gracchi_event_done</code> = 0, it is turn 100 (246 BC) or later, a 35% roll succeeds, <a href="polybian_reforms.html">Polybian Reform</a> has happened and <code>gracchi_farms</code> &gt;= 5: is set to 1</li><li><code>gracchi_farms</code> — <strong>never rises, so any test that needs it above 0 fails</strong>:</li><li>Recounted over every settlement of <code>roman</code> — <strong>no faction is called <code>roman</code>, so this counts nothing</strong>: 1 for each settlement with <strong>Irrigated Great Estates (Crops)</strong>, <strong>Great Estates (Crops)</strong>, <strong>Livestock Estates (Husbandry)</strong>, <strong>Irrigation Aqueducts (Crops)</strong>, <strong>Crop Rotation (Crops)</strong> or <strong>Great Droveways (Husbandry)</strong></li></ul>
+<ul><li>At the start of each turn, if <code>gracchi_event_done</code> = 0, it is turn 100 (246 BC) or later, a 35% roll succeeds, <a href="polybian_reforms.html">Polybian Reform</a> has happened, <code>gracchi_farms</code> &gt;= 5 and a 35% roll succeeds: is set to 1</li><li><code>gracchi_farms</code> — <strong>never rises, so any test that needs it above 0 fails</strong>:</li><li>Recounted over every settlement of <code>roman</code> — <strong>no faction is called <code>roman</code>, so this counts nothing</strong>: 1 for each of these buildings standing in one — <strong>Irrigated Great Estates (Crops)</strong>, <strong>Great Estates (Crops)</strong>, <strong>Livestock Estates (Husbandry)</strong>, <strong>Irrigation Aqueducts (Crops)</strong>, <strong>Crop Rotation (Crops)</strong> or <strong>Great Droveways (Husbandry)</strong></li></ul>
+</details>
 <p>The game checks this at the end of every round.</p>
 <p>Comes after: <a href="polybian_reforms.html">Polybian Reform</a>.</p>
 <p>Opens the way to: <a href="late_republican_reforms.html">The Late Republican Reforms</a>.</p></div><section class="sec"><h2 id="what-it-unlocks">What it unlocks</h2>
@@ -44,5 +49,5 @@
 var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
 setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
 </script>
-<script src="../wiki.js"></script>
+<script src="../wiki.js?v=5930032b12"></script>
 </body></html>

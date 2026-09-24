@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Late Republican Reforms — RTR: Imperium Surrectum</title>
-<link rel="stylesheet" href="../wiki.css">
+<link rel="stylesheet" href="../wiki.css?v=4de611a1b4">
 <script>window.RIS_BASE="../"</script></head><body class="has-jump">
 <div class="top">
   <div class="bar">
@@ -28,9 +28,14 @@
 <p>In response, extensive military reforms have been enacted on the recruitment, equipment, deployment and training of the Roman legions. Despite the opposition of some, the property qualifications have been abolished, allowing the landless masses, the capite censi, to enlist. The state now provides their arms and armour, standardising their equipment. The lines of Hastati, Principes, and Triarii have been replaced by a unified formation: the Cohort. </p>
 <p>Rome can now put in the field professional, full-time standing armies. However, a dangerous precedent has been set. Recruited from the impoverished masses, these men rely on their commanders for their pay, plunder, and eventual land to settle after service. Their loyalty is shifting away from the Senate, and toward these ambitious generals who lead them. </p>
 <p>Who will be able to stop them if their commander decides to cross the Rubicon and march against Rome?</p></blockquote></div><div class="lede-flow"><h2 id="how-to-get-it">How to get it</h2>
-<p>It fires when the campaign counter <code>italic_cw1_gate</code> is at least 2 (see below).</p>
+<p>It fires when the conditions below are met.</p>
+<p>For 2 turns, counted at the start of each turn, all of these hold:</p>
+<ul><li><code>italic_revolt_done</code> has been set — checked at the end of a faction's turn, all of these hold:</li><li>it is turn 120 (241 BC) or later</li><li><a href="gracchi_reform.html">The Gracchan Reforms</a> has happened</li><li>at least 20 of these buildings stand in settlements that lie in the <a href="../tags/specialty-recruitment.html#camillan">Camillan</a> recruitment area: <strong>Small Colony</strong> or <strong>Large Colony</strong></li><li>a 35% chance each time it is checked</li><li>the faction <a href="../factions/italics.html">Italics</a> has been destroyed</li></ul>
+<details>
+<summary>The script, step by step</summary>
 <p><strong><code>italic_cw1_gate</code></strong> is kept by the campaign script. It changes:</p>
 <ul><li>At the start of each turn, if <code>italic_revolt_done</code> = 1 and the faction <a href="../factions/italics.html">Italics</a> has been destroyed: goes up by 1</li></ul>
+</details>
 <p>The game checks this at the end of every round.</p>
 <p>Comes after: <a href="gracchi_reform.html">The Gracchan Reforms</a>.</p></div><section class="sec wide"><h2 id="what-it-unlocks">What it unlocks</h2>
 <p><strong>2 units can be recruited once it fires:</strong></p>
@@ -47,5 +52,5 @@
 var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
 setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
 </script>
-<script src="../wiki.js"></script>
+<script src="../wiki.js?v=5930032b12"></script>
 </body></html>

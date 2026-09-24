@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Named Legions are now available — RTR: Imperium Surrectum</title>
-<link rel="stylesheet" href="../wiki.css">
+<link rel="stylesheet" href="../wiki.css?v=4de611a1b4">
 <script>window.RIS_BASE="../"</script></head><body class="has-jump">
 <div class="top">
   <div class="bar">
@@ -25,8 +25,8 @@
 </div>
 <p><strong>Who gets it:</strong> <a href="../factions/romans_julii.html">Rome</a>, <a href="../factions/non-playable.html#roman-rebels-roman-rebels-1">Roman Rebels (<code>roman_rebels_1</code>)</a>, <a href="../factions/non-playable.html#roman-rebels-roman-rebels-2">Roman Rebels (<code>roman_rebels_2</code>)</a> and <a href="../factions/non-playable.html">The Roman Senate</a> — once it fires it applies to all of them at once</p>
 <blockquote><p>Hooray</p></blockquote></div><div class="lede-flow"><h2 id="how-to-get-it">How to get it</h2>
-<p>It fires when the campaign counter <code>cw2_wait</code> is at least 25 (see below) and a 35% roll succeeds.</p>
-<p><strong><code>cw2_wait</code></strong> (“turns elapsed since war one resolved”) is kept by the campaign script. It changes:</p>
+<p>It fires when the conditions below are met and a 35% roll succeeds.</p>
+<p><strong><code>cw2_wait</code></strong> (“turns elapsed since war one resolved”) is kept by the campaign script and must be at least 25. It changes:</p>
 <ul><li>At the start of each turn, if you are playing <a href="../factions/romans_julii.html">Rome</a>, <code>cw_enabled</code> = 1 (“0 turns the entire CW off”), <code>cw1_done</code> = 1 (“1 once the split has happened”), <code>cw1_resolved</code> = 1 (“1 once war one's revolt has actually landed”), <code>cw1_landed</code> = 1 (“1 once war one's provinces ACTUALLY changed hands”), <code>cw2_armed</code> = 0 (“1 once the conditions are met”), <code>cw2_wait_done</code> = 0 (“1 once the fuse has burned down”) and exactly 1 settlement is held by <a href="../factions/non-playable.html#roman-rebels-roman-rebels-1">Roman Rebels (<code>roman_rebels_1</code>)</a>: goes up by 1</li><li>At the start of each turn, if you are playing <a href="../factions/non-playable.html#roman-rebels-roman-rebels-1">Roman Rebels (<code>roman_rebels_1</code>)</a>, <code>cw_enabled</code> = 1 (“0 turns the entire CW off”), <code>cw1_done</code> = 1 (“1 once the split has happened”), <code>cw1_resolved</code> = 1 (“1 once war one's revolt has actually landed”), <code>cw1_landed</code> = 1 (“1 once war one's provinces ACTUALLY changed hands”), <code>cw2_armed</code> = 0 (“1 once the conditions are met”), <code>cw2_wait_done</code> = 0 (“1 once the fuse has burned down”) and exactly 1 settlement is held by <a href="../factions/romans_julii.html">Rome</a>: goes up by 1</li><li>At the start of each turn, if <code>cw_enabled</code> = 1 (“0 turns the entire CW off”), <code>cw1_done</code> = 1 (“1 once the split has happened”), <code>cw1_resolved</code> = 1 (“1 once war one's revolt has actually landed”), <code>cw1_landed</code> = 1 (“1 once war one's provinces ACTUALLY changed hands”), <code>cw2_armed</code> = 0 (“1 once the conditions are met”), <code>cw2_wait_done</code> = 0 (“1 once the fuse has burned down”) and <code>cw2_is_local_roman</code> = 0 (“1 when the player is julii or rebels_1”): goes up by 1</li></ul>
 <p>The game checks this at the end of every round.</p></div><section class="sec"><h2 id="what-it-unlocks">What it unlocks</h2>
 <p><strong>Message only.</strong> It unlocks, retires and converts no units.</p></section></main>
@@ -38,5 +38,5 @@
 var m={};try{Object.defineProperty(window,"localStorage",{value:{getItem:function(k){return k in m?m[k]:null;},
 setItem:function(k,v){m[k]=String(v);},removeItem:function(k){delete m[k];}},configurable:true});}catch(e2){}}})();
 </script>
-<script src="../wiki.js"></script>
+<script src="../wiki.js?v=5930032b12"></script>
 </body></html>
