@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,336 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,340 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -166,12 +166,9 @@
 <p>---</p>
 <h3 id="temple-despoiler">Temple Despoiler</h3>
 <p>Appears on family members — generals, governors, leaders.</p>
-<p><strong>Effects:</strong> -1 Influence, +2 Unrest, +10 Looting</p>
-<blockquote><p>Recognizing no divine boundaries and driven by absolute financial desperation, this man has done the unthinkable. He ordered his soldiers to sack all the temples in the region. The army got paid, but the local populace will never forgive the sacrilege.</p></blockquote>
-<details>
-<summary>How it is gained — 2 triggers, enslave population</summary>
-<div class="tw multi" data-cols="4" data-up="3"><table><thead><tr><th>When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp">When</th><th>Points</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>enslave population</td><td>+1</td><td class="right">100%</td><td><code>Trait Pious &lt; 1 and Trait Delphoi_Sacker &lt; 1 and CharacterIsLocal and Trait Temple_Sacker &lt; 1 and Trait PublicFaith &lt; 1 and ( TargetFactionCultureType roman or TargetFactionCultureType w_hellenistic or TargetFactionCultu…</code></td><td class="grp">enslave population</td><td>+1</td><td class="right">100%</td><td><code>Trait Pious &lt; 1 and Trait Delphoi_Sacker &lt; 1 and CharacterIsLocal and Trait Temple_Sacker &lt; 1 and Trait PublicFaith &lt; 1 and TargetFactionCultureType carthaginian and CultureType carthaginian and ( Trait Corrupt &gt; 1 or Tr…</code></td><td class="grp"></td><td></td><td class="right"></td><td></td></tr></tbody></table></div>
-</details>
+<p><strong>Effects:</strong> -1 Influence, +1 Unrest, +20 Looting</p>
+<blockquote><p>This man recognizes no divine boundaries and has now done the unthinkable. After conquering a city, he ordered his soldiers to sack all the temples in the region. The army got rich, but the local priests and the populace will never forgive the sacrilege.</p></blockquote>
+<p><em>No trigger in the file grants this trait. It comes from the campaign script, from birth, or from inheritance — the trait file itself does not say which.</em></p>
 <p>---</p>
 <h3 id="temple-tax-officer">Temple Tax Officer</h3>
 <p>Appears on family members — generals, governors, leaders · pulls against <a href="r.html#recruiting-officer">Recruiting Officer</a> · at most <strong>8</strong> characters may hold it.</p>
