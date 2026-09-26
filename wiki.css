@@ -179,6 +179,13 @@ main{min-width:0;padding:1.6rem 1.6rem 5rem;width:100%}
 .fcard-facts li{padding:.28rem 0;border-top:1px solid var(--line)}
 .fcard-facts li:first-child{border-top:none}
 .fcard-facts p{margin:0 0 .6rem}
+/* The faction's two recruit tables (faction units, regional units) share one layout, so their
+   columns line up: full width, fixed card and unit columns, requirements take the rest. */
+.rtab .tw{width:100%}
+.rtab table{width:100%;table-layout:fixed}
+.rtab th:nth-child(1){width:3.8rem}
+.rtab th:nth-child(2){width:16rem}
+.rtab td{max-width:none}
 .lede em{display:block;clear:none;color:var(--dim);font-size:.85rem}
 .lede-flow{margin-bottom:1.5rem}
 .lede-flow>h2:first-child{margin-top:.2rem}

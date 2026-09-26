@@ -28,7 +28,7 @@
   // interleaving a measurement with a rebuild per table would force 156 reflows; setting them
   // all flat, then reading all the widths, then rebuilding all, costs two.
   (function deal(){
-    var tws = [].slice.call(document.querySelectorAll(".tw[data-cols]"));
+    var tws = [].slice.call(document.querySelectorAll(".tw[data-cols]")).filter(function(t){ return !t.closest(".nodeal"); });
     if (!tws.length) return;
 
     function capture(tw){
