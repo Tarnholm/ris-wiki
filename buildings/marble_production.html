@@ -36,14 +36,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the marble resource</li><li>no building tagged <code>heavy_ind</code> is built or queued here (<code>no_other_heavy_ind</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and resource marble and no_other_heavy_ind and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 trade income</li><li>construction time bonus religious +10</li><li>construction cost bonus religious +10</li><li>construction time bonus other +10</li><li>construction cost bonus other +5</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>+1 trade income</li><li>construction time bonus religious +10</li><li>construction cost bonus religious +10</li><li>construction time bonus other +10</li><li>construction cost bonus other +5</li><li>-1 public order (happiness)</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+3 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level marble_production marble_1</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="marble-quarry-industry">Marble Quarry (Industry)</h2>
 <p><img src="../art/roman__marble_2.png" alt="Marble Quarry (Industry)"></p>
 <p><strong>The marble quarry has expanded, supplying the region with high-quality stone.</strong></p>
@@ -55,14 +55,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the marble resource</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and advanced_crafts_factions and nobuilding and resource marble and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>construction time bonus religious +20</li><li>construction cost bonus religious +20</li><li>construction time bonus other +20</li><li>construction cost bonus other +10</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>+2 trade income</li><li>construction time bonus religious +20</li><li>construction cost bonus religious +20</li><li>construction time bonus other +20</li><li>construction cost bonus other +10</li><li>-2 public order (happiness)</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+6 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level marble_production marble_2</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+6 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="marble-exports-industry">Marble Exports (Industry)</h2>
 <p><img src="../art/roman__marble_supply.png" alt="Marble Exports (Industry)"></p>
 <p><strong>Marble is now being exported on a grand scale, renowned for its quality and beauty.</strong></p>
@@ -75,18 +75,18 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the marble resource</li><li>anywhere in your empire does not have the hidden resource <code>marble_supply_built</code> (<code>not_marble_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and advanced_crafts_factions and building_present_min_level market market and water_transport and nobuilding and resource marble and not_marble_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>construction time bonus religious +25</li><li>construction cost bonus religious +20</li><li>construction time bonus other +20</li><li>construction cost bonus other +15</li><li>-3 public order (happiness) <em>(player only)</em></li><li>(Capital) Civic buildings constr. cost reduction: -10%</li></ul>
+<ul><li>+3 trade income</li><li>construction time bonus religious +25</li><li>construction cost bonus religious +20</li><li>construction time bonus other +20</li><li>construction cost bonus other +15</li><li>-3 public order (happiness)</li><li>(Capital) Civic buildings constr. cost reduction: -10%</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-3 public order (happiness) — only when <code>not is_player and building_present_min_level marble_production marble_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (8)</summary>
-<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_marble_supply_built</code></td><td><code>not hidden_resource marble_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr><tr><td><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_marble_supply_built</code></td><td><code>not hidden_resource marble_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td></tr><tr><td><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

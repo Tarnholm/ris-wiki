@@ -33,10 +33,10 @@
 <p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the settlement is yours</li><li>Building this item requires the destruction of an existing government building</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region does not have the hidden resource <code>capital</code> (<code>not_capital</code>)</li><li>Not Homeland region</li></ul>
+<ul><li>any faction</li><li>Building this item requires the destruction of an existing government building</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region does not have the hidden resource <code>capital</code> (<code>not_capital</code>)</li><li>Not Homeland region</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>factions { all, } and is_player and no_other_government and nobuilding and not_capital and not_homeland</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>factions { all, } and no_other_government and nobuilding and not_capital and not_homeland</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <ul><li>-50 taxable income</li><li>-5 trade income</li><li>+1 public order (law)</li><li>+2 public order (happiness)</li></ul>

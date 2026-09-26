@@ -33,14 +33,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of <code>barbarian, germanic, dacian, celtiberian, brittonic, thracian, illyrian, scythian</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>entertainment</code> is built or queued here (<code>no_other_entertainment</code>)</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { barbarian, germanic, dacian, celtiberian, brittonic, thracian, illyrian, scythian, } and nobuilding and requires_gov and no_other_entertainment</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+1 public order (happiness)</li><li>taxable income -10 to -5, scaling with settlement size <em>(player only)</em></li></ul>
+<ul><li>+1 public order (happiness)</li><li>taxable income -10 to -5, scaling with settlement size</li></ul>
 <details>
-<summary>Show 11 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li><li>-5 taxable income — only when <code>size1 and building_present_min_level taverns tavern and not is_player</code></li><li>-6 taxable income — only when <code>size2 and building_present_min_level taverns tavern and not is_player</code></li><li>-6 taxable income — only when <code>size3 and building_present_min_level taverns tavern and not is_player</code></li><li>-7 taxable income — only when <code>size4 and building_present_min_level taverns tavern and not is_player</code></li><li>-7 taxable income — only when <code>size5 and building_present_min_level taverns tavern and not is_player</code></li><li>-8 taxable income — only when <code>size6 and building_present_min_level taverns tavern and not is_player</code></li><li>-8 taxable income — only when <code>size7 and building_present_min_level taverns tavern and not is_player</code></li><li>-9 taxable income — only when <code>size8 and building_present_min_level taverns tavern and not is_player</code></li><li>-9 taxable income — only when <code>size9 and building_present_min_level taverns tavern and not is_player</code></li><li>-10 taxable income — only when <code>size10 and building_present_min_level taverns tavern and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li></ul>
 </details>
 <p><strong>Religious belief</strong> — spreads 13 beliefs, by how much depending on what the region already believes.</p>
 <details>
@@ -54,14 +54,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of <code>barbarian, germanic, dacian, celtiberian, brittonic, thracian, illyrian, scythian</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>entertainment</code> is built or queued here (<code>no_other_entertainment</code>)</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { barbarian, germanic, dacian, celtiberian, brittonic, thracian, illyrian, scythian, } and nobuilding and requires_gov and no_other_entertainment</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 public order (happiness)</li><li>taxable income -15 to -10, scaling with settlement size <em>(player only)</em></li></ul>
+<ul><li>+2 public order (happiness)</li><li>taxable income -15 to -10, scaling with settlement size</li></ul>
 <details>
-<summary>Show 12 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li><li>+1 public order (law) — only when <code>is_toggled "tavern changes"</code></li><li>-10 taxable income — only when <code>size1 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-11 taxable income — only when <code>size2 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-11 taxable income — only when <code>size3 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-12 taxable income — only when <code>size4 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-12 taxable income — only when <code>size5 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-13 taxable income — only when <code>size6 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-13 taxable income — only when <code>size7 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-14 taxable income — only when <code>size8 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-14 taxable income — only when <code>size9 and building_present_min_level taverns bardic_circle and not is_player</code></li><li>-15 taxable income — only when <code>size10 and building_present_min_level taverns bardic_circle and not is_player</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>+1 population health — only when <code>is_toggled "tavern changes"</code></li><li>+1 public order (law) — only when <code>is_toggled "tavern changes"</code></li></ul>
 </details>
 <p><strong>Religious belief</strong> — spreads 13 beliefs, by how much depending on what the region already believes.</p>
 <details>
@@ -69,8 +69,8 @@
 <ul><li>Baltic +2</li><li>Bithynian +2</li><li>Celtic +2</li><li>Dardanian +2</li><li>delmato_pannonian (no name in the text files) +2</li><li>Germanic +2</li><li>Illyrian +2</li><li>Liburnian +2</li><li>Paeonian +2</li><li>Scythian +2</li><li>Thracian +2</li><li>Triballian +2</li><li>Venetic +2</li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (13)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>no_other_entertainment</code></td><td><code>no_building_tagged entertainment queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>size1</code></td><td><code>major_event "empire_size1"</code></td></tr><tr><td><code>size10</code></td><td><code>major_event "empire_size10"</code></td><td class="grp"><code>size2</code></td><td><code>major_event "empire_size2"</code></td><td class="grp"><code>size3</code></td><td><code>major_event "empire_size3"</code></td><td class="grp"><code>size4</code></td><td><code>major_event "empire_size4"</code></td></tr><tr><td><code>size5</code></td><td><code>major_event "empire_size5"</code></td><td class="grp"><code>size6</code></td><td><code>major_event "empire_size6"</code></td><td class="grp"><code>size7</code></td><td><code>major_event "empire_size7"</code></td><td class="grp"><code>size8</code></td><td><code>major_event "empire_size8"</code></td></tr><tr><td><code>size9</code></td><td><code>major_event "empire_size9"</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<summary>What the shorthands in those conditions stand for (3)</summary>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_entertainment</code></td><td><code>no_building_tagged entertainment queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

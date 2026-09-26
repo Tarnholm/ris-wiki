@@ -38,7 +38,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>wetlands</code></li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and requires_gov and no_other_farm and hidden_resource wetlands</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -58,14 +58,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>wetlands</code></li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and requires_gov and no_other_farm and hidden_resource wetlands</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>-1 population growth <em>(player only)</em></li></ul>
+<ul><li>-1 population growth</li></ul>
 <details>
-<summary>Show 9 effects that apply only in the circumstances shown</summary>
-<ul><li>+3 farming level — only when <code>not resource livestock and not resource fish</code></li><li>+4 farming level — only when <code>resource livestock or resource fish</code></li><li>-1 population growth — only when <code>not is_player and building_present_min_level wetland_pastoralism seasonal_pastures</code></li><li>+1 trade income — only when <code>salt_building_supply and not marsh_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and marsh_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and marsh_trade_animals</code></li><li>Additional +1 farming due to resources: livestock, fish — only when <code>resource livestock or resource fish</code></li><li>Trade bonus 10% due to resources: livestock, medicinal herbs&amp;perfumes, papyrus, honey, wild animals — only when <code>marsh_trade_animals</code></li><li>Trade bonus 10% due to resource: salt — only when <code>salt_building_supply</code></li></ul>
+<summary>Show 8 effects that apply only in the circumstances shown</summary>
+<ul><li>+3 farming level — only when <code>not resource livestock and not resource fish</code></li><li>+4 farming level — only when <code>resource livestock or resource fish</code></li><li>+1 trade income — only when <code>salt_building_supply and not marsh_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and marsh_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and marsh_trade_animals</code></li><li>Additional +1 farming due to resources: livestock, fish — only when <code>resource livestock or resource fish</code></li><li>Trade bonus 10% due to resources: livestock, medicinal herbs&amp;perfumes, papyrus, honey, wild animals — only when <code>marsh_trade_animals</code></li><li>Trade bonus 10% due to resource: salt — only when <code>salt_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="managed-wetland-pastures-adaptive-husbandry">Managed Wetland Pastures (Adaptive husbandry)</h2>
 <p><img src="../art/roman__farms_2.png" alt="Managed Wetland Pastures (Adaptive husbandry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Farms+2 picture instead.</em></p>
@@ -79,18 +79,18 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>no building tagged <code>food</code> is built or queued here (<code>no_other_farm</code>)</li><li>the region has the hidden resource <code>wetlands</code></li><li><code>faction_marsh_adapt_farming</code></li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and requires_gov and no_other_farm and hidden_resource wetlands and faction_marsh_adapt_farming</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>-2 population growth <em>(player only)</em></li></ul>
+<ul><li>-2 population growth</li></ul>
 <details>
-<summary>Show 9 effects that apply only in the circumstances shown</summary>
-<ul><li>+5 farming level — only when <code>not resource livestock and not resource fish</code></li><li>+6 farming level — only when <code>resource livestock or resource fish</code></li><li>-2 population growth — only when <code>not is_player and building_present_min_level wetland_pastoralism managed_marshlands</code></li><li>+1 trade income — only when <code>salt_building_supply and not marsh_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and marsh_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and marsh_trade_animals</code></li><li>Additional +1 farming due to resources: livestock, fish — only when <code>resource livestock or resource fish</code></li><li>Trade bonus 10% due to resources: livestock, medicinal herbs&amp;perfumes, papyrus, honey, wild animals — only when <code>marsh_trade_animals</code></li><li>Trade bonus 10% due to resource: salt — only when <code>salt_building_supply</code></li></ul>
+<summary>Show 8 effects that apply only in the circumstances shown</summary>
+<ul><li>+5 farming level — only when <code>not resource livestock and not resource fish</code></li><li>+6 farming level — only when <code>resource livestock or resource fish</code></li><li>+1 trade income — only when <code>salt_building_supply and not marsh_trade_animals</code></li><li>+1 trade income — only when <code>not salt_building_supply and marsh_trade_animals</code></li><li>+2 trade income — only when <code>salt_building_supply and marsh_trade_animals</code></li><li>Additional +1 farming due to resources: livestock, fish — only when <code>resource livestock or resource fish</code></li><li>Trade bonus 10% due to resources: livestock, medicinal herbs&amp;perfumes, papyrus, honey, wild animals — only when <code>marsh_trade_animals</code></li><li>Trade bonus 10% due to resource: salt — only when <code>salt_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (6)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>faction_marsh_adapt_farming</code></td><td><code>factions { trinovantes, dumnonii, durotriges, catuvellauni, brigantes, iverni, cantiaci, getae, eravisci, crobyzi, tyragetae, insubres, scordisci, veneti_gallia, salluvii, sotiates, cisalpine_boii, cimbri, lugii, frisii, chauci, cherusci, bastarnae, langobardi, hermunduri, venedae, ambrones, asta, messapians, veneti, characene, mauri, chorasmia, triballi, suebi, }</code></td><td class="grp"><code>marsh_trade_animals</code></td><td><code>resource livestock or resource perfumes or resource papyrus or resource honey or resource wild_animals</code></td><td class="grp"><code>no_other_farm</code></td><td><code>no_building_tagged food queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>salt_building_supply</code></td><td><code>resource salt or hidden_resource salt_supply_built factionwide</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>faction_marsh_adapt_farming</code></td><td><code>factions { trinovantes, dumnonii, durotriges, catuvellauni, brigantes, iverni, cantiaci, getae, eravisci, crobyzi, tyragetae, insubres, scordisci, veneti_gallia, salluvii, sotiates, cisalpine_boii, cimbri, lugii, frisii, chauci, cherusci, bastarnae, langobardi, hermunduri, venedae, ambrones, asta, messapians, veneti, characene, mauri, chorasmia, triballi, suebi, }</code></td><td class="grp"><code>marsh_trade_animals</code></td><td><code>resource livestock or resource perfumes or resource papyrus or resource honey or resource wild_animals</code></td><td class="grp"><code>no_other_farm</code></td><td><code>no_building_tagged food queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"><code>salt_building_supply</code></td><td><code>resource salt or hidden_resource salt_supply_built factionwide</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

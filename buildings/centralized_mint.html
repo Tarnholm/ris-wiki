@@ -38,7 +38,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 16 factions, listed in the condition below (<code>minting_factions</code>)</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Local Market at Forum or above is built here</li><li>no building tagged <code>civic</code> is built or queued here (<code>no_other_civic</code>)</li><li>Not Autonomous Mint</li><li>Direct Rule or Homeland</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>minting_factions and nobuilding and building_present_min_level market forum and no_other_civic and not_autonomous_mint and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -57,7 +57,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 16 factions, listed in the condition below (<code>minting_factions</code>)</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Local Market at Great Forum or above is built here</li><li>no building tagged <code>civic</code> is built or queued here (<code>no_other_civic</code>)</li><li>Direct Rule or Homeland</li><li>This building requires empire size 6 or above to be constructed</li><li>anywhere in your empire does not have the hidden resource <code>royal_mint_built</code> (<code>not_royal_mint_built</code>)</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>minting_factions and nobuilding and building_present_min_level market curia and no_other_civic and direct_govs and size+5 and not_royal_mint_built</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>

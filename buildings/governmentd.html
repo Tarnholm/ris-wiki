@@ -33,10 +33,10 @@
 <p><em>Wording varies by culture: 11 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li><code>homeland</code></li><li>the settlement is yours</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Building this item requires the destruction of an existing government building</li></ul>
+<ul><li>any faction</li><li><code>homeland</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Building this item requires the destruction of an existing government building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>factions { all, } and homeland and is_player and nobuilding and no_other_government</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>factions { all, } and homeland and nobuilding and no_other_government</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <ul><li>extra construction points 1</li><li>recruits gain 1 morale</li><li>+10 taxable income</li></ul>

@@ -33,15 +33,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>walls at level 0</li><li>towers at level 1</li><li>-3 taxable income <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-3 taxable income — only when <code>building_present_min_level defenses wooden_pallisade and not is_player</code></li></ul>
-</details></section><section class="sec wide"><h2 id="small-stone-wall">Small Stone Wall</h2>
+<ul><li>walls at level 0</li><li>towers at level 1</li><li>-3 taxable income</li></ul></section><section class="sec wide"><h2 id="small-stone-wall">Small Stone Wall</h2>
 <p><img src="../art/roman__wooden_wall.png" alt="Small Stone Wall"></p>
 <p><strong>A rough wooden wall is a better defence than a crude palisade, but it is not likely to present much of a problem to attackers.</strong></p>
 <p>Relatively easy to construct with a skilled workforce, this minor stone wall offers a modest but reliable protection, combining mortared stonework with timber reinforcements. While not as imposing as true stone fortifications, these defenses will slow down all but the most determined attackers. Raiders and opportunistic forces will find them a serious obstacle, but a well-equipped army with siege equipment will, however, break the wall down sooner rather than later.</p>
@@ -51,14 +47,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>walls at level 1</li><li>gate strength 1</li><li>towers at level 1</li><li>-6 taxable income <em>(player only)</em></li></ul>
+<ul><li>walls at level 1</li><li>gate strength 1</li><li>towers at level 1</li><li>-6 taxable income</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 public order (law) — only when <code>is_toggled "settlement condition"</code></li><li>-6 taxable income — only when <code>building_present_min_level defenses wooden_wall and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+1 public order (law) — only when <code>is_toggled "settlement condition"</code></li></ul>
 </details></section><section class="sec wide"><h2 id="stone-wall">Stone Wall</h2>
 <p><img src="../art/roman__stone_wall.png" alt="Stone Wall"></p>
 <p><strong>Stone walls are fairly substantial and give a degree of security to a town, but truly determined attackers will be able to breach them.</strong></p>
@@ -69,14 +65,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>walls at level 2</li><li>towers at level 1</li><li>gate defences 1</li><li>gate strength 1</li><li>-9 taxable income <em>(player only)</em></li></ul>
+<ul><li>walls at level 2</li><li>towers at level 1</li><li>gate defences 1</li><li>gate strength 1</li><li>-9 taxable income</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 public order (law) — only when <code>is_toggled "settlement condition"</code></li><li>-9 taxable income — only when <code>building_present_min_level defenses stone_wall and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+1 public order (law) — only when <code>is_toggled "settlement condition"</code></li></ul>
 </details></section><section class="sec wide"><h2 id="large-stone-wall">Large Stone Wall</h2>
 <p><img src="../art/roman__large_stone_wall.png" alt="Large Stone Wall"></p>
 <p><strong>Large walls are substantial, and even organised enemies will have a hard time scaling them or breaking into the city.</strong></p>
@@ -86,14 +82,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 15 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { carthaginian, iberian, libyan, eastern, anatolian, iranian, arab, ethiopian, indian, parni, egyptian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>walls at level 3</li><li>towers at level 1</li><li>gate defences 2</li><li>gate strength 2</li><li>-13 taxable income <em>(player only)</em></li></ul>
+<ul><li>walls at level 3</li><li>towers at level 1</li><li>gate defences 2</li><li>gate strength 2</li><li>-13 taxable income</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+2 public order (law) — only when <code>is_toggled "settlement condition"</code></li><li>-13 taxable income — only when <code>building_present_min_level defenses large_stone_wall and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+2 public order (law) — only when <code>is_toggled "settlement condition"</code></li></ul>
 </details></section><section class="sec wide"><h2 id="epic-stone-wall">Epic Stone Wall</h2>
 <p><img src="../art/roman__epic_stone_wall.png" alt="Epic Stone Wall"></p>
 <p><strong>These awesome walls will present all attackers with an apparently impregnable barrier when assaulting a protected city.</strong></p>
@@ -103,18 +99,18 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 15 factions, listed in the condition below</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { carthaginian, iberian, libyan, eastern, anatolian, iranian, arab, ethiopian, indian, parni, egyptian, greek, w_hellenistic, e_hellenistic, roman, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>walls at level 4</li><li>towers at level 2</li><li>gate defences 2</li><li>gate strength 2</li><li>-18 taxable income <em>(player only)</em></li></ul>
+<ul><li>walls at level 4</li><li>towers at level 2</li><li>gate defences 2</li><li>gate strength 2</li><li>-18 taxable income</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>+2 public order (law) — only when <code>is_toggled "settlement condition"</code></li><li>-18 taxable income — only when <code>building_present_min_level defenses epic_stone_wall and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>+2 public order (law) — only when <code>is_toggled "settlement condition"</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (2)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

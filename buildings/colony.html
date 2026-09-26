@@ -38,7 +38,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Indirect Rule</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Not Homeland region</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and gov_tier_2 and nobuilding and not_homeland</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -64,7 +64,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Direct Rule</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Not Homeland region</li><li>the region does not have the hidden resource <code>desert</code> (<code>not_desert</code>)</li><li>the region does not have the hidden resource <code>mountains</code> (<code>not_mountains</code>)</li><li>the region does not have the hidden resource <code>sub_artic</code> and the region does not have the hidden resource <code>alpine</code> (<code>not_extreme_cold</code>)</li><li>the region does not have the hidden resource <code>arid</code> (<code>not_arid</code>) — or — the region has the hidden resource <code>irrigation_river</code> — or — the region has the hidden resource <code>irrigation_springs</code> — or — the region has the hidden resource <code>irrigation_lake</code> — or — the region has the hidden resource <code>irrigation_oasis</code> (<code>water</code>)</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and gov_tier_3 and nobuilding and not_homeland and not_desert and not_mountains and not_extreme_cold and not_arid or water</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>

@@ -35,14 +35,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>roads at level 0</li><li>taxable income -5 to -1, scaling with settlement size <em>(player only)</em></li></ul>
+<ul><li>roads at level 0</li><li>taxable income -5 to -1, scaling with settlement size</li></ul>
 <details>
-<summary>Show 11 effects that apply only in the circumstances shown</summary>
-<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter and is_player</code></li><li>-1 taxable income — only when <code>size1 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-1 taxable income — only when <code>size2 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-2 taxable income — only when <code>size3 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-2 taxable income — only when <code>size4 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-3 taxable income — only when <code>size5 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-3 taxable income — only when <code>size6 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-4 taxable income — only when <code>size7 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-4 taxable income — only when <code>size8 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-5 taxable income — only when <code>size9 and building_present_min_level hinterland_roads roads and not is_player</code></li><li>-5 taxable income — only when <code>size10 and building_present_min_level hinterland_roads roads and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter</code></li></ul>
 </details></section><section class="sec wide"><h2 id="paved-roads">Paved Roads</h2>
 <p><img src="../art/roman__paved_roads.png" alt="Paved Roads"></p>
 <p>These improved roads allow armies to assemble and then meet approaching enemies swiftly. Paved roads are built for military use first and foremost. They are carefully surveyed and constructed, often including cuttings and extensive causeways. They will not degenerate into muddy rivers in winter or dusty tracks in summer, no matter how hard the usage.</p>
@@ -51,14 +51,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is not one of <code>scythian, germanic, brittonic, libyan</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>not factions { scythian, germanic, brittonic, libyan, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>roads at level 1</li><li>taxable income -10 to -5, scaling with settlement size <em>(player only)</em></li></ul>
+<ul><li>roads at level 1</li><li>taxable income -10 to -5, scaling with settlement size</li></ul>
 <details>
-<summary>Show 11 effects that apply only in the circumstances shown</summary>
-<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter and is_player</code></li><li>-5 taxable income — only when <code>size1 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-5 taxable income — only when <code>size2 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-6 taxable income — only when <code>size3 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-6 taxable income — only when <code>size4 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-7 taxable income — only when <code>size5 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-7 taxable income — only when <code>size6 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-8 taxable income — only when <code>size7 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-8 taxable income — only when <code>size8 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-9 taxable income — only when <code>size9 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li><li>-9 taxable income — only when <code>size10 and building_present_min_level hinterland_roads paved_roads and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter</code></li></ul>
 </details></section><section class="sec wide"><h2 id="highways">Highways</h2>
 <p><img src="../art/roman__highways.png" alt="Highways"></p>
 <p><strong>These superb roads allow very swift movement by massed Roman armies to defend the Empire.</strong></p>
@@ -69,18 +69,18 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of <code>roman, greek, w_hellenistic, e_hellenistic, anatolian, eastern, iranian, carthaginian</code></li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { roman, greek, w_hellenistic, e_hellenistic, anatolian, eastern, iranian, carthaginian, } and nobuilding and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>roads at level 2</li><li>taxable income -12 to -8, scaling with settlement size <em>(player only)</em></li></ul>
+<ul><li>roads at level 2</li><li>taxable income -12 to -8, scaling with settlement size</li></ul>
 <details>
-<summary>Show 11 effects that apply only in the circumstances shown</summary>
-<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter and is_player</code></li><li>-8 taxable income — only when <code>size1 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-8 taxable income — only when <code>size2 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-9 taxable income — only when <code>size3 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-9 taxable income — only when <code>size4 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-10 taxable income — only when <code>size5 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-10 taxable income — only when <code>size6 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-11 taxable income — only when <code>size7 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-11 taxable income — only when <code>size8 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-12 taxable income — only when <code>size9 and building_present_min_level hinterland_roads highways and not is_player</code></li><li>-12 taxable income — only when <code>size10 and building_present_min_level hinterland_roads highways and not is_player</code></li></ul>
+<summary>Show 1 effect that apply only in the circumstances shown</summary>
+<ul><li>Due to extreme climate this building's effects are disabled during winter — only when <code>not disabling_in_winter</code></li></ul>
 </details>
 <details>
-<summary>What the shorthands in those conditions stand for (14)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>disabling_in_winter</code></td><td><code>not_extreme_cold or not major_event "winter"</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_extreme_cold</code></td><td><code>not hidden_resource sub_artic and not hidden_resource alpine</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr><tr><td><code>size1</code></td><td><code>major_event "empire_size1"</code></td><td class="grp"><code>size10</code></td><td><code>major_event "empire_size10"</code></td><td class="grp"><code>size2</code></td><td><code>major_event "empire_size2"</code></td><td class="grp"><code>size3</code></td><td><code>major_event "empire_size3"</code></td></tr><tr><td><code>size4</code></td><td><code>major_event "empire_size4"</code></td><td class="grp"><code>size5</code></td><td><code>major_event "empire_size5"</code></td><td class="grp"><code>size6</code></td><td><code>major_event "empire_size6"</code></td><td class="grp"><code>size7</code></td><td><code>major_event "empire_size7"</code></td></tr><tr><td><code>size8</code></td><td><code>major_event "empire_size8"</code></td><td class="grp"><code>size9</code></td><td><code>major_event "empire_size9"</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<summary>What the shorthands in those conditions stand for (4)</summary>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>disabling_in_winter</code></td><td><code>not_extreme_cold or not major_event "winter"</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_extreme_cold</code></td><td><code>not hidden_resource sub_artic and not hidden_resource alpine</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

@@ -34,15 +34,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource slave_trade and no_other_urban_exploits and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+2 trade income</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level slave_market slave_market</code></li></ul>
-</details></section><section class="sec wide"><h2 id="slave-auction-urban">Slave Auction (Urban)</h2>
+<ul><li>+2 trade income</li><li>-2 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="slave-auction-urban">Slave Auction (Urban)</h2>
 <p><img src="../art/roman__slave_market.png" alt="Slave Auction (Urban)"></p>
 <p><strong>Need some more hands for that? Why not buy some.</strong></p>
 <p>The bustling market where people are treated as just another commodity, captured in battle, born into servitude, or sold due to bad luck or bad debt.</p>
@@ -55,15 +51,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource slave_trade and no_other_urban_exploits and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+4 trade income</li><li>-4 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-4 public order (happiness) — only when <code>not is_player and building_present_min_level slave_market slave_market</code></li></ul>
-</details></section><section class="sec wide"><h2 id="slave-trading-hub-urban">Slave Trading Hub (Urban)</h2>
+<ul><li>+4 trade income</li><li>-4 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="slave-trading-hub-urban">Slave Trading Hub (Urban)</h2>
 <p><img src="../art/roman__forum.png" alt="Slave Trading Hub (Urban)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
 <p><strong>A regional slave supply line that’s vital for everything from villas to war.</strong></p>
@@ -77,7 +69,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>anywhere in your empire does not have the hidden resource <code>slave_supply_built</code> (<code>not_slave_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource slave_trade and not_slave_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -88,7 +80,7 @@
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_slave_supply_built</code></td><td><code>not hidden_resource slave_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_slave_supply_built</code></td><td><code>not hidden_resource slave_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

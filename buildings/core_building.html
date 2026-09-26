@@ -36,13 +36,13 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, }</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>
-<summary>Show 7 effects that apply only in the circumstances shown</summary>
-<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and is_player and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>is_player and hidden_resource capital</code></li><li>allows recruiting Diplomats — only when <code>factions { all, } and hidden_resource capital and not is_player</code></li><li>up to 1 Diplomat can be recruited in this settlement — only when <code>hidden_resource capital and not is_player</code></li><li>+199 public order (happiness) — only when <code>hidden_resource cg_antibonus</code></li><li>-50 population growth — only when <code>hidden_resource cg_antibonus</code></li><li>-50 taxable income — only when <code>hidden_resource cg_antibonus</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>hidden_resource capital</code></li><li>+199 public order (happiness) — only when <code>hidden_resource cg_antibonus</code></li><li>-50 population growth — only when <code>hidden_resource cg_antibonus</code></li><li>-50 taxable income — only when <code>hidden_resource cg_antibonus</code></li></ul>
 </details></section><section class="sec wide"><h2 id="governor-s-villa">Governor's Villa</h2>
 <p><img src="../art/roman__governors_villa.png" alt="Governor's Villa"></p>
 <p><strong>The Governor's Villa is the centre of the settlement: the place where important decisions are made. It brings a small touch of class to a town and allows further development.</strong></p>
@@ -53,13 +53,13 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and is_player and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>is_player and hidden_resource capital</code></li><li>allows recruiting Diplomats — only when <code>factions { all, } and hidden_resource capital and not is_player</code></li><li>up to 1 Diplomat can be recruited in this settlement — only when <code>hidden_resource capital and not is_player</code></li></ul>
+<summary>Show 2 effects that apply only in the circumstances shown</summary>
+<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>hidden_resource capital</code></li></ul>
 </details></section><section class="sec wide"><h2 id="governor-s-palace">Governor's Palace</h2>
 <p><img src="../art/roman__governors_palace.png" alt="Governor's Palace"></p>
 <p><strong>The Governor's Palace is an important centre of political power, and a deliberately impressive symbol of Roman might and authority.</strong></p>
@@ -70,13 +70,13 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and is_player and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>is_player and hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li><li>allows recruiting Diplomats — only when <code>factions { all, } and hidden_resource capital and not is_player</code></li><li>up to 1 Diplomat can be recruited in this settlement — only when <code>hidden_resource capital and not is_player</code></li></ul>
+<summary>Show 3 effects that apply only in the circumstances shown</summary>
+<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li></ul>
 </details></section><section class="sec wide"><h2 id="pro-consul-s-palace">Pro-Consul's Palace</h2>
 <p><img src="../art/roman__proconsuls_palace.png" alt="Pro-Consul's Palace"></p>
 <p><strong>The Pro-Consul's Palace is an unmissable symbol of Roman might and authority. Those who live in its shadow can have no doubts as to who is in charge.</strong></p>
@@ -87,13 +87,13 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and is_player and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>is_player and hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li><li>allows recruiting Diplomats — only when <code>factions { all, } and hidden_resource capital and not is_player</code></li><li>up to 1 Diplomat can be recruited in this settlement — only when <code>hidden_resource capital and not is_player</code></li></ul>
+<summary>Show 3 effects that apply only in the circumstances shown</summary>
+<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li></ul>
 </details></section><section class="sec wide"><h2 id="imperial-palace">Imperial Palace</h2>
 <p><img src="../art/roman__imperial_palace.png" alt="Imperial Palace"></p>
 <p><strong>The Curia is the ultimate expression in marble and stone of Roman authority.</strong></p>
@@ -104,17 +104,17 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>
-<summary>Show 5 effects that apply only in the circumstances shown</summary>
-<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and is_player and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>is_player and hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li><li>allows recruiting Diplomats — only when <code>factions { all, } and hidden_resource capital and not is_player</code></li><li>up to 1 Diplomat can be recruited in this settlement — only when <code>hidden_resource capital and not is_player</code></li></ul>
+<summary>Show 3 effects that apply only in the circumstances shown</summary>
+<ul><li>allows recruiting Diplomats — only when <code>factions { all, } and requires_gov and hidden_resource capital</code></li><li>up to 3 Diplomats can be recruited in this settlement — only when <code>hidden_resource capital</code></li><li>+1 public order (law) — only when <code>purple_dye_building_supply_not_local</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (2)</summary>
-<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>purple_dye_building_supply_not_local</code></td><td><code>hidden_resource purple_dye_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>purple_dye_building_supply_not_local</code></td><td><code>hidden_resource purple_dye_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

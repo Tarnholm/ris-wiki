@@ -31,10 +31,10 @@
 <p>Historically, the mint was a source of wealth and control. The Ptolemies, for example, tried to make an inner economy and only allowed to use their coins. The mint in many cases was a symbol of independence. In case of Bosporan Kingdom, during the time of consolidation of power, kings allowed mint only in the capital, while before there were at least 5-6 another mints. The decentralization of the kingdom in the II BCE, even without any written sources, could be seen through the sudden appearance of new minting locations. The person who controlled the mint influenced all others who used those coins, as he decided: what will be on coin (propaganda), from which metal it will be made, and how much was the coin worth.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>your faction is one of 16 factions, listed in the condition below (<code>minting_factions</code>)</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Local Market at Forum or above is built here</li><li>Not Centralized Mint or Treasury</li><li>no building tagged <code>civic</code> is built or queued here (<code>no_other_civic</code>)</li><li>Dependency or Indirect Rule — or — the settlement is the AI's</li><li>Not Homeland region</li></ul>
+<ul><li>your faction is one of 16 factions, listed in the condition below (<code>minting_factions</code>)</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Local Market at Forum or above is built here</li><li>Not Centralized Mint or Treasury</li><li>no building tagged <code>civic</code> is built or queued here (<code>no_other_civic</code>)</li><li>Dependency or Indirect Rule</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>minting_factions and nobuilding and building_present_min_level market forum and not_centralized_mint and no_other_civic and indirect_govs or not is_player and not_homeland</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>minting_factions and nobuilding and building_present_min_level market forum and not_centralized_mint and no_other_civic and indirect_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <details>

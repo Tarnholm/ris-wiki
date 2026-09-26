@@ -34,10 +34,10 @@
 <p>For a few extra coins, even the most rebellious citizen is content to wait in line for his ration.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Large Grain Imports (Food trade)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Barter or above is built here</li><li>Roads or Trading Port or River Port or above</li></ul>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Barter or above is built here</li><li>Roads or Trading Port or River Port or above</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market trader and any_transport</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>nobuilding and direct_govs and can_import_grain and not_granary and building_present_min_level market trader and any_transport</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <ul><li>+2 population growth</li><li>+2 public order (happiness)</li><li>-10 taxable income</li><li>-1 trade income</li><li>Consumes 1 grain supply point from your faction. \nAny faction starts with 1 base grain supply point. \nGrain supply points can be increased by building grain supply chain</li></ul>
@@ -54,10 +54,10 @@
 <p>The people may not notice the rising costs, but the city’s leaders certainly do. Nonetheless, the masses stay content, and isn’t that worth every coin?</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Grain Import Network (Food trade)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Paved Roads or Trading Port or River Port or above</li></ul>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Paved Roads or Trading Port or River Port or above</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market market and any_transport_2</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>nobuilding and direct_govs and can_import_grain and not_granary and building_present_min_level market market and any_transport_2</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <ul><li>+4 population growth</li><li>+4 public order (happiness)</li><li>-20 taxable income</li><li>-1 trade income</li><li>Consumes 2 grain supply points from your faction. \nAny faction starts with 1 base grain supply point. \nGrain supply points can be increased by building grain supply chain</li></ul>
@@ -73,10 +73,10 @@
 <p>It’s almost enough to make one forget the astronomical costs. The coffers may be emptied and trade profits exhausted, but for a city this big, what’s a little expense if it means keeping the peace? Let the merchants smirk, for as long as the ever-hungry masses are fed, our people endures.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>1 turn</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the settlement is yours</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li></ul>
+<ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Direct Rule or Homeland</li><li>anywhere in your empire has the hidden resource <code>can_build_grain_imports</code> (<code>can_import_grain</code>)</li><li>Small Granary (Food trade) is not built here and not <code>building_present food_storage queued</code> (<code>not_granary</code>)</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
-<ul><li><code>nobuilding and is_player and direct_govs and can_import_grain and not_granary and building_present_min_level market market and water_transport</code></li></ul>
+<summary>Show the condition as the game files write it (the player's part)</summary>
+<ul><li><code>nobuilding and direct_govs and can_import_grain and not_granary and building_present_min_level market market and water_transport</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
 <ul><li>population growth +6 to +8</li><li>happiness +6 to +8</li><li>-20 taxable income</li><li>trade base income -3 to -2</li><li>Consumes 3 grain supply points from your faction. \nAny faction starts with 1 base grain supply point. \nGrain supply points can be increased by building grain supply chain</li><li>Consumes 4 grain supply points from your faction. \nAny faction starts with 1 base grain supply point. \nGrain supply points can be increased by building grain supply chain</li></ul>

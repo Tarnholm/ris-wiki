@@ -35,15 +35,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the livestock resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource livestock and no_other_urban_exploits and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+8 taxable income</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-1 public order (happiness) — only when <code>building_present_min_level hides_industry hides_1 and not is_player</code></li></ul>
-</details></section><section class="sec wide"><h2 id="leatherworker-urban">Leatherworker (Urban)</h2>
+<ul><li>+8 taxable income</li><li>-1 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="leatherworker-urban">Leatherworker (Urban)</h2>
 <p><img src="../art/roman__hides_2.png" alt="Leatherworker (Urban)"></p>
 <p><strong>Armour so flexible, you might forget you’re at war.</strong></p>
 <p>In the Leatherworkers shop the leather produced by the tannery gets made into usefull goods, like clothing, boots, and the sturdy straps that tie everything in ancient life together.</p>
@@ -53,15 +49,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the livestock resource</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource livestock and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+12 taxable income</li><li>+1 trade income</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
-<details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>-1 public order (happiness) — only when <code>building_present_min_level hides_industry hides_2 and not is_player</code></li></ul>
-</details></section><section class="sec wide"><h2 id="parchment-maker-urban">Parchment Maker (Urban)</h2>
+<ul><li>+12 taxable income</li><li>+1 trade income</li><li>-1 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="parchment-maker-urban">Parchment Maker (Urban)</h2>
 <p><img src="../art/roman__hides_3.png" alt="Parchment Maker (Urban)"></p>
 <p><strong>Where hides and history meet in thin sheets.</strong></p>
 <p>At the Parchment Maker’s, hides are transformed into delicate sheets upon which history is written.</p>
@@ -71,11 +63,11 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the livestock resource</li><li>Small School (Civic) at Small School (Civic) or above is built here</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>advanced_crafts_factions and building_present_min_level market forum and nobuilding and resource livestock and building_present_min_level academic academy and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+18 taxable income</li><li>+2 trade income</li><li>+1 public order (law)</li><li>-1 public order (happiness) <em>(player only)</em></li></ul></section><section class="sec wide"><h2 id="parchment-exports-urban">Parchment Exports (Urban)</h2>
+<ul><li>+18 taxable income</li><li>+2 trade income</li><li>+1 public order (law)</li><li>-1 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="parchment-exports-urban">Parchment Exports (Urban)</h2>
 <p><img src="../art/roman__hides_supply.png" alt="Parchment Exports (Urban)"></p>
 <p><strong>Where thoughts become scrolls and wisdom lives on (for a price).</strong></p>
 <p>As there never seems to be enough papyrus available, scholars and scribes have been gathered to turn parchment into the repository of civilization’s brightest (and sometimes strangest) ideas.</p>
@@ -84,14 +76,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Large Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the livestock resource</li><li>Small School (Civic) at Academy (Civic) or above is built here</li><li>Direct Rule or Homeland</li><li>anywhere in your empire does not have the hidden resource <code>hides_supply_built</code> (<code>not_hides_supply_built</code>)</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>advanced_crafts_factions and building_present_min_level market great_forum and nobuilding and resource livestock and building_present_min_level academic scriptorium and direct_govs and not_hides_supply_built</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>+20 taxable income</li><li>+3 trade income</li><li>+1 public order (law)</li><li>-1 public order (happiness) <em>(player only)</em></li><li>(Faction) Law courts (tier 2-3) and Academies (tier 2-3) gain bonus law (local livestock does not give this bonus) (does not stack with papyrus bonus)</li></ul>
+<ul><li>+20 taxable income</li><li>+3 trade income</li><li>+1 public order (law)</li><li>-1 public order (happiness)</li><li>(Faction) Law courts (tier 2-3) and Academies (tier 2-3) gain bonus law (local livestock does not give this bonus) (does not stack with papyrus bonus)</li></ul>
 <details>
 <summary>What the shorthands in those conditions stand for (6)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_hides_supply_built</code></td><td><code>not hidden_resource hides_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_hides_supply_built</code></td><td><code>not hidden_resource hides_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

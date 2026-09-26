@@ -35,7 +35,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>any faction</li><li>Government Building</li><li>Grain Imports (Food trade) is not built here and not <code>building_present grain_imports queued</code> (<code>not_grain_imports</code>)</li><li>Level 1 of any cropfarming building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and resource grain and factions { all, } and requires_gov and not_grain_imports and cropfarming_level_1</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -55,7 +55,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>any faction</li><li>Government Building</li><li>Grain Imports (Food trade) is not built here and not <code>building_present grain_imports queued</code> (<code>not_grain_imports</code>)</li><li>Level 2 of any cropfarming building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and resource grain and factions { all, } and requires_gov and not_grain_imports and cropfarming_level_2</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -77,7 +77,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>any faction</li><li>Government Building</li><li>Grain Imports (Food trade) is not built here and not <code>building_present grain_imports queued</code> (<code>not_grain_imports</code>)</li><li>Level 3 of any cropfarming building</li><li>Trading Port or River Port or above</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and resource grain and factions { all, } and requires_gov and not_grain_imports and cropfarming_level_3 and water_transport</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -96,7 +96,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the grain resource</li><li>any faction</li><li>Government Building</li><li>Grain Imports (Food trade) is not built here and not <code>building_present grain_imports queued</code> (<code>not_grain_imports</code>)</li><li>Level 4 of any cropfarming building</li><li>Shipwright or above or Inland Trade Centre</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>nobuilding and resource grain and factions { all, } and requires_gov and not_grain_imports and cropfarming_level_4 and water_transport_2</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -108,7 +108,7 @@
 <blockquote><p><strong>Excludes:</strong> building this rules out Grain Imports (Food trade). Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
 <details>
 <summary>What the shorthands in those conditions stand for (9)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>cropfarming_level_1</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_2</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_3</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_4</code></td><td>any one of 4 alternatives — too long to quote here</td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_grain_imports</code></td><td><code>not building_present grain_imports and not building_present grain_imports queued</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td></tr><tr><td><code>water_transport_2</code></td><td><code>building_present_min_level river_port river_port2 or building_present_min_level port_buildings shipwright</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>cropfarming_level_1</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_2</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_3</code></td><td>any one of 5 alternatives — too long to quote here</td><td class="grp"><code>cropfarming_level_4</code></td><td>any one of 4 alternatives — too long to quote here</td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_grain_imports</code></td><td><code>not building_present grain_imports and not building_present grain_imports queued</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td></tr><tr><td><code>water_transport_2</code></td><td><code>building_present_min_level river_port river_port2 or building_present_min_level port_buildings shipwright</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

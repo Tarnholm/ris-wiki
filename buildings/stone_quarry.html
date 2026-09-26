@@ -37,14 +37,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the stone resource</li><li>no building tagged <code>heavy_ind</code> is built or queued here (<code>no_other_heavy_ind</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and resource stone and no_other_heavy_ind and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>construction cost bonus military +5</li><li>construction time bonus other +15</li><li>construction cost bonus other +5</li><li>-1 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>construction cost bonus military +5</li><li>construction time bonus other +15</li><li>construction cost bonus other +5</li><li>-1 public order (happiness)</li></ul>
 <details>
-<summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +10 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+2 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+4 taxable income — only when <code>slave_trade_building_supply</code></li><li>-1 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_1</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +10 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+2 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+4 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="stone-cutter-industry">Stone Cutter (Industry)</h2>
 <p><img src="../art/roman__stone_2.png" alt="Stone Cutter (Industry)"></p>
 <p><strong>A significant stone quarry, supplying large amounts of building material for regional projects.</strong></p>
@@ -58,14 +58,14 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the stone resource</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and resource stone and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>construction cost bonus military +10</li><li>construction time bonus other +20</li><li>construction cost bonus other +15</li><li>-2 public order (happiness) <em>(player only)</em></li></ul>
+<ul><li>construction cost bonus military +10</li><li>construction time bonus other +20</li><li>construction cost bonus other +15</li><li>-2 public order (happiness)</li></ul>
 <details>
-<summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +25 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>-2 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_2</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +25 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +15 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+4 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+8 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details></section><section class="sec wide"><h2 id="stone-exports-industry">Stone Exports (Industry)</h2>
 <p><img src="../art/roman__stone_supply.png" alt="Stone Exports (Industry)"></p>
 <p><strong>Send stones far and wide, and watch the world build itself in your image. - Stone is now being exported on a large scale, building the wealth of the region one block at a time.</strong></p>
@@ -79,18 +79,18 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>Trading Port or River Port or above</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the stone resource</li><li>anywhere in your empire does not have the hidden resource <code>stone_supply_built</code> (<code>not_stone_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market market and water_transport and nobuilding and resource stone and not_stone_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
-<ul><li>construction cost bonus military +10</li><li>construction time bonus other +30</li><li>construction cost bonus other +15</li><li>+1 trade income</li><li>-3 public order (happiness) <em>(player only)</em></li><li>(Capital) +1 construction point (faster construction) at the cost of a 10% tax penalty</li></ul>
+<ul><li>construction cost bonus military +10</li><li>construction time bonus other +30</li><li>construction cost bonus other +15</li><li>+1 trade income</li><li>-3 public order (happiness)</li><li>(Capital) +1 construction point (faster construction) at the cost of a 10% tax penalty</li></ul>
 <details>
-<summary>Show 6 effects that apply only in the circumstances shown</summary>
-<ul><li>construction time bonus defensive +35 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +20 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+5 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>-3 public order (happiness) — only when <code>not is_player and building_present_min_level stone_quarry stone_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
+<summary>Show 5 effects that apply only in the circumstances shown</summary>
+<ul><li>construction time bonus defensive +35 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>construction cost bonus defensive +20 — only when <code>building_present_min_level defenses wooden_pallisade</code></li><li>+5 taxable income — only when <code>not slave_trade_building_supply</code></li><li>+10 taxable income — only when <code>slave_trade_building_supply</code></li><li>Tax bonus is due to local slave trade or factionwide supply — only when <code>slave_trade_building_supply</code></li></ul>
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (7)</summary>
-<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_stone_supply_built</code></td><td><code>not hidden_resource stone_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td><td class="grp"><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td></tr><tr><td><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td></tr><tr><td><code>not_stone_supply_built</code></td><td><code>not hidden_resource stone_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"><code>slave_trade_building_supply</code></td><td><code>resource slave_trade or hidden_resource slave_supply_built factionwide</code></td></tr><tr><td><code>water_transport</code></td><td><code>building_present_min_level river_port river_port1 or building_present_min_level port_buildings port</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>

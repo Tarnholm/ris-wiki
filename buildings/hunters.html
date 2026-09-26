@@ -38,7 +38,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and resource wild_animals and no_other_rural_exploits and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -55,7 +55,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>Government Building</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and nobuilding and resource wild_animals and requires_gov</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -69,7 +69,7 @@
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
 <ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the wild animals resource</li><li>anywhere in your empire does not have the hidden resource <code>wild_animals_supply_built</code> (<code>not_wild_animals_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
 <details>
-<summary>Show the condition as the game files write it</summary>
+<summary>Show the condition as the game files write it (the player's part)</summary>
 <ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource wild_animals and not_wild_animals_supply_built and direct_govs</code></li></ul>
 </details>
 <p><strong>What it does</strong></p>
@@ -80,7 +80,7 @@
 </details>
 <details>
 <summary>What the shorthands in those conditions stand for (6)</summary>
-<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>faction_sed_estate_farming</code></td><td><code>factions { paeonia, kush, timbuktu, cappadocia, chrysaoria, cilicians, lycia, pontus, armenia, armenia_minor, colchians, iberians, sophene, commagene, egypt, acarnania, achaea, acragas, aetolia, argos, athens, boeotia, bosporan, byzantium, chersonesus, chios, cius, elis, emporion, gortyn, heraclea_pontica, issa, knossos, kydonia, lyttos, massalia, messene, miletus, olbia, pentapolis, priene, rhodes, selge, sinope, sparta, syracuse, taras, thessaly, trapezus, sarsinates, cyzicus, antigonid, bactria, cyrene, histria, epirus, lysiad, megalopolis, carmo, asta, arse, pergamon, ptolemaic, seleucid, ptolemaic_rebels, seleucid_rebels, seleucid_rebels2, mauryan, indians, volsinii, picentes, sarsinates, bruttians, lucanians, mamertines, messapians, capua, italics, arados, tyre, hasmonean, osrhoene, sidon, characene, atropatene, chorasmia, persis, parni, carthage, gades, roman, romans_julii, roman_rebels_1, roman_rebels_2, roman_senate, bithynia, cabyle, odrysians, }</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_wild_animals_supply_built</code></td><td><code>not hidden_resource wild_animals_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD or not is_player</code></td></tr></tbody></table></div>
+<div class="tw multi" data-cols="2" data-up="3"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>faction_sed_estate_farming</code></td><td><code>factions { paeonia, kush, timbuktu, cappadocia, chrysaoria, cilicians, lycia, pontus, armenia, armenia_minor, colchians, iberians, sophene, commagene, egypt, acarnania, achaea, acragas, aetolia, argos, athens, boeotia, bosporan, byzantium, chersonesus, chios, cius, elis, emporion, gortyn, heraclea_pontica, issa, knossos, kydonia, lyttos, massalia, messene, miletus, olbia, pentapolis, priene, rhodes, selge, sinope, sparta, syracuse, taras, thessaly, trapezus, sarsinates, cyzicus, antigonid, bactria, cyrene, histria, epirus, lysiad, megalopolis, carmo, asta, arse, pergamon, ptolemaic, seleucid, ptolemaic_rebels, seleucid_rebels, seleucid_rebels2, mauryan, indians, volsinii, picentes, sarsinates, bruttians, lucanians, mamertines, messapians, capua, italics, arados, tyre, hasmonean, osrhoene, sidon, characene, atropatene, chorasmia, persis, parni, carthage, gades, roman, romans_julii, roman_rebels_1, roman_rebels_2, roman_senate, bithynia, cabyle, odrysians, }</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td></tr><tr><td><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_wild_animals_supply_built</code></td><td><code>not hidden_resource wild_animals_supply_built factionwide</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td></tr></tbody></table></div>
 </details></section></main>
 </div>
 <script>
