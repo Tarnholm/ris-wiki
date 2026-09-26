@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How the new units are made: helmets, baking and painting — RTR: Imperium Surrectum</title>
-<link rel="stylesheet" href="../wiki.css?v=48b2cb3b19">
+<link rel="stylesheet" href="../wiki.css?v=2f1acc7c92">
 <script>window.RIS_BASE="../"</script></head><body>
 <div class="top">
   <div class="bar">
@@ -49,8 +49,8 @@
 <p>Given that we now have about 20 greek factions, each with at least 6-8 units per faction (in many cases far more), and needing at least 4 texture variants per unit, we’re looking at around 500+ unit textures just for the Greeks. That’s a lot. Clearly some organisation is needed and ways of streamlining workflow and enabling mass production. Some time invested up front in thinking about efficient approaches will reap dividends in the future. Some of the things that I’ve done to allow this include: a.    Use of layers, layer masks and overlays for unit texture files. This allows for reuse of some components and easy changes of colours or patterns, and greater flexibility and speed for creating variant textures. Some of my unit texture files have well over 700 layers in them. b.    Breaking the unit texture and unit model down into modular parts e.g. torso, head, linothorax shoulder padding. These need to be interchangeable between units. Unit textures need to be laid out in a structured and consistent way in order to streamline the process, and a spreadsheet is used to track which bits are going on which unit. For the unit textures the modular layout looks more or less like this:</p>
 <p><img src="../diary-images/949537003672862720-unknown.webp" alt="Developer diary image"></p>
 <p><strong>3)    Modelling. </strong> As with a lot of artistic work, the beginning of the process sees a lot of creating, refining, creating again, refining again, and the last two months have really been a process of working on processes, workflows, refining unit textures and unit models. With the Greek units, we’ve needed to create some new parts including the shoulder protection and pteryges, as well as some variants on these. @El Santo Padre helped in creating the initial shoulder armour and pteryges models, which I’ve then created some variants on.</p>
-<p><img src="../diary-images/949537496956567632-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949537496956567632-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949537496956567632-949537495421427772-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949537496956567632-949537495647916052-unknown.webp" alt="Developer diary image"></p>
 <p>Once the model components are created there’s the challenge of doing the vertex weighting in order to get the models animated as they should. Each vertex on a model component needs to be weighted to one of the skeleton “bones” within Blender. Vertices can be partially weighted to more than one vertex which helps create more natural movement but also increases the complexity of the process. Here you can see the weights assigned to a set of pteryges – in this case weighting to the pelvis bone (red represents a weighting of one and blue a weighting of zero):</p>
 <p><img src="../diary-images/949537617899298856-unknown.webp" alt="Developer diary image"></p>
 <p><strong>4)    Albedo/diffuse texturing</strong> The albedo or diffuse texture is the main colouring you can see on a unit. As explained above, I’ve taken a modular approach to creating the unit textures, so that it will be possible to swap parts and textures across models more easily, speeding up the creative process. Some of the texture components have needed to be created from scratch, like this scale armour, which is built literally one scale at a time (OK, so once you’ve done one row, you can then duplicate rows rather than individual scales!)</p>
@@ -77,35 +77,35 @@
 <p><strong>PART 4</strong></p>
 <p><strong>6)    Putting it all together</strong> OK, OK, so this is the bit you’ve been waiting for. What’s the end result? What have we got to show for all this effort? Well here are one or two unit textures to get started with – these are a couple of variations on a Macedonian Royal Peltast.</p>
 <p><strong>Variant 1</strong></p>
-<p><img src="../diary-images/949539855602421800-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949539855602421800-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949539855602421800-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949539855602421800-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949539855602421800-949539850955141140-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949539855602421800-949539851332620329-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949539855602421800-949539851676577882-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949539855602421800-949539852733530133-unknown.webp" alt="Developer diary image"></p>
 <p><strong>Variant 2</strong></p>
-<p><img src="../diary-images/949540406956277820-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949540406956277820-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949540406956277820-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949540406956277820-949540403852496927-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949540406956277820-949540404259323934-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949540406956277820-949540404615852042-unknown.webp" alt="Developer diary image"></p>
 <p>And just for fun some more parts and components and work in progress, including some of Grimbold's amazing helmets, including both the raw creations:</p>
 <p><img src="../diary-images/949540799727669258-unknown.webp" alt="Developer diary image"></p>
 <p>and ones where I've started adding additional wear, ageing and shadowing:</p>
-<p><img src="../diary-images/949542100981137428-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949542100981137428-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949542100981137428-949542097986388048-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949542100981137428-949542098313576538-unknown.webp" alt="Developer diary image"></p>
 <p>And here's showing some of the linothorax variants that are underway:</p>
 <p>These are just a few of the many many variants that will be worked up</p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949544607933431858-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544594339659796-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544594666823730-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544595052695602-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544595409235998-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544595786702918-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544596269072424-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544596747202560-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544597158232124-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544597565104198-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949544607933431858-949544598030680104-unknown.webp" alt="Developer diary image"></p>
 <p>And finally some shots of some of these unit textures in game - there's still a bit of work needing doing to tweak the colour saturation, metalness and roughness to optimise the look under game lighting, but it's getting pretty close.</p>
-<p><img src="../diary-images/949546166205431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949546166205431858-unknown.webp" alt="Developer diary image"></p>
-<p><img src="../diary-images/949546166205431858-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949546166205431858-949546162212462632-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949546166205431858-949546162766098443-unknown.webp" alt="Developer diary image"></p>
+<p><img src="../diary-images/949546166205431858-949546163286208512-unknown.webp" alt="Developer diary image"></p>
 <p>So hopefully that’s enough to give you a flavour of what we’re doing and what will be coming in the future. If you’d like to join the creative process, please message me.</p></main>
 </div>
 <script>
