@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -24,7 +24,7 @@
 <div class="reform-banner">
 <p><img src="../reform-images/marian_reform.png" alt="The Gracchan Reforms"></p>
 </div>
-<p><strong>Who gets it:</strong> <a href="../factions/romans_julii.html">Rome</a>, <a href="../factions/non-playable.html#roman-rebels-roman-rebels-1">Roman Rebels (<code>roman_rebels_1</code>)</a>, <a href="../factions/non-playable.html#roman-rebels-roman-rebels-2">Roman Rebels (<code>roman_rebels_2</code>)</a> and <a href="../factions/non-playable.html">The Roman Senate</a></p>
+<p><strong>Who gets it:</strong> <a href="../factions/romans_julii.html">Rome</a>, <a href="../factions/non-playable.html">Roman Rebels (first civil war)</a>, <a href="../factions/non-playable.html">Roman Rebels (second civil war)</a> and <a href="../factions/non-playable.html">The Roman Senate</a></p>
 <blockquote><p>Tiberius Gracchus, as Tribune of the Plebs sought to heal the growing divide in the Republic by passing the Lex Agraria. This land reform aimed to confiscate excess public lands hoarded by the elite and redistribute them to Rome's landless citizens and impoverished veterans. </p>
 <p>By bypassing the Senate and appealing directly to the masses, Gracchus championed the cause of the Populares. However, he drew the ire of the Optimates, who saw their wealth, vast estates, and traditional constitutional authority directly threatened by him. Led by conservative senators, a mob attacked Gracchus and his supporters on the Capitoline Hill. The Tribune was beaten to death, and his body was thrown into the Tiber River. </p>
 <p>This assassination marked a dark turning point in Roman history. The sacred immunity of the tribunate has been violated, opening the door to a terrifying era of political violence in Rome. </p>
@@ -32,11 +32,6 @@
 <p>It fires when the conditions below are met.</p>
 <p>Checked at the start of each turn, all of these hold:</p>
 <ul><li>it is turn 100 (246 BC) or later</li><li>a 35% chance each time it is checked</li><li><a href="polybian_reforms.html">Polybian Reform</a> has happened</li><li>at least 5 of these buildings stand in settlements held by any <a href="../cultures/roman.html#roman">Roman</a>-culture faction (AI factions included): <strong>Irrigated Great Estates (Crops)</strong>, <strong>Great Estates (Crops)</strong>, <strong>Livestock Estates (Husbandry)</strong>, <strong>Irrigation Aqueducts (Crops)</strong>, <strong>Crop Rotation (Crops)</strong> or <strong>Great Droveways (Husbandry)</strong></li><li>then a further 35% chance</li></ul>
-<details>
-<summary>The script, step by step</summary>
-<p><strong><code>gracchi_event_done</code></strong> is kept by the campaign script. It changes:</p>
-<ul><li>At the start of each turn, if <code>gracchi_event_done</code> = 0, it is turn 100 (246 BC) or later, a 35% chance each round, <a href="polybian_reforms.html">Polybian Reform</a> has happened and <code>gracchi_farms</code> &gt;= 5: is set to 1</li><li><code>gracchi_farms</code>:</li><li>Recounted over every settlement held by any <a href="../cultures/roman.html#roman">Roman</a>-culture faction (AI factions included): 1 for each of these buildings standing in one — <strong>Irrigated Great Estates (Crops)</strong>, <strong>Great Estates (Crops)</strong>, <strong>Livestock Estates (Husbandry)</strong>, <strong>Irrigation Aqueducts (Crops)</strong>, <strong>Crop Rotation (Crops)</strong> or <strong>Great Droveways (Husbandry)</strong></li></ul>
-</details>
 <p>The game checks this at the end of every round.</p>
 <p>Comes after: <a href="polybian_reforms.html">Polybian Reform</a>.</p>
 <p>Opens the way to: <a href="late_republican_reforms.html">The Late Republican Reforms</a>, <a href="../revolts/italics.html">The Italic Revolt</a>.</p></div><section class="sec"><h2 id="what-it-unlocks">What it unlocks</h2>

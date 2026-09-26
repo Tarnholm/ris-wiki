@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -34,11 +34,7 @@
 <p>Whether it's for a sore throat, a nasty fever, or just a “bad day” after battle, these leaves, roots, and flowers are the ancient world’s answer to every ache, pain, and broken heart (though not necessarily in that order).</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Perfume Maker (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource perfumes and no_other_urban_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Barter</a> or a higher level is built here</li><li>The region has <a href="../goods/perfumes.html">Perfumes &amp; Medicinal Herbs</a></li><li>Only one urban industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population health</li></ul></section><section class="sec wide"><h2 id="perfume-maker-urban">Perfume Maker (Urban)</h2>
 <p><img src="../art/roman__market.png" alt="Perfume Maker (Urban)"></p>
@@ -50,11 +46,7 @@
 <p>If you like smelling rich and fancy (or just want to mask the smell of city life), this is your spot.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,500 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Medicine and Perfume Export (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource perfumes and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Market</a> or a higher level is built here</li><li>The region has <a href="../goods/perfumes.html">Perfumes &amp; Medicinal Herbs</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population health</li><li>+2 trade income</li></ul></section><section class="sec wide"><h2 id="medicine-and-perfume-export-urban">Medicine and Perfume Export (Urban)</h2>
 <p><img src="../art/roman__forum.png" alt="Medicine and Perfume Export (Urban)"></p>
@@ -63,17 +55,9 @@
 <p>In this extensive workshop both medicines and perfumes are produced from the herbs that are gathered from the hills as well as those that grown withing the courtyards. The scents that enrich this place will soon be available near you, at an extravangant price. While the most exclusive medicines using Silphium, Mastic, Hellebore, and Asafoetida are carefully prepared to be sold to the most expert healers of the empire.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the perfumes resource</li><li>Direct Rule or Homeland</li><li>anywhere in your empire does not have the hidden resource <code>perfumes_supply_built</code> (<code>not_perfumes_supply_built</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource perfumes and direct_govs and not_perfumes_supply_built</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/perfumes.html">Perfumes &amp; Medicinal Herbs</a></li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li><li>No <a href="perfumes_industry.html">Medicine and Perfume Export (Urban)</a> is built anywhere in your empire</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+2 population health</li><li>+3 trade income</li><li>(Faction) Healers (tier 2-3) gain +1 health (does not stack with local medicinal herbs, but can stack with other medicinal resources on tier 3)</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_perfumes_supply_built</code></td><td><code>not hidden_resource perfumes_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+2 population health</li><li>+3 trade income</li><li>(Faction) Healers (tier 2-3) gain +1 health (does not stack with local medicinal herbs, but can stack with other medicinal resources on tier 3)</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

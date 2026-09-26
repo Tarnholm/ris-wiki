@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -30,17 +30,7 @@
 <p>It fires when <strong>any one</strong> of these holds:</p>
 <ul><li>the conditions below are met</li><li>the faction is <a href="../factions/gades.html">Gades</a> (not <a href="../factions/carthage.html">Carthage</a>) and it is turn 122 (240 BC) or later</li></ul>
 <p>At least 2 settlements that lie in Italy (41 regions) are held by <a href="../factions/carthage.html">Carthage</a> (counted at the end of its turn).</p>
-<details>
-<summary>The script, step by step</summary>
-<p><strong><code>italian_cities_owned</code></strong> is kept by the campaign script. It changes:</p>
-<ul><li>At the end of <a href="../factions/carthage.html">Carthage</a>'s turn: is set to <code>italian_tally</code></li><li><code>italian_tally</code>:</li><li>At the end of the turn, for each settlement that lies in Italy (41 regions): goes up by 1</li></ul>
-</details>
 <p>At least 5 settlements that lie in Sicily (17 regions) are held by <a href="../factions/carthage.html">Carthage</a> (counted at the end of its turn).</p>
-<details>
-<summary>The script, step by step</summary>
-<p><strong><code>sicilian_cities_owned</code></strong> is kept by the campaign script. It changes:</p>
-<ul><li>At the end of <a href="../factions/carthage.html">Carthage</a>'s turn: is set to <code>sicilian_tally</code></li><li><code>sicilian_tally</code>:</li><li>At the end of the turn, for each settlement that lies in Sicily (17 regions): goes up by 1</li></ul>
-</details>
 <p>The game checks this at the end of every round.</p></div><section class="sec"><h2 id="what-it-unlocks">What it unlocks</h2>
 <p><strong>2 units can be recruited once it fires:</strong></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Unit</th><th>Who can raise it</th><th class="grp">Unit</th><th>Who can raise it</th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><a href="../units/african_infantry.html">African Infantry</a></td><td><a href="../factions/carthage.html">Carthage</a>, <a href="../factions/gades.html">Gades</a></td><td class="grp"><a href="../units/carthaginian_lonchophoroi.html">Carthaginian Lonchophoroi</a></td><td><a href="../factions/carthage.html">Carthage</a>, <a href="../factions/gades.html">Gades</a></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div></section></main>

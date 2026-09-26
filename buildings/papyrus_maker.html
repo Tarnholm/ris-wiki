@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -34,11 +34,7 @@
 <p>A humble place, yet essential for writing all those complaints and declarations.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,500 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Papyrus Maker (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the papyrus resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource papyrus and no_other_rural_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/papyrus.html">Papyrus</a></li><li>Only one rural industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="papyrus-maker-rural">Papyrus Maker (Rural)</h2>
 <p><img src="../art/roman__papyrus_2.png" alt="Papyrus Maker (Rural)"></p>
@@ -48,11 +44,7 @@
 <p>With so much papyrus flowing, knowledge, and bureaucracy, spread faster than ever, supplying enough material to keep bureaucrats busy and poets romantic.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Papyrus Press (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the papyrus resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource papyrus and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/papyrus.html">Papyrus</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 trade income</li><li>+1 public order (law)</li></ul></section><section class="sec wide"><h2 id="papyrus-press-rural">Papyrus Press (Rural)</h2>
 <p><img src="../art/roman__papyrus_3.png" alt="Papyrus Press (Rural)"></p>
@@ -63,11 +55,7 @@
 <p>Civilization marches forward on rolls of papyrus! Surely, this is where papyrus flows like wine, and scrolls multiply faster than rabbits.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Papyrus Supply (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the papyrus resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource papyrus and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/papyrus.html">Papyrus</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+2 trade income</li><li>+2 public order (law)</li></ul></section><section class="sec wide"><h2 id="papyrus-supply-rural">Papyrus Supply (Rural)</h2>
 <p><img src="../art/roman__papyrus_supply.png" alt="Papyrus Supply (Rural)"></p>
@@ -77,17 +65,9 @@
 <p>In every scroll, there’s a bit of your empire, and with every shipment, wealth flows back to the homeland. Paper may be light, but its impact is heavy, and with this, we are shipping the seeds of knowledge far and wide, one scroll at a time.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>10 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the papyrus resource</li><li>anywhere in your empire does not have the hidden resource <code>papyrus_supply_built</code> (<code>not_papyrus_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource papyrus and not_papyrus_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/papyrus.html">Papyrus</a></li><li>No <a href="papyrus_maker.html">Papyrus Supply (Rural)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+3 trade income</li><li>+2 public order (law)</li><li>(Faction) Additional law bonus for law courts (tier 2-3) and Academies (tier 2-3)(does not stack with parchment bonus)</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_papyrus_supply_built</code></td><td><code>not hidden_resource papyrus_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+3 trade income</li><li>+2 public order (law)</li><li>(Faction) Additional law bonus for law courts (tier 2-3) and Academies (tier 2-3)(does not stack with parchment bonus)</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

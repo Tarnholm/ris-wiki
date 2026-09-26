@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -33,17 +33,12 @@
 <p>As these men drill in formation and learn the value of unbreakable ranks, they become the stones in the wall of Rome’s invincible legions.</p>
 <p>Strategy</p>
 <p>Unit recruitment requires more than just these barracks. To recruit units from your factional roster you either need a homeland government and these barracks OR a direct rule/indirect rule AND a colony OR the factional unit. While local units (AOR-Area of Recruitment, units with the diadem icon) often require less direct forms of government. See the Region Information Scroll for the AOR units that this region offers and hover over the units to see the requirements for recruitment.</p>
-<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Basic Armoury</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>not <code>building_present garrison queued</code> (<code>not_garrison</code>) — or — the region does not have the hidden resource <code>ai_cant_recruit</code> and the region does not have the hidden resource <code>island_settlement</code> — or — the region has the hidden resource <code>island_settlement</code> and the region has the hidden resource <code>capital</code> (<code>noisland</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and requires_gov and not_garrison or noisland</code></li></ul>
-</details>
+<ul><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>) and no level of <a href="garrison.html">Garrison</a> is built or being built here — or — the settlement is not on an island — or — the settlement is on an island and this settlement is your capital</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -7 to -3, scaling with settlement size</li></ul>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<ul><li>taxable income -7 to -3, depending on how many settlements your empire holds</li></ul>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry</li><li>Celtic Spearmen</li><li>Celtic Swordsmen</li></ul>
 <blockquote><p><strong>Excludes:</strong> building this rules out Local Garrisons. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="basic-armoury">Basic Armoury</h2>
 <p><img src="../art/roman__mic_2.png" alt="Basic Armoury"></p>
@@ -53,17 +48,12 @@
 <p>From here, they march with weapons and training that bring respect, and often fear, to Rome’s name on every front.</p>
 <p>Strategy</p>
 <p>Unit recruitment requires more than just these barracks. To recruit units from your factional roster you either need a homeland government and these barracks OR a direct rule/indirect rule AND a colony OR the factional unit. While local units (AOR-Area of Recruitment, units with the diadem icon) often require less direct forms of government. See the Region Information Scroll for the AOR units that this region offers and hover over the units to see the requirements for recruitment.</p>
-<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Barracks and Armoury</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>not <code>building_present garrison queued</code> (<code>not_garrison</code>) — or — the region does not have the hidden resource <code>ai_cant_recruit</code> and the region does not have the hidden resource <code>island_settlement</code> — or — the region has the hidden resource <code>island_settlement</code> and the region has the hidden resource <code>capital</code> (<code>noisland</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and requires_gov and not_garrison or noisland</code></li></ul>
-</details>
+<ul><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>) and no level of <a href="garrison.html">Garrison</a> is built or being built here — or — the settlement is not on an island — or — the settlement is on an island and this settlement is your capital</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -10 to -6, scaling with settlement size</li></ul>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<ul><li>taxable income -10 to -6, depending on how many settlements your empire holds</li></ul>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry</li><li>Celtic Spearmen</li><li>Celtic Swordsmen</li></ul>
 <blockquote><p><strong>Excludes:</strong> building this rules out Local Garrisons. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="barracks-and-armoury">Barracks and Armoury</h2>
 <p><img src="../art/roman__mic_3.png" alt="Barracks and Armoury"></p>
@@ -73,17 +63,12 @@
 <p>Only the best emerge from these walls, ready to honour Rome with courage and steel.</p>
 <p>Strategy</p>
 <p>Unit recruitment requires more than just these barracks. To recruit units from your factional roster you either need a homeland government and these barracks OR a direct rule/indirect rule AND a colony OR the factional unit. While local units (AOR-Area of Recruitment, units with the diadem icon) often require less direct forms of government. See the Region Information Scroll for the AOR units that this region offers and hover over the units to see the requirements for recruitment.</p>
-<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>10,000 denarii</td><td class="grp">Build time</td><td>7 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Barracks and Foundry Complex</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>not <code>building_present garrison queued</code> (<code>not_garrison</code>) — or — the region does not have the hidden resource <code>ai_cant_recruit</code> and the region does not have the hidden resource <code>island_settlement</code> — or — the region has the hidden resource <code>island_settlement</code> and the region has the hidden resource <code>capital</code> (<code>noisland</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and requires_gov and not_garrison or noisland</code></li></ul>
-</details>
+<ul><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>) and no level of <a href="garrison.html">Garrison</a> is built or being built here — or — the settlement is not on an island — or — the settlement is on an island and this settlement is your capital</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -12 to -8, scaling with settlement size</li><li>recruits gain 1 experience</li></ul>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<ul><li>taxable income -12 to -8, depending on how many settlements your empire holds</li><li>recruits gain 1 experience</li></ul>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry</li><li>Celtic Spearmen</li><li>Celtic Swordsmen</li></ul>
 <blockquote><p><strong>Excludes:</strong> building this rules out Local Garrisons. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="barracks-and-foundry-complex">Barracks and Foundry Complex</h2>
 <p><img src="../art/roman__mic_4.png" alt="Barracks and Foundry Complex"></p>
@@ -93,27 +78,18 @@
 <p>This complex is not just a building; it is a declaration of Rome’s unstoppable march toward greatness.</p>
 <p>Strategy</p>
 <p>Unit recruitment requires more than just these barracks. To recruit units from your factional roster you either need a homeland government and these barracks OR a direct rule/indirect rule AND a colony OR the factional unit. While local units (AOR-Area of Recruitment, units with the diadem icon) often require less direct forms of government. See the Region Information Scroll for the AOR units that this region offers and hover over the units to see the requirements for recruitment.</p>
-<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>13,000 denarii</td><td class="grp">Build time</td><td>10 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>not <code>building_present garrison queued</code> (<code>not_garrison</code>) — or — the region does not have the hidden resource <code>ai_cant_recruit</code> and the region does not have the hidden resource <code>island_settlement</code> — or — the region has the hidden resource <code>island_settlement</code> and the region has the hidden resource <code>capital</code> (<code>noisland</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and requires_gov and not_garrison or noisland</code></li></ul>
-</details>
+<ul><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>) and no level of <a href="garrison.html">Garrison</a> is built or being built here — or — the settlement is not on an island — or — the settlement is on an island and this settlement is your capital</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -14 to -10, scaling with settlement size</li><li>recruits gain 1 experience</li></ul>
+<ul><li>taxable income -14 to -10, depending on how many settlements your empire holds</li><li>recruits gain 1 experience</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>extra recruitment points +1 — only when <code>not building_present_min_level smith foundry</code></li><li>extra recruitment points +2 — only when <code>building_present_min_level smith foundry</code></li><li>1 additional recruitment point due to having a foundry in this city — only when <code>building_present_min_level smith foundry</code></li></ul>
+<summary>Show 3 effects that apply only in some circumstances</summary>
+<ul><li>extra recruitment points +1 — only when <a href="smith.html">Foundry (Industry)</a> or a higher level is not built here</li><li>extra recruitment points +2 — only when <a href="smith.html">Foundry (Industry)</a> or a higher level is built here</li><li>1 additional recruitment point due to having a foundry in this city — only when <a href="smith.html">Foundry (Industry)</a> or a higher level is built here</li></ul>
 </details>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry (1 experience)</li><li>Celtic Spearmen (1 experience)</li><li>Celtic Swordsmen (1 experience)</li></ul>
-<blockquote><p><strong>Excludes:</strong> building this rules out Local Garrisons. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
-<details>
-<summary>What the shorthands in those conditions stand for (6)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>island_capital</code></td><td><code>hidden_resource island_settlement and hidden_resource capital</code></td><td class="grp"><code>land_recruitment</code></td><td><code>not hidden_resource ai_cant_recruit and not hidden_resource island_settlement</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>noisland</code></td><td><code>land_recruitment or island_capital</code></td></tr><tr><td><code>not_garrison</code></td><td><code>not building_present garrison queued</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<blockquote><p><strong>Excludes:</strong> building this rules out Local Garrisons. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

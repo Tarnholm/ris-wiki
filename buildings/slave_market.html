@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -32,11 +32,7 @@
 <p>This trader mostly catters to the farms, mines and quarries in the wider area but also offers house servants and occasionally the skilled artisan.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,500 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Slave Auction (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource slave_trade and no_other_urban_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Barter</a> or a higher level is built here</li><li>The region has <a href="../goods/slave_trade.html">Slave Trade</a></li><li>Only one urban industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+2 trade income</li><li>-2 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="slave-auction-urban">Slave Auction (Urban)</h2>
 <p><img src="../art/roman__slave_market.png" alt="Slave Auction (Urban)"></p>
@@ -49,11 +45,7 @@
 <p>Rowing required skill, not just a strong back. And only the most desperate of masters would ever give their slaves weapons and permission to kill...</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Slave Trading Hub (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource slave_trade and no_other_urban_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Market</a> or a higher level is built here</li><li>The region has <a href="../goods/slave_trade.html">Slave Trade</a></li><li>Only one urban industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+4 trade income</li><li>-4 public order (happiness)</li></ul></section><section class="sec wide"><h2 id="slave-trading-hub-urban">Slave Trading Hub (Urban)</h2>
 <p><img src="../art/roman__forum.png" alt="Slave Trading Hub (Urban)"></p>
@@ -67,20 +59,12 @@
 <p>Slavery was a huge business and criminals, POWs and those simply abducted from their homelands were sold for their labour. Once enslaved, the unlucky individual had no rights under Roman law. The biggest market was the Graecostadium in Rome, originally specialising in the trade of Greek prisoners. Domestic servants, field hands, quarrymen, gladiators and harlots were all traded flesh from as far afield as Britain, Parthia, Carthage and Egypt. In fact, such exotic origins meant a premium price!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>15,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the slave trade resource</li><li>anywhere in your empire does not have the hidden resource <code>slave_supply_built</code> (<code>not_slave_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource slave_trade and not_slave_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/slave_trade.html">Slave Trade</a></li><li>No <a href="slave_market.html">Slave Trading Hub (Urban)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+6 trade income</li><li>-6 public order (happiness)</li><li>(Faction) Mines, stone, marble, sulphur and salt industries gain tax income bonus</li><li>(Faction) Crop farms (tier 4-5 and tier 3 for Qanat farms) gain tax income bonus</li><li>(Faction) Homelands gain population growth bonus +0.5%</li></ul>
 <details>
-<summary>Show 1 effect that apply only in the circumstances shown</summary>
-<ul><li>(Faction) Additional happiness bonus for arena's (tier 2-4)(can stack with wild animals bonus) — only when <code>factions { roman, }</code></li></ul>
-</details>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_slave_supply_built</code></td><td><code>not hidden_resource slave_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<summary>Show 1 effect that apply only in some circumstances</summary>
+<ul><li>(Faction) Additional happiness bonus for arena's (tier 2-4)(can stack with wild animals bonus) — only when you play a <a href="../cultures/roman.html">Roman</a> faction</li></ul>
 </details></section></main>
 </div>
 <script>

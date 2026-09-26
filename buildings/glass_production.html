@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -34,11 +34,7 @@
 <p>The work is risky, but for the artisan, each glass is a small victory against the odds (and occasional sneezes).</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Large Glass Reworking Shop (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource glass and no_other_urban_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Barter</a> or a higher level is built here</li><li>The region has <a href="../goods/glass.html">Glass</a></li><li>Only one urban industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="large-glass-reworking-shop-urban">Large Glass Reworking Shop (Urban)</h2>
 <p><img src="../art/roman__glass_production_2.png" alt="Large Glass Reworking Shop (Urban)"></p>
@@ -50,11 +46,7 @@
 <p>Soon, nobles and merchants alike will clamour to toast in glasses so fine, they might even survive a careless servant’s grip. Now, if we could only acquire access to the lands of the Levant and Egypt where this raw glass is made we could establish a truly great industry here.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,500 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Glassware Workshop (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource glass and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Market</a> or a higher level is built here</li><li>The region has <a href="../goods/glass.html">Glass</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+2 trade income</li></ul></section><section class="sec wide"><h2 id="glassware-workshop-urban">Glassware Workshop (Urban)</h2>
 <p><img src="../art/roman__glass_production_3.png" alt="Glassware Workshop (Urban)"></p>
@@ -67,11 +59,7 @@
 <p>This region is now famed for its glassware, known throughout the world for its clarity and elegance.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp">Upgrades to</td><td>Fine Glassware Artisans (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>advanced_crafts_factions and building_present_min_level market forum and nobuilding and resource glass and requires_gov</code></li></ul>
-</details>
+<ul><li>You play a <a href="../cultures/carthaginian.html">Phoenician</a>, <a href="../cultures/eastern.html">Caucasian</a>, <a href="../cultures/anatolian.html">Anatolian</a>, <a href="../cultures/egyptian.html">Egyptian</a>, <a href="../cultures/iranian.html">Iranian</a>, <a href="../cultures/indian.html">Indian</a>, <a href="../cultures/greek.html">Greek</a>, <a href="../cultures/w_hellenistic.html">Western Hellenistic</a>, <a href="../cultures/e_hellenistic.html">Eastern Hellenistic</a>, <a href="../cultures/roman.html">Roman</a>, <a href="../cultures/ethiopian.html">Ethiopian</a>, <a href="../cultures/arab.html">Arab</a>, <a href="../cultures/libyan.html">Libyan</a> or <a href="../cultures/iberian.html">Iberian</a> faction</li><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/glass.html">Glass</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+4 trade income</li></ul></section><section class="sec wide"><h2 id="fine-glassware-artisans-urban">Fine Glassware Artisans (Urban)</h2>
 <p><img src="../art/roman__glass_production_4.png" alt="Fine Glassware Artisans (Urban)"></p>
@@ -83,17 +71,9 @@
 <p>This region may be humble, but its glass is priceless, attracting a price as magnificent as its reputation.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>7,500 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>huge city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>your faction is one of 14 factions, listed in the condition below (<code>advanced_crafts_factions</code>)</li><li>Local Market at Large Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the glass resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>advanced_crafts_factions and building_present_min_level market great_forum and nobuilding and resource glass and requires_gov</code></li></ul>
-</details>
+<ul><li>You play a <a href="../cultures/carthaginian.html">Phoenician</a>, <a href="../cultures/eastern.html">Caucasian</a>, <a href="../cultures/anatolian.html">Anatolian</a>, <a href="../cultures/egyptian.html">Egyptian</a>, <a href="../cultures/iranian.html">Iranian</a>, <a href="../cultures/indian.html">Indian</a>, <a href="../cultures/greek.html">Greek</a>, <a href="../cultures/w_hellenistic.html">Western Hellenistic</a>, <a href="../cultures/e_hellenistic.html">Eastern Hellenistic</a>, <a href="../cultures/roman.html">Roman</a>, <a href="../cultures/ethiopian.html">Ethiopian</a>, <a href="../cultures/arab.html">Arab</a>, <a href="../cultures/libyan.html">Libyan</a> or <a href="../cultures/iberian.html">Iberian</a> faction</li><li><a href="market.html">Large Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/glass.html">Glass</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+6 trade income</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (4)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>advanced_crafts_factions</code></td><td><code>factions { carthaginian, eastern, anatolian, egyptian, iranian, indian, greek, w_hellenistic, e_hellenistic, roman, ethiopian, arab, libyan, iberian, }</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+6 trade income</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

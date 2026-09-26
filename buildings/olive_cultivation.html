@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -34,11 +34,7 @@
 <p>Olive oil was common in ancient Greek, Punic and Roman cuisine. According to Herodotus, Apollodorus, Plutarch, Pausanias, Ovid and other sources, the city of Athens obtained its name because Athenians considered olive oil essential, preferring the offering of the goddess Athena (an olive tree) over the offering of Poseidon (a spring of salt water gushing out of a cliff). Many ancient presses still exist in the Eastern Mediterranean region, and some dating to the Roman period are still in use today.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Olive Press (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource olive_oil and no_other_rural_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/olive_oil.html">Olives</a></li><li>Only one rural industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 farming level</li></ul></section><section class="sec wide"><h2 id="olive-press-rural">Olive Press (Rural)</h2>
 <p><img src="../art/roman__olive_2.png" alt="Olive Press (Rural)"></p>
@@ -47,11 +43,7 @@
 <p>Once the realm of lone craftsmen and their families, oil production here has swelled to an industrious scale. Slaves and free workers alike now toil under the watchful gaze of foremen, feeding olives into the mills that stand like hungry gods. Oil flows freely, filling amphoras bound for distant lands, and this region has become synonymous with that green-gold liquid, as essential to the table as bread or wine. This is no small family affair now, this is olive oil on a large scale, and the grove’s expansion brings wealth to both lord and labourer. Soon, tales of this smooth, fragrant oil will spread as far as our ships can sail.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Olive Oil Mill (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource olive_oil and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/olive_oil.html">Olives</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 farming level</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="olive-oil-mill-rural">Olive Oil Mill (Rural)</h2>
 <p><img src="../art/roman__olive_3.png" alt="Olive Oil Mill (Rural)"></p>
@@ -62,11 +54,7 @@
 <p>Now, the demand from foreign lands, noble households, and the finest kitchens keeps the mills busy day and night. Amphoras of this prized liquid line the docks, each one a promise of our enduring legacy, sealed with the scent of olives. It is said that the smoothness of this oil has convinced even Gauls to put down their mead for a moment and try a taste!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Olive Oil Exports (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource olive_oil and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/olive_oil.html">Olives</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+2 farming level</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="olive-oil-exports-rural">Olive Oil Exports (Rural)</h2>
 <p><img src="../art/roman__olive_supply.png" alt="Olive Oil Exports (Rural)"></p>
@@ -75,20 +63,11 @@
 <p>"I even sell to the Gauls now. The Gauls! Can you imagine?"</p>
 <p>The olive oil from this region flows not just within the borders, but far beyond.</p>
 <p>Whether it’s used to anoint kings or to make even the most barbarian of diets tolerable, this oil has found its way into the hearts, and stomachs, of distant lands.</p>
-<p><em>Wording varies by culture: 2 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>8,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the olive oil resource</li><li>anywhere in your empire does not have the hidden resource <code>olive_supply_built</code> (<code>not_olive_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource olive_oil and not_olive_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/olive_oil.html">Olives</a></li><li>No <a href="olive_cultivation.html">Olive Oil Exports (Rural)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+2 farming level</li><li>+2 trade income</li><li>+4 taxable income</li><li>(Capital) Population growth bonus per turn: 1%</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_olive_supply_built</code></td><td><code>not hidden_resource olive_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+2 farming level</li><li>+2 trade income</li><li>+4 taxable income</li><li>(Capital) Population growth bonus per turn: 1%</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

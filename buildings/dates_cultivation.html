@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -35,11 +35,7 @@
 <p>Though modest in size, it keeps both bellies and markets content, ensuring there’s a little sweetness amid the desert heat.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>800 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Palm Wine Maker (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource dates and no_other_rural_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/dates.html">Dates</a></li><li>Only one rural industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population growth</li></ul></section><section class="sec wide"><h2 id="palm-wine-maker-rural">Palm Wine Maker (Rural)</h2>
 <p><img src="../art/roman__farms_2.png" alt="Palm Wine Maker (Rural)"></p>
@@ -49,16 +45,12 @@
 <p>With alcohol now in the offering, expect more caravans to stop by and perhaps linger in the town.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,200 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Date &amp; Palm Wine Market (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource dates and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/dates.html">Dates</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li><li>+1 trade income</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 population growth — only when <code>not hidden_resource irrigation_oasis</code></li><li>+2 population growth — only when <code>hidden_resource irrigation_oasis</code></li><li>Additional growth bonus 0.5% due to this being an oasis region — only when <code>hidden_resource irrigation_oasis</code></li></ul>
+<summary>Show 3 effects that apply only in some circumstances</summary>
+<ul><li>+1 population growth — only when the region's water source is not <a href="../tags/irrigation.html#oasis">Oasis</a></li><li>+2 population growth — only when the region's water source is <a href="../tags/irrigation.html#oasis">Oasis</a></li><li>Additional growth bonus 0.5% due to this being an oasis region — only when the region's water source is <a href="../tags/irrigation.html#oasis">Oasis</a></li></ul>
 </details></section><section class="sec wide"><h2 id="date-palm-wine-market-rural">Date &amp; Palm Wine Market (Rural)</h2>
 <p><img src="../art/roman__farms_3.png" alt="Date &amp; Palm Wine Market (Rural)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Farms+3 picture instead.</em></p>
@@ -69,20 +61,12 @@
 <p>The workers toil, the palms sway, and the wealth flows in. Just don’t let the camels eat the profits!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,600 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the dates resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource dates and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/dates.html">Dates</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 public order (happiness)</li><li>+2 trade income</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+1 population growth — only when <code>not hidden_resource irrigation_oasis</code></li><li>+2 population growth — only when <code>hidden_resource irrigation_oasis</code></li><li>Additional growth bonus 0.5% due to this being an oasis region — only when <code>hidden_resource irrigation_oasis</code></li></ul>
-</details>
-<details>
-<summary>What the shorthands in those conditions stand for (3)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp"></th><th></th></tr></thead><tbody><tr><td><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<summary>Show 3 effects that apply only in some circumstances</summary>
+<ul><li>+1 population growth — only when the region's water source is not <a href="../tags/irrigation.html#oasis">Oasis</a></li><li>+2 population growth — only when the region's water source is <a href="../tags/irrigation.html#oasis">Oasis</a></li><li>Additional growth bonus 0.5% due to this being an oasis region — only when the region's water source is <a href="../tags/irrigation.html#oasis">Oasis</a></li></ul>
 </details></section></main>
 </div>
 <script>

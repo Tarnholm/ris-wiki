@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -32,21 +32,16 @@
 <p>Conquest alone does not bring peace, only order enforced by Rome’s unbreakable will can secure lasting dominion. These garrisons are more than mere strongholds; they are Rome’s iron grip upon the land, ensuring that rebellious thoughts remain just that, thoughts. Here, disciplined legionaries and faithful auxiliaries stand ever ready to stop unrest, deter foreign incursions, and remind all who live within these lands that Rome is here to stay.</p>
 <p>Yet these bastions of civilization serve more than a martial purpose. Traders find respite within their walls, knowing that Rome’s roads are safer under the watchful gaze of her soldiers. Messengers carrying the Senate’s decrees or a general’s orders pass through unhindered, their words travelling as swiftly as a marching column. Where Rome builds, Rome rules, and these fortifications stand as a testament to her ever-expanding domain.</p>
 <p>A conquered land is never truly pacified until Rome’s will is firmly established. Fortified garrisons serve as a symbol of the Republic’s dominion, housing the soldiers necessary to enforce law and suppress unrest. These outposts are manned by legionaries and auxiliaries alike, ensuring swift response to rebellion or foreign incursion. These fortifications also serve a secondary purpose, providing a haven for traders and messengers, ensuring the safe passage of goods and information across the province. As Rome’s road network expands, these garrisons become essential to maintaining the Republic’s growing influence.</p>
-<p><em>Wording varies by culture: 8 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>3,200 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Waystations and Garrisons</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Government Building</li><li>not <code>building_present military_industrial_complex queued</code> (<code>not_mic</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and requires_gov and not_mic</code></li></ul>
-</details>
+<ul><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li><li>No level of <a href="military_industrial_complex.html">Military Industrial Complex</a> is built or being built here</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -12 to -8, scaling with settlement size</li></ul>
+<ul><li>taxable income -12 to -8, depending on how many settlements your empire holds</li></ul>
 <details>
-<summary>Show 3 effects that apply only in the circumstances shown</summary>
-<ul><li>+2 public order (law) — only when <code>not hidden_resource hills and not hidden_resource mountain_valley and not hidden_resource mountains</code></li><li>+3 public order (law) — only when <code>hidden_resource hills or hidden_resource mountain_valley or hidden_resource mountains</code></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when <code>hidden_resource hills or hidden_resource mountain_valley or hidden_resource mountains</code></li></ul>
+<summary>Show 3 effects that apply only in some circumstances</summary>
+<ul><li>+2 public order (law) — only when the region's terrain is not <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li><li>+3 public order (law) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li></ul>
 </details>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry</li><li>Celtic Spearmen</li><li>Celtic Swordsmen</li></ul>
 <blockquote><p><strong>Excludes:</strong> building this rules out Training Grounds. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="waystations-and-garrisons">Waystations and Garrisons</h2>
 <p><img src="../art/roman__garrison_1.png" alt="Waystations and Garrisons"></p>
@@ -54,21 +49,16 @@
 <p>A province at peace is a province well-garrisoned.</p>
 <p>Rome's expansion is not merely a matter of conquest, but of control. A newly taken land is little more than a restless beast, growling beneath the yoke of civilization. To pacify such territories, the Republic does not rely on mere decrees, it builds. These fortified waystations serve as Rome’s ever-watchful eyes, ensuring that neither brigands nor rebellious thoughts take root in lands claimed by the eagle’s wings.</p>
 <p>Within these walls, battle-hardened legionaries stand ready to stamp out unrest before it takes hold, their discipline an uncompromising testament to Roman order. But these fortifications do more than bristle with spears, they facilitate the steady march of progress. Here, weary merchants find security, messengers change mounts, and supplies are stockpiled for armies that must always be prepared to march. Under Rome’s careful watch, roads become arteries of trade, and a well-guarded province becomes a thriving one.</p>
-<p><em>Wording varies by culture: 6 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,400 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Permanent Military Garrisons</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Indirect Rule</li><li>not <code>building_present military_industrial_complex queued</code> (<code>not_mic</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and gov_tier_2 and not_mic</code></li></ul>
-</details>
+<ul><li><a href="governmentb.html">Indirect Rule</a></li><li>No level of <a href="military_industrial_complex.html">Military Industrial Complex</a> is built or being built here</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -22 to -18, scaling with settlement size</li></ul>
+<ul><li>taxable income -22 to -18, depending on how many settlements your empire holds</li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+4 public order (law) — only when <code>not hidden_resource hills and not hidden_resource mountain_valley and not hidden_resource mountains</code></li><li>+5 public order (law) — only when <code>hidden_resource hills or hidden_resource mountain_valley</code></li><li>+6 public order (law) — only when <code>hidden_resource mountains</code></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when <code>hidden_resource hills or hidden_resource mountain_valley or hidden_resource mountains</code></li></ul>
+<summary>Show 4 effects that apply only in some circumstances</summary>
+<ul><li>+4 public order (law) — only when the region's terrain is not <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li><li>+5 public order (law) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a> or <a href="../tags/terrain.html#mountain-valley">Mountain valley</a></li><li>+6 public order (law) — only when the region's terrain is <a href="../tags/terrain.html#mountains">Mountains</a></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li></ul>
 </details>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry</li><li>Celtic Spearmen</li><li>Celtic Swordsmen</li></ul>
 <blockquote><p><strong>Excludes:</strong> building this rules out Training Grounds. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section><section class="sec wide"><h2 id="permanent-military-garrisons">Permanent Military Garrisons</h2>
 <p><img src="../art/roman__garrison_2.png" alt="Permanent Military Garrisons"></p>
@@ -76,27 +66,18 @@
 <p>A well-fortified camp is a legion’s second home and a rebel’s worst nightmare.</p>
 <p>With Rome’s relentless expansion, temporary marching camps have given way to grander, more permanent fortifications. These Castra (military camp or fort) serve as the backbone of provincial security, imposing the rule of law upon conquered lands with all the subtlety of a catapult to the face. More than mere barracks, they are miniature cities, complete with granaries, forges, and temples to keep both Mars and Jupiter suitably appeased. Housing a full complement of legionaries, cavalry detachments, and engineers, these garrisons project the might of Rome across the land. Here, legionaries train ceaselessly within the walls, their disciplined drills a constant reminder to the locals that Rome is here to stay. Cavalry patrols ensure that neither brigands nor rebellious thoughts grow too bold, while engineers strengthen roads and fortifications, turning the province into an unbreakable cog in the great Roman machine. While the conquered might dream of throwing off their shackles, they had best dream softly, for the sentries hear everything, and Rome does not take kindly to insubordination.</p>
 <p>More than simple defenses, these camps impose order upon the local populace. Watchful sentries patrol roads and countryside, ever vigilant for signs of rebellion or unrest. To the conquered, these fortresses are an unwelcome sign of subjugation, but to Rome, they are the foundation of stability and prosperity.</p>
-<p><em>Wording varies by culture: 5 versions of this description exist in the game files.</em></p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>12,800 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>Direct Rule</li><li>not <code>building_present military_industrial_complex queued</code> (<code>not_mic</code>)</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and gov_tier_3 and not_mic</code></li></ul>
-</details>
+<ul><li><a href="governmentc.html">Direct Rule</a></li><li>No level of <a href="military_industrial_complex.html">Military Industrial Complex</a> is built or being built here</li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>taxable income -32 to -28, scaling with settlement size</li></ul>
+<ul><li>taxable income -32 to -28, depending on how many settlements your empire holds</li></ul>
 <details>
-<summary>Show 4 effects that apply only in the circumstances shown</summary>
-<ul><li>+6 public order (law) — only when <code>not hidden_resource hills and not hidden_resource mountain_valley and not hidden_resource mountains</code></li><li>+7 public order (law) — only when <code>hidden_resource hills or hidden_resource mountain_valley</code></li><li>+8 public order (law) — only when <code>hidden_resource mountains</code></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when <code>hidden_resource hills or hidden_resource mountain_valley or hidden_resource mountains</code></li></ul>
+<summary>Show 4 effects that apply only in some circumstances</summary>
+<ul><li>+6 public order (law) — only when the region's terrain is not <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li><li>+7 public order (law) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a> or <a href="../tags/terrain.html#mountain-valley">Mountain valley</a></li><li>+8 public order (law) — only when the region's terrain is <a href="../tags/terrain.html#mountains">Mountains</a></li><li>Additional law bonus in terrain types: hills, mountain valleys, mountains (these terrains have an inherent law penalty) — only when the region's terrain is <a href="../tags/terrain.html#hills">Hills</a>, <a href="../tags/terrain.html#mountain-valley">Mountain valley</a> or <a href="../tags/terrain.html#mountains">Mountains</a></li></ul>
 </details>
-<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region, exactly as the game files state it.</p>
+<p><strong>Recruitment</strong> — unlocks 3 units. Which of them you can actually raise depends on your faction, your government and the region.</p>
 <ul><li>Celtic Light Cavalry (1 experience)</li><li>Celtic Spearmen (1 experience)</li><li>Celtic Swordsmen (1 experience)</li></ul>
-<blockquote><p><strong>Excludes:</strong> building this rules out Training Grounds. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>gov_tier_2</code></td><td><code>building_present_min_level governmentB gov2 or building_present_min_level governmentC gov3</code></td><td class="grp"><code>gov_tier_3</code></td><td><code>building_present_min_level governmentC gov3</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_mic</code></td><td><code>not building_present military_industrial_complex queued</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<blockquote><p><strong>Excludes:</strong> building this rules out Training Grounds. Choose deliberately — this is not reversible by demolition in every case.</p></blockquote></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

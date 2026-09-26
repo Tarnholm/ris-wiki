@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -33,11 +33,7 @@
 <p>While the supply may be modest, the impact on the local cuisine (and the trader’s profits) is undeniable, with the aroma of far-off lands in one tiny marketplace.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Aromas Market (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the spices resource</li><li>no building tagged <code>urban_exploits</code> is built or queued here (<code>no_other_urban_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource spices and no_other_urban_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Barter</a> or a higher level is built here</li><li>The region has <a href="../goods/spices.html">Spices</a></li><li>Only one urban industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 trade income</li><li>+1 population growth</li></ul></section><section class="sec wide"><h2 id="aromas-market-urban">Aromas Market (Urban)</h2>
 <p><img src="../art/roman__spices_2.png" alt="Aromas Market (Urban)"></p>
@@ -48,11 +44,7 @@
 <p>The traders are all too happy to benefit from the ever-growing hunger for rare flavors.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>5,000 denarii</td><td class="grp">Build time</td><td>5 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Spices Exports (Urban)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the spices resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource spices and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Market</a> or a higher level is built here</li><li>The region has <a href="../goods/spices.html">Spices</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+3 trade income</li><li>+2 population growth</li></ul></section><section class="sec wide"><h2 id="spices-exports-urban">Spices Exports (Urban)</h2>
 <p><img src="../art/roman__spices_supply.png" alt="Spices Exports (Urban)"></p>
@@ -62,17 +54,9 @@
 <p>The merchants’ coffers grow heavier with each shipment sent abroad, and the region’s wealth is spiced with opportunity. The exotic flavors of the East are not just on the plates, they’re in the pockets.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>12,000 denarii</td><td class="grp">Build time</td><td>8 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the spices resource</li><li>anywhere in your empire does not have the hidden resource <code>spices_supply_built</code> (<code>not_spices_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource spices and not_spices_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/spices.html">Spices</a></li><li>No <a href="spices_trading.html">Spices Exports (Urban)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+5 trade income</li><li>+3 population growth</li><li>(Capital) Trade bonus: +20%</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_urban_exploits</code></td><td><code>no_building_tagged urban_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_spices_supply_built</code></td><td><code>not hidden_resource spices_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+5 trade income</li><li>+3 population growth</li><li>(Capital) Trade bonus: +20%</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

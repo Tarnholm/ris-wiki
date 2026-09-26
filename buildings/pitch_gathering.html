@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -32,11 +32,7 @@
 <p>At this remote site workers gather the mysterious and usefull substances that can make any surface waterproof, especially handy for ships, which you generally want to be watertight. In Mesopotamia and at the dead sea liquid naptha and bitumen naturally bubble up from depths unknown. While in the forests of the mediterranean and the north resinous woods like pine are gathered and burned in clay pits to produce tar. No matter the source the work is dirty, smelly and difficult.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,000 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Pitch Rendering Kilns (Industry)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>no building tagged <code>heavy_ind</code> is built or queued here (<code>no_other_heavy_ind</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource pitch and no_other_heavy_ind and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/pitch.html">Pitch, Bitumen &amp; Tars</a></li><li>Only one heavy industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+8 taxable income</li></ul></section><section class="sec wide"><h2 id="pitch-rendering-kilns-industry">Pitch Rendering Kilns (Industry)</h2>
 <p><img src="../art/roman__market.png" alt="Pitch Rendering Kilns (Industry)"></p>
@@ -45,16 +41,12 @@
 <p>The pitch that is gathered here was previously directly brought to town, but now that we have build up the kilns necessary to further refine the pitch we can create a more valuable product.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,000 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Pitch Exports (Industry)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Barter or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market trader and nobuilding and resource pitch and requires_gov</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Barter</a> or a higher level is built here</li><li>The region has <a href="../goods/pitch.html">Pitch, Bitumen &amp; Tars</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+10 taxable income</li><li>+1 trade income</li><li>-1 population growth</li><li>-1 public order (happiness)</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>construction cost bonus defensive +10 — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li><li>Additional cost reduction for walls in Mesopotamia as pitch is used as a mortar for their fortifications — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li></ul>
+<summary>Show 2 effects that apply only in some circumstances</summary>
+<ul><li>construction cost bonus defensive +10 — only when the region is in the <a href="../tags/recruitment-zones.html#babylonian">Babylonian</a> area of recruitment</li><li>Additional cost reduction for walls in Mesopotamia as pitch is used as a mortar for their fortifications — only when the region is in the <a href="../tags/recruitment-zones.html#babylonian">Babylonian</a> area of recruitment</li></ul>
 </details></section><section class="sec wide"><h2 id="pitch-exports-industry">Pitch Exports (Industry)</h2>
 <p><img src="../art/roman__forum.png" alt="Pitch Exports (Industry)"></p>
 <p><em>The game ships no picture of its own for this level and shows the Forum picture instead.</em></p>
@@ -62,20 +54,12 @@
 <p>All over the coasts great shipyards turn out and maintain numerous warships and ships of trade. But to do so they require massive amounts of pitch to keep our sailors from a watery grave. This region has developed the production capacity to meet this demand. Throughout the evening and the night the sky lights up from the fires of the rendering kilns.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>6,000 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Local Market or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the pitch resource</li><li>anywhere in your empire does not have the hidden resource <code>pitch_supply_built</code> (<code>not_pitch_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market market and nobuilding and resource pitch and not_pitch_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Local Market</a> or a higher level is built here</li><li>The region has <a href="../goods/pitch.html">Pitch, Bitumen &amp; Tars</a></li><li>No <a href="pitch_gathering.html">Pitch Exports (Industry)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+12 taxable income</li><li>+2 trade income</li><li>-1 population growth</li><li>-1 public order (happiness)</li><li>(Faction) Ports gain +1 special attack for ships and slingers (does not stack with local pitch, but can stack with hemp and timber on higher level ports)</li></ul>
 <details>
-<summary>Show 2 effects that apply only in the circumstances shown</summary>
-<ul><li>construction cost bonus defensive +15 — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li><li>Additional cost reduction for walls in Mesopotamia as pitch is used as a mortar for their fortifications — only when <code>hidden_resource aor_babylonian or hidden_resource assyrian</code></li></ul>
-</details>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_heavy_ind</code></td><td><code>no_building_tagged heavy_ind queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_pitch_supply_built</code></td><td><code>not hidden_resource pitch_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
+<summary>Show 2 effects that apply only in some circumstances</summary>
+<ul><li>construction cost bonus defensive +15 — only when the region is in the <a href="../tags/recruitment-zones.html#babylonian">Babylonian</a> area of recruitment</li><li>Additional cost reduction for walls in Mesopotamia as pitch is used as a mortar for their fortifications — only when the region is in the <a href="../tags/recruitment-zones.html#babylonian">Babylonian</a> area of recruitment</li></ul>
 </details></section></main>
 </div>
 <script>

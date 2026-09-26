@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -35,11 +35,7 @@
 <p>A small price to pay for such sweetness!</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>1,100 denarii</td><td class="grp">Build time</td><td>2 turns</td><td class="grp">Minimum settlement</td><td>town</td><td class="grp">Upgrades to</td><td>Mead Brewer (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the honey resource</li><li>no building tagged <code>rural_exploits</code> is built or queued here (<code>no_other_rural_exploits</code>)</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource honey and no_other_rural_exploits and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/honey.html">Honey</a></li><li>Only one rural industry building per settlement: no other may already be built or being built here</li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population health</li></ul></section><section class="sec wide"><h2 id="mead-brewer-rural">Mead Brewer (Rural)</h2>
 <p><img src="../art/roman__honey_2.png" alt="Mead Brewer (Rural)"></p>
@@ -50,11 +46,7 @@
 <p>So, as you sip your mead, remember: someone had to wrestle a few hundred bees for that sweet nectar. But while the workers grumble about the bee stings, they can’t deny that the rewards are as golden as the honeycomb.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>2,200 denarii</td><td class="grp">Build time</td><td>3 turns</td><td class="grp">Minimum settlement</td><td>large town</td><td class="grp">Upgrades to</td><td>Wax Workshop (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the honey resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource honey and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/honey.html">Honey</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population health</li><li>+1 public order (happiness)</li><li>+1 trade income</li></ul></section><section class="sec wide"><h2 id="wax-workshop-rural">Wax Workshop (Rural)</h2>
 <p><img src="../art/roman__honey_3.png" alt="Wax Workshop (Rural)"></p>
@@ -65,11 +57,7 @@
 <p>This has truly become a sweet empire of hives producing liquid gold that even the gods envy. There may be a lot of buzzing in the air, but it’s the sound of prosperity being made, one candle at a time.</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>4,400 denarii</td><td class="grp">Build time</td><td>4 turns</td><td class="grp">Minimum settlement</td><td>city</td><td class="grp">Upgrades to</td><td>Honey and Wax Exports (Rural)</td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the honey resource</li><li>Government Building</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and nobuilding and resource honey and requires_gov</code></li></ul>
-</details>
+<ul><li>The region has <a href="../goods/honey.html">Honey</a></li><li>Government Building (<a href="governmenta.html">Dependency</a>, <a href="governmentb.html">Indirect Rule</a>, <a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a>)</li></ul>
 <p><strong>What it does</strong></p>
 <ul><li>+1 population health</li><li>+1 public order (happiness)</li><li>+1 trade income</li><li>+10 taxable income</li></ul></section><section class="sec wide"><h2 id="honey-and-wax-exports-rural">Honey and Wax Exports (Rural)</h2>
 <p><img src="../art/roman__honey_supply.png" alt="Honey and Wax Exports (Rural)"></p>
@@ -81,17 +69,9 @@
 <p>The bees may be small, but their impact is mighty, they’ve made this region famous and rich, one drop of honey at a time. Just don’t ask how they get all that nectar, they’re a bit secretive about it. The region’s wealth is growing as fast as the beekeepers can gather the honey, though some workers claim the bees are plotting something...</p>
 <div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th><th class="grp"></th><th></th></tr></thead><tbody><tr><td>Cost</td><td>9,900 denarii</td><td class="grp">Build time</td><td>6 turns</td><td class="grp">Minimum settlement</td><td>large city</td><td class="grp"></td><td></td></tr></tbody></table></div>
 <p><strong>Requirements</strong> — all of these must hold before this level can be built.</p>
-<ul><li>any faction</li><li>Local Market at Forum or above is built here</li><li>the region does not have the hidden resource <code>nobuild</code> (<code>nobuilding</code>)</li><li>the region has the honey resource</li><li>anywhere in your empire does not have the hidden resource <code>honey_supply_built</code> (<code>not_honey_supply_built</code>)</li><li>Direct Rule or Homeland</li></ul>
-<details>
-<summary>Show the condition as the game files write it (the player's part)</summary>
-<ul><li><code>factions { all, } and building_present_min_level market forum and nobuilding and resource honey and not_honey_supply_built and direct_govs</code></li></ul>
-</details>
+<ul><li><a href="market.html">Forum</a> or a higher level is built here</li><li>The region has <a href="../goods/honey.html">Honey</a></li><li>No <a href="honey_industry.html">Honey and Wax Exports (Rural)</a> is built anywhere in your empire</li><li><a href="governmentc.html">Direct Rule</a> or <a href="governmentd.html">Homeland</a></li></ul>
 <p><strong>What it does</strong></p>
-<ul><li>+1 population health</li><li>+1 public order (happiness)</li><li>+2 trade income</li><li>+10 taxable income</li><li>(Capital) Population growth bonus per turn (1%) and public order (10%) due to health</li></ul>
-<details>
-<summary>What the shorthands in those conditions stand for (5)</summary>
-<div class="tw multi" data-cols="2" data-up="4"><table><thead><tr><th>Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th><th class="grp">Shorthand</th><th>Stands for</th></tr></thead><tbody><tr><td><code>direct_govs</code></td><td><code>building_present governmentC or building_present governmentD</code></td><td class="grp"><code>no_other_rural_exploits</code></td><td><code>no_building_tagged rural_exploits queued</code></td><td class="grp"><code>nobuilding</code></td><td><code>not hidden_resource nobuild</code></td><td class="grp"><code>not_honey_supply_built</code></td><td><code>not hidden_resource honey_supply_built factionwide</code></td></tr><tr><td><code>requires_gov</code></td><td><code>building_present governmentA or building_present governmentB or building_present governmentC or building_present governmentD</code></td><td class="grp"></td><td></td><td class="grp"></td><td></td><td class="grp"></td><td></td></tr></tbody></table></div>
-</details></section></main>
+<ul><li>+1 population health</li><li>+1 public order (happiness)</li><li>+2 trade income</li><li>+10 taxable income</li><li>(Capital) Population growth bonus per turn (1%) and public order (10%) due to health</li></ul></section></main>
 </div>
 <script>
 // See build-ris-wiki-site.js: file:// documents may be denied localStorage, and the shell's

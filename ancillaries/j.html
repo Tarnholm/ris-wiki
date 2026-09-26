@@ -8,7 +8,7 @@
   <div class="bar">
   <a class="brand" href="../README.html"><img src="../art/ris-mark.png" alt="">RTR: Imperium Surrectum</a>
   <form action="../search.html" method="get" role="search">
-    <input name="q" type="search" placeholder="Search 4,483 pages — a faction, region or unit…" autocomplete="off">
+    <input name="q" type="search" placeholder="Search 4,479 pages — a faction, region or unit…" autocomplete="off">
   </form>
   <div class="right">
     <button id="theme" type="button" title="Switch theme">theme</button>
@@ -31,7 +31,7 @@
 <summary>Cultures that never receive it (9)</summary>
 <p><a href="../cultures/carthaginian.html">Phoenician</a> · <a href="../cultures/libyan.html">Libyan</a> · <a href="../cultures/barbarian.html">Gallic</a> · <a href="../cultures/germanic.html">Germanic</a> · <a href="../cultures/dacian.html">Dacian</a> · <a href="../cultures/celtiberian.html">Celtiberian</a> · <a href="../cultures/brittonic.html">Brittonic</a> · <a href="../cultures/thracian.html">Thracian</a> · <a href="../cultures/roman.html">Roman</a></p>
 </details>
-<p><em>No trigger grants this — it comes from the campaign script or an event.</em></p>
+<p><em>Granted by events.</em></p>
 <p>---</p>
 <h3 id="jeweller">Jeweller</h3>
 <p><img src="../ancillary-icons/worker.png" alt="" width="44" style="float:right;margin:0 0 .3rem .6rem;border-radius:4px">never for 6 of the cultures.</p>
@@ -43,8 +43,8 @@
 <p><a href="../cultures/barbarian.html">Gallic</a> · <a href="../cultures/germanic.html">Germanic</a> · <a href="../cultures/dacian.html">Dacian</a> · <a href="../cultures/celtiberian.html">Celtiberian</a> · <a href="../cultures/brittonic.html">Brittonic</a> · <a href="../cultures/thracian.html">Thracian</a></p>
 </details>
 <details>
-<summary>How it is gained — 1 trigger, ending a turn in a settlement</summary>
-<div class="tw multi" data-cols="3" data-up="3"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td><code>Trait Miserly &gt;= 1 and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= curia</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<summary>How it is gained — ending a turn in a settlement</summary>
+<div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>ending a turn in a settlement</td><td class="right">2%</td><td>has <a href="../traits/c.html#careful-with-money">Careful With Money</a> · over 90% of his movement left · the settlement has Great Forum or better</td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details>
 <p>---</p>
 <h3 id="judge">Judge</h3>
@@ -57,8 +57,8 @@
 <p><a href="../cultures/barbarian.html">Gallic</a> · <a href="../cultures/germanic.html">Germanic</a> · <a href="../cultures/dacian.html">Dacian</a> · <a href="../cultures/celtiberian.html">Celtiberian</a> · <a href="../cultures/brittonic.html">Brittonic</a> · <a href="../cultures/thracian.html">Thracian</a> · <a href="../cultures/scythian.html">Scythian</a> · <a href="../cultures/roman.html">Roman</a></p>
 </details>
 <details>
-<summary>How it is gained — 1 trigger, governor city riots</summary>
-<div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>governor city riots</td><td class="right">3%</td><td><code>EndedInSettlement and RemainingMPPercentage &gt; 90 and SettlementBuildingExists &gt;= proconsuls_palace and SettlementBuildingExists &gt;= law_court and Trait Just &gt;= 1 and IsGeneral</code></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
+<summary>How it is gained — when the governed city riots</summary>
+<div class="tw multi" data-cols="3" data-up="4"><table><thead><tr><th>When</th><th class="right">Chance</th><th>Conditions</th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th><th class="grp"></th><th class="right"></th><th></th></tr></thead><tbody><tr><td>when the governed city riots</td><td class="right">3%</td><td>ended the turn in a settlement · over 90% of his movement left · the settlement has Pro-Consul's Palace or better · the settlement has Court of Law (Civic) or better · has <a href="../traits/i.html#impartial-judge">Impartial Judge</a> · is a general</td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td><td class="grp"></td><td class="right"></td><td></td></tr></tbody></table></div>
 </details></main>
 </div>
 <script>
