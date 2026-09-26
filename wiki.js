@@ -17,6 +17,23 @@
     }
   });
 
+  // ── hover one entry, not the whole row, in a dealt table ───────────────────
+  // A group starts at a cell marked "grp" (or at the row's first cell), and runs to the next.
+  (function(){
+    var lit = [];
+    function clear(){ lit.forEach(function(c){ c.classList.remove("hl"); }); lit = []; }
+    document.addEventListener("mouseover", function(e){
+      var td = e.target.closest && e.target.closest(".tw.multi td");
+      clear();
+      if (!td) return;
+      var cells = Array.prototype.slice.call(td.parentNode.children);
+      var i = cells.indexOf(td), a = i, b = i;
+      while (a > 0 && !cells[a].classList.contains("grp")) a--;
+      while (b + 1 < cells.length && !cells[b + 1].classList.contains("grp")) b++;
+      for (var k = a; k <= b; k++) { cells[k].classList.add("hl"); lit.push(cells[k]); }
+    });
+  })();
+
   // ── deal the tables to the window that is actually open ────────────────────
   // The server decides how many copies of a narrow table fit across the page from an ESTIMATE of
   // a width it cannot know. On a window narrower than the estimate assumes, three lists that

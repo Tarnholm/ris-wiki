@@ -284,6 +284,10 @@ td.right,th.right{text-align:right;font-variant-numeric:tabular-nums}
 td.center,th.center{text-align:center}
 tbody tr:last-child td{border-bottom:none}
 tbody tr:hover{background:var(--acc-soft)}
+/* A table dealt into side-by-side groups holds several entries per row, so the row highlight
+   lit up every entry across it. There only the group under the pointer is lit (see the script). */
+.tw.multi tbody tr:hover{background:none}
+.tw.multi td.hl{background:var(--acc-soft)}
 img{max-width:100%;height:auto;vertical-align:middle}
 img[align="right"]{margin:0 0 1rem 1.4rem;border-radius:8px;box-shadow:var(--shadow)}
 a:has(img){display:inline-block}
